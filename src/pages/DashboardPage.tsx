@@ -67,51 +67,75 @@ function CountdownSection() {
 }
 
 function HotelQuickView() {
-  const hotel = getTodayHotel();
-  if (!hotel) {
-    // Show next hotel
-    const nextHotel = hotelsData[0];
-    return (
-      <div className="bg-white rounded-2xl p-4 shadow-sm">
-        <h3 className="text-sm font-semibold text-warm-gray mb-2">🏨 住宿資訊</h3>
-        <div className="flex items-start gap-3">
-          <span className="text-3xl">{nextHotel.emoji}</span>
-          <div className="flex-1 min-w-0">
-            <p className="font-bold text-base">{nextHotel.name}</p>
-            <p className="text-sm text-warm-gray">{nextHotel.subtitle}</p>
-            <p className="text-xs text-warm-gray mt-1">Day {nextHotel.days.join(' & ')}</p>
-          </div>
-        </div>
-        {nextHotel.phone && (
-          <a href={`tel:${nextHotel.phone}`} className="mt-3 block w-full text-center bg-fuji-ice text-fuji-blue rounded-xl py-2.5 text-sm font-semibold tap-highlight">
-            📞 撥打電話
-          </a>
-        )}
-      </div>
-    );
-  }
+  const today = new Date().toISOString().slice(0, 10);
 
   return (
-    <div className="bg-white rounded-2xl p-4 shadow-sm">
-      <h3 className="text-sm font-semibold text-warm-gray mb-2">🏨 今晚住這裡</h3>
-      <div className="flex items-start gap-3">
-        <span className="text-3xl">{hotel.emoji}</span>
-        <div className="flex-1 min-w-0">
-          <p className="font-bold text-base">{hotel.name}</p>
-          <p className="text-sm text-warm-gray">{hotel.subtitle}</p>
-          <p className="text-xs text-warm-gray mt-1">{hotel.roomType}</p>
-        </div>
-      </div>
-      <div className="flex gap-2 mt-3">
-        {hotel.phone && (
-          <a href={`tel:${hotel.phone}`} className="flex-1 text-center bg-fuji-ice text-fuji-blue rounded-xl py-2.5 text-sm font-semibold tap-highlight">
-            📞 電話
-          </a>
-        )}
-        <a href={hotel.mapUrl} target="_blank" rel="noopener" className="flex-1 text-center bg-forest-light text-forest-green rounded-xl py-2.5 text-sm font-semibold tap-highlight">
-          🗺️ 導航
-        </a>
-      </div>
+    <div className="space-y-3">
+      <h3 className="text-sm font-bold text-warm-gray px-1">🏨 住宿安排與預約資訊</h3>
+      {hotelsData.map((hotel) => {
+        const isCurrent = hotel.dates.includes(today);
+        return (
+          <div
+            key={hotel.id}
+            className={`bg-white rounded-2xl p-4 shadow-sm border transition-all ${
+              isCurrent
+                ? 'border-fuji-blue ring-2 ring-fuji-blue/15'
+                : 'border-gray-150/60'
+            }`}
+          >
+            <div className="flex items-start gap-3">
+              <span className="text-3xl flex-shrink-0">{hotel.emoji}</span>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2">
+                  <h4 className="font-bold text-base text-dark-navy truncate">{hotel.name}</h4>
+                  {isCurrent && (
+                    <span className="text-[10px] font-bold bg-fuji-blue text-white px-2 py-0.5 rounded-full shrink-0">
+                      今晚入住
+                    </span>
+                  )}
+                </div>
+                <p className="text-sm text-warm-gray font-semibold mt-0.5">{hotel.subtitle}</p>
+                <p className="text-xs text-warm-gray mt-1 font-semibold">
+                  入住天數：Day {hotel.days.join(' & ')} ({hotel.roomType})
+                </p>
+
+                {/* Hotel Details */}
+                <div className="mt-2 text-xs text-warm-gray space-y-1.5 border-t border-gray-100 pt-2 font-medium">
+                  <p className="text-dark-navy">📍 {hotel.address.ja}</p>
+                  {hotel.roomDetail && <p>🛏️ 房型明細：{hotel.roomDetail}</p>}
+                  {hotel.reservations.map((res, idx) => (
+                    <div key={idx} className="bg-fuji-snow/60 p-2 rounded-xl mt-1 text-dark-navy">
+                      <p className="font-bold">🗓️ 預定日期：{res.date.slice(5)}</p>
+                      {res.orderId && <p>🔑 訂單編號：{res.orderId}</p>}
+                      {res.chargeDate && <p>💳 扣款日期：{res.chargeDate}</p>}
+                      {res.note && <p className="text-danger font-bold mt-0.5">⚠️ 提醒：{res.note}</p>}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-2 mt-3 border-t border-gray-100 pt-3">
+              {hotel.phone && (
+                <a
+                  href={`tel:${hotel.phone}`}
+                  className="flex-1 text-center bg-fuji-ice text-fuji-blue rounded-xl py-2 text-xs font-bold tap-highlight"
+                >
+                  📞 撥打電話
+                </a>
+              )}
+              <a
+                href={hotel.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 text-center bg-forest-light text-forest-green rounded-xl py-2 text-xs font-bold tap-highlight"
+              >
+                🗺️ 開啟地圖
+              </a>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

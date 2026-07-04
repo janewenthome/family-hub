@@ -23,8 +23,11 @@ const CATEGORY_COLORS: Record<string, string> = {
 
 function TimelineEvent({ event }: { event: ItineraryEvent }) {
   const [expanded, setExpanded] = useState(false);
-  const icon = ICON_MAP[event.icon] || '📌';
   const colorClass = CATEGORY_COLORS[event.category] || 'border-l-gray-300 bg-gray-50';
+
+  // Extract clean query text by removing emojis and starting symbols
+  const cleanTitle = event.title.replace(/^[\s\p{Emoji}\p{Symbol}]+/u, '').trim();
+  const mapsUrl = event.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(cleanTitle)}`;
 
   return (
     <div className="flex gap-3 items-start">
@@ -37,9 +40,9 @@ function TimelineEvent({ event }: { event: ItineraryEvent }) {
       </div>
 
       {/* Timeline dot + line */}
-      <div className="flex flex-col items-center pt-3.5">
+      <div className="flex flex-col items-center pt-3.5 flex-shrink-0">
         <div className={`w-3 h-3 rounded-full ${event.important ? 'bg-sunset-orange ring-2 ring-sunset-orange/30' : 'bg-fuji-blue'}`} />
-        <div className="w-0.5 flex-1 bg-gray-200 mt-1" />
+        <div className="w-0.5 flex-grow bg-gray-200 mt-1 min-h-[40px]" />
       </div>
 
       {/* Event card */}
@@ -47,19 +50,31 @@ function TimelineEvent({ event }: { event: ItineraryEvent }) {
         onClick={() => setExpanded(!expanded)}
         className={`flex-1 border-l-4 rounded-xl p-3 mb-2 text-left tap-highlight transition-all ${colorClass}`}
       >
-        <div className="flex items-start gap-2">
-          <span className="text-lg leading-none mt-0.5">{icon}</span>
+        <div className="flex items-start justify-between gap-2">
           <div className="flex-1 min-w-0">
             <h4 className="font-semibold text-sm leading-snug">{event.title}</h4>
             {event.description && (
               <p className="text-xs text-warm-gray mt-0.5">{event.description}</p>
             )}
           </div>
-          {(event.important || event.warning) && (
-            <span className="text-xs">
-              {event.warning ? '⚠️' : '🔴'}
-            </span>
-          )}
+          
+          <div className="flex items-center gap-1.5 flex-shrink-0">
+            <a
+              href={mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="p-1.5 text-xs bg-white/95 border border-gray-200 rounded-lg hover:bg-fuji-blue hover:text-white transition-colors shadow-sm tap-highlight flex items-center justify-center"
+              title="導航至此處"
+            >
+              🗺️
+            </a>
+            {(event.important || event.warning) && (
+              <span className="text-xs">
+                {event.warning ? '⚠️' : '🔴'}
+              </span>
+            )}
+          </div>
         </div>
 
         {expanded && (
@@ -91,12 +106,6 @@ function TimelineEvent({ event }: { event: ItineraryEvent }) {
                   <p key={i} className="text-xs text-warm-gray pl-4">• {note}</p>
                 ))}
               </div>
-            )}
-            {event.mapUrl && (
-              <a href={event.mapUrl} target="_blank" rel="noopener"
-                className="inline-block text-xs bg-fuji-blue text-white rounded-lg px-3 py-1.5 tap-highlight">
-                🗺️ 開啟地圖
-              </a>
             )}
           </div>
         )}
@@ -144,6 +153,7 @@ export default function ItineraryPage() {
               </button>
             );
           })}
+          <div className="w-8 flex-shrink-0" />
         </div>
       </div>
 
