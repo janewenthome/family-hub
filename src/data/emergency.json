@@ -1,0 +1,39 @@
+{
+  "police": { "name": "日本警察", "number": "110", "emoji": "🚔" },
+  "ambulance": { "name": "日本急救/消防", "number": "119", "emoji": "🚑" },
+  "embassy": {
+    "name": "駐日台灣代表處",
+    "number": "+81-3-6206-3600",
+    "emergencyNumber": "+81-80-6552-4764",
+    "emoji": "🇹🇼",
+    "note": "緊急時請撥專線"
+  },
+  "insurance": [
+    {
+      "name": "東京海上日動",
+      "type": "TOKIO OMOTENASHI POLICY",
+      "coverage": "在日治療 + 醫療搬運，上限 ¥1,000 萬",
+      "note": "7/25 生效（申請隔天起算）",
+      "emoji": "🏥"
+    },
+    {
+      "name": "富邦不便險",
+      "type": "旅遊不便險 + 海外突發疾病",
+      "coverage": "班機延誤/行李損失/旅程取消",
+      "note": "補足東京海上缺口，7/24 入境當天即有效",
+      "emoji": "🛡️"
+    },
+    {
+      "name": "公教信用卡",
+      "type": "海外意外身故/失能",
+      "coverage": "含部分不便險/海外醫療",
+      "note": "請查閱卡片手冊確認涵蓋範圍",
+      "emoji": "💳"
+    }
+  ],
+  "hotels": [
+    { "name": "成田日航酒店", "phone": "+81-476-32-0032", "emoji": "🏨" },
+    { "name": "日本橋阿克薩斯", "phone": null, "emoji": "🏠" },
+    { "name": "Yoshimura ooike sense", "phone": null, "emoji": "🏡" }
+  ]
+}

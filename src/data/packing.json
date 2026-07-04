@@ -1,0 +1,117 @@
+{
+  "categories": [
+    {
+      "id": "documents",
+      "name": "📄 證件與文件",
+      "emoji": "📄",
+      "items": [
+        { "id": "doc-1", "text": "護照（全家 5 本）", "critical": true },
+        { "id": "doc-2", "text": "信用卡 x2（VISA/Master）", "critical": true },
+        { "id": "doc-3", "text": "日幣現金", "critical": true },
+        { "id": "doc-4", "text": "台幣少量（回程用）" },
+        { "id": "doc-5", "text": "KKday Skyliner QR Code 截圖" },
+        { "id": "doc-6", "text": "住宿確認信列印" },
+        { "id": "doc-7", "text": "Toyota 租車預約確認" },
+        { "id": "doc-8", "text": "各票券預約編號備份" },
+        { "id": "doc-9", "text": "保險證明文件" }
+      ]
+    },
+    {
+      "id": "family-shared",
+      "name": "🏠 家庭共用",
+      "emoji": "🏠",
+      "items": [
+        { "id": "fam-1", "text": "常備藥品（退燒/止瘉/OK繃/體溫計）", "critical": true },
+        { "id": "fam-2", "text": "防蚊液" },
+        { "id": "fam-3", "text": "防曬乳（全家用）" },
+        { "id": "fam-4", "text": "行動電源 x2" },
+        { "id": "fam-5", "text": "充電線（Lightning + USB-C）" },
+        { "id": "fam-6", "text": "萬用轉接頭" },
+        { "id": "fam-7", "text": "折疊雨衣（大人 x2 + 兒童 x1）" },
+        { "id": "fam-8", "text": "折疊傘 x2" },
+        { "id": "fam-9", "text": "推車" },
+        { "id": "fam-10", "text": "背巾/腰凳（三寶用）" },
+        { "id": "fam-11", "text": "保溫瓶/水壺 x3" },
+        { "id": "fam-12", "text": "夾鏈袋（多用途）" },
+        { "id": "fam-13", "text": "塑膠袋若干" },
+        { "id": "fam-14", "text": "濕紙巾（大包 x2）" },
+        { "id": "fam-15", "text": "面紙/衛生紙" }
+      ]
+    },
+    {
+      "id": "dad",
+      "name": "👨 爸爸",
+      "emoji": "👨",
+      "items": [
+        { "id": "dad-1", "text": "衣物（9 天份）" },
+        { "id": "dad-2", "text": "內衣褲（9 天份）" },
+        { "id": "dad-3", "text": "睡衣" },
+        { "id": "dad-4", "text": "涼鞋/拖鞋" },
+        { "id": "dad-5", "text": "盥洗用品" },
+        { "id": "dad-6", "text": "駕照（國際駕照）" },
+        { "id": "dad-7", "text": "太陽眼鏡" },
+        { "id": "dad-8", "text": "帽子" }
+      ]
+    },
+    {
+      "id": "mom",
+      "name": "👩 媽媽",
+      "emoji": "👩",
+      "items": [
+        { "id": "mom-1", "text": "衣物（9 天份）" },
+        { "id": "mom-2", "text": "內衣褲（9 天份）" },
+        { "id": "mom-3", "text": "睡衣" },
+        { "id": "mom-4", "text": "涼鞋/拖鞋" },
+        { "id": "mom-5", "text": "盥洗用品" },
+        { "id": "mom-6", "text": "化妝品/保養品" },
+        { "id": "mom-7", "text": "太陽眼鏡" },
+        { "id": "mom-8", "text": "帽子" }
+      ]
+    },
+    {
+      "id": "kid1",
+      "name": "👦 大寶 (10y)",
+      "emoji": "👦",
+      "items": [
+        { "id": "k1-1", "text": "衣物（9 天份）" },
+        { "id": "k1-2", "text": "內褲（9 天份）" },
+        { "id": "k1-3", "text": "睡衣" },
+        { "id": "k1-4", "text": "涼鞋" },
+        { "id": "k1-5", "text": "水壺" },
+        { "id": "k1-6", "text": "帽子" },
+        { "id": "k1-7", "text": "小背包" },
+        { "id": "k1-8", "text": "零食/車上點心" }
+      ]
+    },
+    {
+      "id": "kid2",
+      "name": "🧒 二寶 (4y)",
+      "emoji": "🧒",
+      "items": [
+        { "id": "k2-1", "text": "衣物（9 天份 + 備用 2 套）" },
+        { "id": "k2-2", "text": "內褲（9 天份 + 備用）" },
+        { "id": "k2-3", "text": "睡衣" },
+        { "id": "k2-4", "text": "涼鞋" },
+        { "id": "k2-5", "text": "水壺" },
+        { "id": "k2-6", "text": "帽子" },
+        { "id": "k2-7", "text": "零食" }
+      ]
+    },
+    {
+      "id": "kid3",
+      "name": "👶 三寶 (2y)",
+      "emoji": "👶",
+      "items": [
+        { "id": "k3-1", "text": "衣物（9 天份 + 備用 3 套）" },
+        { "id": "k3-2", "text": "紙尿褲（大量！每天約 6-8 片）", "critical": true },
+        { "id": "k3-3", "text": "睡衣" },
+        { "id": "k3-4", "text": "涼鞋" },
+        { "id": "k3-5", "text": "水壺/學習杯" },
+        { "id": "k3-6", "text": "帽子" },
+        { "id": "k3-7", "text": "安撫物/小毯子" },
+        { "id": "k3-8", "text": "副食品/零食" },
+        { "id": "k3-9", "text": "圍兜兜" }
+      ]
+    }
+  ]
+}

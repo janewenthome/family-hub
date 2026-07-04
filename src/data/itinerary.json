@@ -1,0 +1,923 @@
+{
+  "tripStart": "2026-07-24",
+  "tripEnd": "2026-08-01",
+  "days": [
+    {
+      "date": "2026-07-24",
+      "dayNumber": 1,
+      "label": "Day 1",
+      "title": "降落與前進基地",
+      "emoji": "✈️",
+      "location": "台灣 → 成田",
+      "hotel": "nikko-narita",
+      "phase": "階段一：城市與鐵道探索",
+      "events": [
+        {
+          "time": "16:25",
+          "endTime": "20:50",
+          "title": "中華航空 CI101 起飛",
+          "icon": "plane",
+          "category": "transport",
+          "description": "TPE → NRT",
+          "important": true,
+          "kidFocus": "坐飛機出發去日本囉！"
+        },
+        {
+          "time": "21:30",
+          "title": "搭乘免費接駁車前往飯店",
+          "icon": "bus",
+          "category": "transport",
+          "description": "成田日航酒店免費接駁車",
+          "tips": ["抵達後跟著 Hotel Nikko Narita 指標走"]
+        },
+        {
+          "time": "22:00",
+          "title": "辦理成田日航酒店入住",
+          "icon": "hotel",
+          "category": "hotel",
+          "description": "Comfort Triple Room",
+          "adultNotes": ["預約編號：ORD0026706376", "地址：〒286-0106 千葉県成田市取香500"]
+        },
+        {
+          "time": "22:30",
+          "title": "Lawson 宵夜＋休息",
+          "icon": "food",
+          "category": "food",
+          "description": "飯店 1F Lawson 便利商店",
+          "kidFocus": "去便利商店買好吃的！"
+        },
+        {
+          "time": "22:45",
+          "title": "🛡️ 投保東京海上日動旅平險",
+          "icon": "phone",
+          "category": "task",
+          "description": "上網投保「東京海上日動訪日外國人旅平險」",
+          "adultNotes": ["保障於 7/25 生效", "7/24 入境當天由台灣富邦不便險與公教信用卡 cover"],
+          "important": true
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "dayNumber": 2,
+      "label": "Day 2",
+      "title": "鐵道大師的夢想成真",
+      "emoji": "🚂",
+      "location": "成田 → 大宮 → 日本橋",
+      "hotel": "axas-nihonbashi",
+      "phase": "階段一：城市與鐵道探索",
+      "events": [
+        {
+          "time": "08:30",
+          "title": "退房＋搭接駁車去機場",
+          "icon": "hotel",
+          "category": "hotel",
+          "description": "辦理退房，搭免費接駁車前往成田機場 T2"
+        },
+        {
+          "time": "08:40",
+          "title": "🧳 ヤマト宅急便寄行李",
+          "icon": "luggage",
+          "category": "task",
+          "description": "當日配送大行李箱至日本橋阿克薩斯",
+          "important": true,
+          "adultNotes": [
+            "T1 或 T2 ヤマト宅急便櫃檯（06:30 開）",
+            "受付截止 10:30",
+            "寄送至：〒103-0015 東京都中央区日本橋箱崎町20-12 Hotel Axas Nihonbashi フロント気付",
+            "費用約 ¥2,000–3,000"
+          ],
+          "tips": ["背包需備好當晚衣物、紙尿褲、必需品"],
+          "warning": "若當日配暫停，背包內需備好一晚衣物"
+        },
+        {
+          "time": "08:50",
+          "title": "🎫 Skyliner 換票劃位",
+          "icon": "ticket",
+          "category": "task",
+          "description": "E-TICKETS 自動售票機掃 KKday QR Code",
+          "adultNotes": [
+            "單程票 4 張（大人 ×2 + 兒童 ×2）",
+            "劃位選 A/B/C/D 同排連號，包下一整排"
+          ],
+          "kidFocus": "要搭藍色子彈列車了！"
+        },
+        {
+          "time": "09:20",
+          "endTime": "10:01",
+          "title": "🚄 Skyliner 直達京成上野",
+          "icon": "train",
+          "category": "transport",
+          "description": "41 分鐘直達，ABCD 4 連座",
+          "kidFocus": "坐在超快的藍色子彈列車裡！"
+        },
+        {
+          "time": "10:01",
+          "endTime": "10:35",
+          "title": "🎫 上野站神級取票＋轉乘",
+          "icon": "ticket",
+          "category": "task",
+          "description": "JR 上野站紫色指定席券売機",
+          "important": true,
+          "adultNotes": [
+            "輸入受取コード 27452392380521278",
+            "一次領取「富士回遊 15 号」＋「特急かいじ 14 号」實體票",
+            "省去新宿站排隊"
+          ],
+          "tips": ["找有護照/QR掃描槽的紫色指定席券売機", "選繁體中文 → Pick up Tickets → JR-EAST Train Reservation"]
+        },
+        {
+          "time": "10:35",
+          "endTime": "16:00",
+          "title": "🚂 大宮鐵道博物館 5.5 小時",
+          "icon": "museum",
+          "category": "attraction",
+          "description": "全日深度探索！",
+          "important": true,
+          "kidFocus": "開迷你火車、開新幹線模擬器、吃新幹線造型便當！",
+          "adultNotes": [
+            "11:05 ミニ運転列車：大寶開車，二寶＋三寶乘坐",
+            "13:00 E5 シミュレータ：大寶專屬新幹線駕駛",
+            "午餐：旅弁当 駅弁屋 買 E5/E6 造型便當，在 Lunch Train 車廂吃",
+            "15:00 必看中央轉車台蒸汽秀"
+          ],
+          "tips": [
+            "南館 2F 科學車站、摩擦力台車、轉向架體驗",
+            "本館 1F 蒸汽機關車、Kids Plaza 放電"
+          ]
+        },
+        {
+          "time": "16:00",
+          "title": "搭車返回上野站",
+          "icon": "train",
+          "category": "transport",
+          "description": "提早離場，搭計程車返回飯店"
+        },
+        {
+          "time": "17:00",
+          "title": "入住日本橋阿克薩斯",
+          "icon": "hotel",
+          "category": "hotel",
+          "description": "當日配行李箱已在房內等候",
+          "adultNotes": ["地址：〒103-0015 東京都中央区日本橋箱崎町20-12"]
+        },
+        {
+          "time": "17:30",
+          "title": "Maruetsu Petit 補貨",
+          "icon": "shopping",
+          "category": "shopping",
+          "description": "爸爸去濱町店買水果與鮮奶"
+        },
+        {
+          "time": "19:00",
+          "endTime": "20:30",
+          "title": "🎆 第 49 回隅田川花火大会",
+          "icon": "fireworks",
+          "category": "attraction",
+          "description": "游擊觀賞策略",
+          "important": true,
+          "kidFocus": "看超大的煙火秀！",
+          "adultNotes": [
+            "媽媽＋雙幼童：房間吹冷氣看 NHK 直播",
+            "爸爸＋大寶：步行 12 分鐘到「新大橋・濱町公園」河畔",
+            "距第二會場約 1.5km，免票免擠，高空煙火視野清晰",
+            "20:30 步行返回飯店"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "dayNumber": 3,
+      "label": "Day 3",
+      "title": "漫步宇宙與水上飛船",
+      "emoji": "🚀",
+      "location": "日本橋 → 台場 → 日本橋",
+      "hotel": "axas-nihonbashi",
+      "phase": "階段一：城市與鐵道探索",
+      "events": [
+        {
+          "time": "07:30",
+          "endTime": "08:15",
+          "title": "🥐 爸爸的早餐儀式",
+          "icon": "food",
+          "category": "food",
+          "description": "TRUFFLE Bakery 富岡本店白松露鹽麵包",
+          "adultNotes": [
+            "地址：〒135-0047 東京都江東区富岡1-15-2",
+            "回程建議在店門口攔計程車（¥500-600，3 分鐘）"
+          ]
+        },
+        {
+          "time": "08:30",
+          "title": "全家在房間吃頂級麵包早餐",
+          "icon": "food",
+          "category": "food",
+          "description": "充足時間讓孩子睡飽、吃飽、著裝"
+        },
+        {
+          "time": "10:00",
+          "title": "🚕 計程車直達日の出棧橋",
+          "icon": "taxi",
+          "category": "transport",
+          "description": "Jumbo Taxi / Uber XL，約 15 分鐘，¥1,200",
+          "tips": ["叫大台計程車載全家"]
+        },
+        {
+          "time": "10:25",
+          "title": "抵達碼頭排隊",
+          "icon": "ticket",
+          "category": "task",
+          "description": "出示手機預約 QR Code（預約號碼：716514）",
+          "warning": "電子票禁止截圖！必須保留原 URL 連結即時顯示"
+        },
+        {
+          "time": "10:45",
+          "endTime": "11:05",
+          "title": "🚀 水上巴士 ホタルナ 科幻巡航",
+          "icon": "ship",
+          "category": "attraction",
+          "description": "20 分鐘穿越彩虹大橋",
+          "important": true,
+          "kidFocus": "搭全透明水上太空船出航！穿越彩虹大橋！",
+          "adultNotes": ["全室內冷氣玻璃艙", "頂部甲板行駛中多不開放"]
+        },
+        {
+          "time": "11:15",
+          "endTime": "12:15",
+          "title": "🍽️ Aqua City 錯峰早午餐",
+          "icon": "food",
+          "category": "food",
+          "description": "ポムの樹蛋包飯或同層拉麵",
+          "tips": ["週日 11:30 前完全避開 12:30 排隊人潮"],
+          "kidFocus": "在大商場裡吃好吃的蛋包飯！"
+        },
+        {
+          "time": "12:20",
+          "title": "🚝 百合海鷗號無人駕駛體驗",
+          "icon": "train",
+          "category": "transport",
+          "description": "台場站 → 東京國際郵輪碼頭站（1 站）",
+          "kidFocus": "搶站到車廂最前方！無人駕駛雲霄飛車視角！",
+          "adultNotes": ["車資：大人 ¥200、兒童 ¥100，刷 Suica"]
+        },
+        {
+          "time": "12:30",
+          "endTime": "16:30",
+          "title": "🤖 日本科學未來館 4 小時",
+          "icon": "museum",
+          "category": "attraction",
+          "description": "Miraikan 科學互動體驗",
+          "important": true,
+          "kidFocus": "在發光巨大地球下與 AI 機器人玩耍！",
+          "adultNotes": [
+            "使用電子入館券進場",
+            "大寶主攻 3F「創造未來」與 AI 互動區",
+            "幼童在 Geo-Cosmos 巨型發光地球與親子互動區"
+          ],
+          "tips": ["4 小時為幼兒體力專注極限"]
+        },
+        {
+          "time": "16:40",
+          "title": "🚕 Jumbo Taxi 返回飯店",
+          "icon": "taxi",
+          "category": "transport",
+          "description": "車資約 ¥3,000–3,500，途中經超市補貨"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "dayNumber": 4,
+      "label": "Day 4",
+      "title": "搭乘特急進軍富士山！",
+      "emoji": "🗻",
+      "location": "日本橋 → 新宿 → 河口湖",
+      "hotel": "yoshimura-villa",
+      "phase": "階段二：富士山下別墅時光",
+      "meetup": "與奕綺一家（2大2小）在別墅會合",
+      "events": [
+        {
+          "time": "08:45",
+          "title": "早餐＋退房",
+          "icon": "hotel",
+          "category": "hotel",
+          "description": "辦理 Hotel Axas 退房，行李寄放櫃檯"
+        },
+        {
+          "time": "09:00",
+          "title": "⛩️ 水天宮祈福",
+          "icon": "shrine",
+          "category": "attraction",
+          "description": "飯店旁，推車極友善",
+          "tips": ["順路購買重盛人形燒當車上點心"],
+          "kidFocus": "去神社許願保平安！"
+        },
+        {
+          "time": "09:40",
+          "title": "🚕 Jumbo Taxi 直達新宿站",
+          "icon": "taxi",
+          "category": "transport",
+          "description": "日本橋 → 新宿，約 25–35 分鐘"
+        },
+        {
+          "time": "10:10",
+          "title": "🍱 新宿站買火車便當",
+          "icon": "food",
+          "category": "food",
+          "description": "駅弁＋飲料",
+          "warning": "富士回遊車上無販售食物，務必買齊！"
+        },
+        {
+          "time": "10:30",
+          "endTime": "12:24",
+          "title": "🚆 特急富士回遊 15 号",
+          "icon": "train",
+          "category": "transport",
+          "description": "新宿 → 河口湖，零轉車直達！",
+          "important": true,
+          "kidFocus": "在火車上吃便當，看著富士山越來越大！",
+          "adultNotes": [
+            "全車指定席，3号車 14番ABC + 15番AB（5席連坐）",
+            "予約番号：E06117",
+            "實體票已於 Day 2 領妥"
+          ]
+        },
+        {
+          "time": "12:30",
+          "title": "🚕 計程車前往別墅",
+          "icon": "taxi",
+          "category": "transport",
+          "description": "河口湖站前計程車排班處，3–5 分鐘，¥700–900"
+        },
+        {
+          "time": "13:00",
+          "title": "🏠 抵達 Yoshimura 別墅！盟友會合！",
+          "icon": "hotel",
+          "category": "hotel",
+          "description": "與奕綺一家合體包棟！4大5小共 9 人",
+          "important": true,
+          "kidFocus": "抵達終極秘密基地！與好朋友一家會合開派對！",
+          "adultNotes": ["地址：〒401-0301 山梨県南都留郡富士河口湖町船津6713-91"]
+        },
+        {
+          "time": "14:00",
+          "title": "📦 Plarail 網購下單",
+          "icon": "gift",
+          "category": "task",
+          "description": "手機登入 Yodobashi / Amazon JP 下單",
+          "adultNotes": [
+            "指定配送日 7/30，寄至成田日航酒店",
+            "收件：〒286-0106 千葉県成田市取香500 成田日航酒店 フロント気付 TSENG WENHUNG"
+          ]
+        },
+        {
+          "time": "14:30",
+          "title": "備案：湖畔散步或纜車",
+          "icon": "park",
+          "category": "free",
+          "description": "OGINO 採買 / 大石公園散步 / カチカチ山纜車",
+          "backup": {
+            "condition": "纜車排隊超過 45 分鐘",
+            "plan": "果斷放棄改回湖畔散步"
+          },
+          "adultNotes": [
+            "カチカチ山纜車：往復大人 ¥1,000、小人 ¥500",
+            "暑假旺季常排 1 小時以上",
+            "山頂多階梯，推車需折疊，三寶需爸爸抱"
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "🍲 兩家人在別墅開伙",
+          "icon": "food",
+          "category": "food",
+          "description": "大廚房溫馨晚餐",
+          "kidFocus": "在大房子裡一起煮飯吃！"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "dayNumber": 5,
+      "label": "Day 5",
+      "title": "巨型天鵝寶寶與音樂森林",
+      "emoji": "🦢",
+      "location": "河口湖 → 山中湖 → 河口湖",
+      "hotel": "yoshimura-villa",
+      "phase": "階段二：富士山下別墅時光",
+      "events": [
+        {
+          "time": "08:45",
+          "title": "🚕 爸爸取車",
+          "icon": "car",
+          "category": "task",
+          "description": "Toyota 富士河口湖店取 NOAH Hybrid",
+          "adultNotes": [
+            "車站正對面 Toyota 店",
+            "確認安全座椅：嬰幼兒座(三寶) + 增高座(二寶)",
+            "導航設定完成後返回民宿接人"
+          ]
+        },
+        {
+          "time": "09:30",
+          "title": "🚙 出發往山中湖",
+          "icon": "car",
+          "category": "transport",
+          "description": "NOAH 載兩家大部隊出發",
+          "kidFocus": "爸爸開著大戰車載大家去探險！"
+        },
+        {
+          "time": "10:15",
+          "title": "抵達山中湖旭日丘碼頭",
+          "icon": "walk",
+          "category": "attraction",
+          "description": "湖畔散步、買飼料餵天鵝與鯉魚"
+        },
+        {
+          "time": "10:45",
+          "endTime": "11:10",
+          "title": "🦢 天鵝湖號遊覽船",
+          "icon": "ship",
+          "category": "attraction",
+          "description": "水戶岡銳治設計木質內裝",
+          "important": true,
+          "kidFocus": "搭華麗的木造海盜船，在沙發上用望遠鏡看富士山！",
+          "adultNotes": [
+            "大人 ¥1,100 ×2 + 大寶 ¥550 + 二寶 ¥550（4歲不免費！）+ 三寶免費 = ¥3,300",
+            "船上無安全帶限制，幼童可在木質地板自由走動"
+          ],
+          "warning": "強風時改為小型船或停駛，出發前查 yamanakako-yuransen.jp"
+        },
+        {
+          "time": "11:15",
+          "endTime": "13:00",
+          "title": "🍜 小作山中湖店（餺飥名店）",
+          "icon": "food",
+          "category": "food",
+          "description": "不接受預約，純現場排隊",
+          "important": true,
+          "kidFocus": "吃軟綿綿的南瓜蔬菜粗麵條！",
+          "adultNotes": [
+            "11:00 開門，天鵝湖船 11:10 結束後步行 5 分鐘抵達",
+            "避開正午排隊熱潮",
+            "9 人入座榻榻米座位，幼童可爬可躺"
+          ]
+        },
+        {
+          "time": "13:30",
+          "title": "🚗 開車返回河口湖",
+          "icon": "car",
+          "category": "transport",
+          "description": "35 分鐘車程，孩子車上午睡",
+          "kidFocus": "在車上睡個好覺～",
+          "tips": ["車程剛好讓三個孩子完整午睡"]
+        },
+        {
+          "time": "14:30",
+          "endTime": "16:30",
+          "title": "🎵 河口湖音樂盒之森美術館",
+          "icon": "museum",
+          "category": "attraction",
+          "description": "歐風玫瑰庭園，自動手風琴與沙畫音樂秀",
+          "kidFocus": "在音樂森林聽神奇的自動樂器演奏！"
+        },
+        {
+          "time": "17:00",
+          "title": "🛒 OGINO 超市補貨",
+          "icon": "shopping",
+          "category": "shopping",
+          "description": "回程經超市買肉品與飲料"
+        },
+        {
+          "time": "18:00",
+          "title": "🍲 しゃぶしゃぶ はやし 涮涮鍋",
+          "icon": "food",
+          "category": "food",
+          "description": "清爽高湯專人涮肉片，幼兒極度友善",
+          "adultNotes": ["需預訂 9 人大桌座位", "可委託 VISA 秘書或直接預訂"]
+        }
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "dayNumber": 6,
+      "label": "Day 6",
+      "title": "狂野的一天：餵食猛獸與泡湯",
+      "emoji": "🦁",
+      "location": "河口湖 → 富士 Safari → 鳴沢",
+      "hotel": "yoshimura-villa",
+      "phase": "階段三：野生動物與樂園狂歡",
+      "events": [
+        {
+          "time": "08:00",
+          "title": "🚗 出發前往富士野生動物園",
+          "icon": "car",
+          "category": "transport",
+          "description": "從民宿出發，50 分鐘車程"
+        },
+        {
+          "time": "08:50",
+          "title": "🎟️ 抵達大門，車內刷卡入園",
+          "icon": "ticket",
+          "category": "attraction",
+          "description": "車內刷卡買票，停中央第一停車場"
+        },
+        {
+          "time": "09:15",
+          "endTime": "10:30",
+          "title": "🦘 親近動物區",
+          "icon": "park",
+          "category": "attraction",
+          "description": "餵水豚、袋鼠、迷你馬，看紅熊貓",
+          "kidFocus": "親手餵食可愛的水豚和袋鼠！"
+        },
+        {
+          "time": "10:30",
+          "endTime": "11:45",
+          "title": "🚙 NOAH 自駕猛獸區",
+          "icon": "car",
+          "category": "attraction",
+          "description": "開自家車進 Safari Drive！",
+          "important": true,
+          "kidFocus": "自己開車進生物園！車窗外就是真正的獅子和大象！",
+          "adultNotes": [
+            "用自家車開，完全免費且無限次數",
+            "冷氣開放最舒服"
+          ]
+        },
+        {
+          "time": "11:45",
+          "endTime": "12:45",
+          "title": "🍽️ Safari Restaurant 午餐",
+          "icon": "food",
+          "category": "food",
+          "description": "大象造型兒童餐",
+          "kidFocus": "吃大象造型的兒童餐！"
+        },
+        {
+          "time": "12:50",
+          "title": "叢林巴士報到",
+          "icon": "ticket",
+          "category": "task",
+          "description": "巴士案內所完成 13:30 劃位報到"
+        },
+        {
+          "time": "13:30",
+          "endTime": "14:30",
+          "title": "🚌 叢林巴士：餵食猛獸！",
+          "icon": "bus",
+          "category": "attraction",
+          "description": "鐵網巴士，親手用鐵夾餵獅子與黑熊",
+          "important": true,
+          "kidFocus": "最勇敢的任務：搭鐵籠車，用夾子餵食巨大獅子與黑熊！",
+          "adultNotes": ["2 歲三寶免費，抱在大腿上"],
+          "warning": "園內不可撐傘，備妥雨衣"
+        },
+        {
+          "time": "14:45",
+          "title": "🚗 啟程北上返回鳴沢",
+          "icon": "car",
+          "category": "transport",
+          "description": "50 分鐘車程，孩子車上午睡"
+        },
+        {
+          "time": "15:40",
+          "endTime": "17:45",
+          "title": "♨️ 富士眺望の湯 ゆらり 泡湯",
+          "icon": "bath",
+          "category": "attraction",
+          "description": "先在活き活き広場放電，再泡富士山絕景溫泉",
+          "important": true,
+          "kidFocus": "在大草地溜滑梯，然後泡溫泉看富士山！",
+          "adultNotes": ["2 歲三寶可向櫃檯借嬰兒澡盆"],
+          "tips": ["泡完後到隔壁「道の駅なるさわ」展望台拍「子抱富士」合照"]
+        },
+        {
+          "time": "18:00",
+          "title": "晚餐：SL 火車個室或民宿開伙",
+          "icon": "food",
+          "category": "food",
+          "description": "A: お狩場 SL 個室 / B: 民宿頂級和牛開伙",
+          "backup": {
+            "condition": "SL 個室訂不到",
+            "plan": "回 Yoshimura 民宿用 OGINO 買的頂級和牛開火"
+          }
+        },
+        {
+          "time": "20:00",
+          "title": "⚠️ 睡前任務：富士急入園申請",
+          "icon": "phone",
+          "category": "task",
+          "description": "登入 CLUBフジQ 申請 WEB 無料入園券＋臉部照片登錄",
+          "important": true,
+          "warning": "務必今晚完成！明天入園需要"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "dayNumber": 7,
+      "label": "Day 7",
+      "title": "湯瑪士小火車與忍者大集合",
+      "emoji": "🎢",
+      "location": "富士急樂園",
+      "hotel": "yoshimura-villa",
+      "phase": "階段三：野生動物與樂園狂歡",
+      "meetup": "與日本友人 Haruki & Yuma 一家會合（共 6 大 7 小）",
+      "events": [
+        {
+          "time": "09:20",
+          "title": "🤝 富士急樂園大會師！",
+          "icon": "star",
+          "category": "attraction",
+          "description": "WEB QR + 臉部辨識秒速入園",
+          "important": true,
+          "kidFocus": "日本好朋友 Haruki & Yuma 加入隊伍！",
+          "adultNotes": [
+            "大人：手機 WEB 免費入園券 QR 掃碼過閘",
+            "小孩：WEB QR ワンデイパス（一日通票）",
+            "大人不買通票！設施門口用 Suica 單次買票，全天省 ¥9,600"
+          ]
+        },
+        {
+          "time": "09:35",
+          "endTime": "10:10",
+          "title": "🥷 火影忍者村：科學忍具道場",
+          "icon": "star",
+          "category": "attraction",
+          "description": "室內 3D 雷射射擊車",
+          "important": true,
+          "kidFocus": "手刀衝火影忍者村，戴上眼鏡發射雷射光！",
+          "adultNotes": [
+            "零身高限制，三寶坐媽媽腿上一起射擊",
+            "大人門口嗶卡 ¥1,500",
+            "趁年輕人搶雲霄飛車，逆向包場"
+          ]
+        },
+        {
+          "time": "10:15",
+          "endTime": "11:15",
+          "title": "🚂 湯瑪士樂園三連刷",
+          "icon": "train",
+          "category": "attraction",
+          "description": "趁在地遊客未湧入，一小時連刷三招牌",
+          "important": true,
+          "kidFocus": "稱霸湯瑪士樂園，坐故事小火車與哈羅德直升機！",
+          "adultNotes": [
+            "故事小火車わくわくライド",
+            "哈羅德直升機スカイパトロール",
+            "跳跳歡樂車ホッピングウィンストン",
+            "App 監控即時等待時間"
+          ]
+        },
+        {
+          "time": "11:15",
+          "endTime": "12:30",
+          "title": "🍽️ 湯瑪士餐廳神級錯峰午餐",
+          "icon": "food",
+          "category": "food",
+          "description": "比全園提早 45 分鐘進店",
+          "kidFocus": "吃湯瑪士造型火車餐盤（可以帶回家！）",
+          "adultNotes": ["餐盤可帶走留念", "輕鬆併桌大坐席，吹冷氣避暑"]
+        },
+        {
+          "time": "12:45",
+          "endTime": "13:30",
+          "title": "🎡 巨大摩天輪 Shining Flower",
+          "icon": "star",
+          "category": "attraction",
+          "description": "冷氣開放透明景觀摩天輪",
+          "kidFocus": "在正午最熱時搭乘冷氣開放的巨大摩天輪！",
+          "adultNotes": ["大人門口嗶卡 ¥800", "俯瞰富士山大景"]
+        },
+        {
+          "time": "13:45",
+          "endTime": "15:00",
+          "title": "午後散策與二刷",
+          "icon": "walk",
+          "category": "attraction",
+          "description": "忍道館拍照 + 大寶二刷射擊 + 幼童玩立體迷宮"
+        },
+        {
+          "time": "15:30",
+          "title": "⚡ 電力監控與撤退",
+          "icon": "car",
+          "category": "transport",
+          "description": "若幼兒斷電，NOAH 5 分鐘載回別墅午睡",
+          "adultNotes": ["檢視幼兒體力條", "斷電徵兆立即撤退回民宿"]
+        },
+        {
+          "time": "18:15",
+          "endTime": "19:00",
+          "title": "👋 麗莎與卡斯柏小鎮點燈道別",
+          "icon": "walk",
+          "category": "attraction",
+          "description": "免門票歐風夜間點燈，溫馨擁抱道別"
+        },
+        {
+          "time": "19:30",
+          "title": "🍱 OGINO 超市備隔日車上早餐",
+          "icon": "shopping",
+          "category": "shopping",
+          "description": "買飯糰/三明治放進冰箱"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "dayNumber": 8,
+      "label": "Day 8",
+      "title": "鐵路回城＋科博館 ComPASS",
+      "emoji": "🦖",
+      "location": "河口湖 → 大月 → 新宿 → 上野 → 成田",
+      "hotel": "nikko-narita",
+      "phase": "階段四：最後放電與歸途",
+      "events": [
+        {
+          "time": "08:40",
+          "title": "🚗 別墅退房＋還車",
+          "icon": "car",
+          "category": "task",
+          "description": "開車至 Toyota 富士河口湖店加滿油還車",
+          "important": true,
+          "adultNotes": ["Toyota 08:00 開門", "河口湖駅正對面"]
+        },
+        {
+          "time": "09:16",
+          "endTime": "10:01",
+          "title": "🚃 富士急特急往大月",
+          "icon": "train",
+          "category": "transport",
+          "description": "河口湖（始發站）→ 大月",
+          "tips": ["始發站車廂空曠，全家悠閒上車", "車上吃昨晚買的愛心早餐"]
+        },
+        {
+          "time": "10:23",
+          "endTime": "11:27",
+          "title": "🚆 特急かいじ 14 号回城",
+          "icon": "train",
+          "category": "transport",
+          "description": "大月 → 新宿（指定席已預訂）",
+          "important": true,
+          "adultNotes": ["予約番号：E96991", "4 人（三寶膝上坐免費）", "¥6,200"]
+        },
+        {
+          "time": "11:27",
+          "endTime": "11:55",
+          "title": "🚇 山手線移動至上野",
+          "icon": "train",
+          "category": "transport",
+          "description": "山手線外回り（池袋・上野方面）約 25 分鐘",
+          "warning": "確認不要搭成內回り"
+        },
+        {
+          "time": "11:55",
+          "title": "🧳 上野站寄物＋換 Skyliner 票",
+          "icon": "luggage",
+          "category": "task",
+          "description": "大行李鎖入特大置物櫃 ¥700–900",
+          "adultNotes": [
+            "広小路口出站，右手邊特大置物櫃",
+            "旁邊 E-TICKETS 售票機掃 KKday 回程 QR Code",
+            "兌換 18:00 Skyliner 實體票（劃 ABCD 4 連座）"
+          ]
+        },
+        {
+          "time": "12:30",
+          "endTime": "15:00",
+          "title": "🦖 國立科學博物館＋午餐",
+          "icon": "museum",
+          "category": "attraction",
+          "description": "MOUSEION 餐廳 + 恐龍化石 + 分組看展",
+          "important": true,
+          "kidFocus": "在巨大恐龍化石旁邊吃午餐！",
+          "adultNotes": [
+            "先去地球館 M2F MOUSEION 餐廳抽號碼牌",
+            "13:00 分組：爸爸+大寶租中文導覽 ¥320/台",
+            "媽媽+幼童租探險包 ¥410/個"
+          ]
+        },
+        {
+          "time": "15:00",
+          "endTime": "15:45",
+          "title": "🏰 ComPASS 幼童神殿",
+          "icon": "star",
+          "category": "attraction",
+          "description": "科博館 3F 探險廣場（已預約 15:00）",
+          "important": true,
+          "kidFocus": "在安全的木質攀爬設施上瘋狂放電！",
+          "tips": ["需提早 5-10 分鐘報到", "45 分鐘場次"]
+        },
+        {
+          "time": "16:30",
+          "title": "🍜 一蘭拉麵錯峰晚餐",
+          "icon": "food",
+          "category": "food",
+          "description": "一蘭拉麵 アトレ上野山下口店",
+          "tips": ["此時完全沒有排隊", "隔板折攏，全家一字排開"]
+        },
+        {
+          "time": "18:00",
+          "title": "🚄 Skyliner 返回機場",
+          "icon": "train",
+          "category": "transport",
+          "description": "京成上野 → 成田機場 T2（41 分鐘）"
+        },
+        {
+          "time": "19:00",
+          "title": "🏨 入住成田日航酒店（第 2 晚）",
+          "icon": "hotel",
+          "category": "hotel",
+          "description": "ORD0026706564",
+          "important": true,
+          "adultNotes": [
+            "預約編號：ORD0026706564",
+            "⚠️ Check-in 時領取 Plarail 網購大禮包！"
+          ],
+          "kidFocus": "領取超大的 Plarail 火車禮物！"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-01",
+      "dayNumber": 9,
+      "label": "Day 9",
+      "title": "歸途",
+      "emoji": "✈️",
+      "location": "成田機場",
+      "hotel": "",
+      "phase": "階段四：最後放電與歸途",
+      "events": [
+        {
+          "time": "08:00",
+          "title": "🍳 飯店內悠閒早餐",
+          "icon": "food",
+          "category": "food",
+          "description": "最後一頓日本早餐"
+        },
+        {
+          "time": "09:30",
+          "title": "退房＋搭接駁巴士去 T1",
+          "icon": "bus",
+          "category": "transport",
+          "description": "免費接駁巴士在 T1 下車"
+        },
+        {
+          "time": "10:00",
+          "title": "🚌 T1 → T2 穿梭巴士",
+          "icon": "bus",
+          "category": "transport",
+          "description": "免費航廈穿梭巴士前往 T2"
+        },
+        {
+          "time": "11:30",
+          "title": "🧳 T2 中華航空辦理託運",
+          "icon": "luggage",
+          "category": "task",
+          "description": "CI 櫃檯起飛前 3 小時開櫃",
+          "important": true,
+          "adultNotes": ["辦理託運行李與領取登機證", "行李託運後全體輕裝"]
+        },
+        {
+          "time": "12:00",
+          "title": "搭接駁巴士回 T1 5F",
+          "icon": "bus",
+          "category": "transport",
+          "description": "輕裝返回 T1 放電"
+        },
+        {
+          "time": "12:00",
+          "endTime": "13:30",
+          "title": "🎡 最後放電＋足湯",
+          "icon": "park",
+          "category": "attraction",
+          "description": "Kinder Platz 兒童樂園 + 看飛機 + 免費足湯",
+          "kidFocus": "在機場樂園最後放電！看飛機＋泡腳！",
+          "adultNotes": [
+            "Kinder Platz：兒童 ¥2,200、陪同大人 ¥1,100",
+            "SHIKISAI GARDEN 看飛機、免費泡足湯、扭蛋"
+          ]
+        },
+        {
+          "time": "13:30",
+          "title": "🍽️ T1 4F 京成友膳午餐",
+          "icon": "food",
+          "category": "food",
+          "description": "日式兒童餐",
+          "tips": ["13:45 準時搭巴士回 T2 過安檢"]
+        },
+        {
+          "time": "14:30",
+          "endTime": "17:15",
+          "title": "✈️ CI101 返台！",
+          "icon": "plane",
+          "category": "transport",
+          "description": "NRT → TPE，平安回家！",
+          "important": true,
+          "kidFocus": "坐飛機回台灣囉！帶著滿滿的回憶！"
+        }
+      ]
+    }
+  ]
+}

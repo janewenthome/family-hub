@@ -1,0 +1,75 @@
+[
+  {
+    "id": "nikko-narita",
+    "name": "成田日航酒店",
+    "nameJa": "ホテル日航成田",
+    "nameEn": "Hotel Nikko Narita",
+    "emoji": "✈️",
+    "subtitle": "飛機旁邊的家",
+    "days": [1, 8],
+    "dates": ["2026-07-24", "2026-07-31"],
+    "address": {
+      "ja": "〒286-0106 千葉県成田市取香500",
+      "en": "500 Toko, Narita, Chiba, 286-0106, Japan"
+    },
+    "phone": "+81-476-32-0032",
+    "mapUrl": "https://maps.google.com/?q=35.7726,140.3589",
+    "roomType": "主樓舒適三人房 (Comfort Triple Room)",
+    "roomDetail": "5 份早餐 / 3 張小型雙人床",
+    "checkIn": "15:00",
+    "checkOut": "10:00",
+    "reservations": [
+      { "date": "2026-07-24", "orderId": "ORD0026706376", "chargeDate": "2026/07/19", "note": null },
+      { "date": "2026-07-31", "orderId": "ORD0026706564", "chargeDate": "2026/07/26", "note": "⚠️ Check-in 時領取 Plarail 網購大禮包" }
+    ],
+    "tips": ["免費機場接駁車（成田機場 ↔ 飯店）", "1F 有 Lawson 便利商店"]
+  },
+  {
+    "id": "axas-nihonbashi",
+    "name": "日本橋阿克薩斯",
+    "nameJa": "ホテルアクサス日本橋",
+    "nameEn": "Hotel Axas Nihonbashi",
+    "emoji": "🏙️",
+    "subtitle": "城市裡的魔術房",
+    "days": [2, 3],
+    "dates": ["2026-07-25", "2026-07-26"],
+    "address": {
+      "ja": "〒103-0015 東京都中央区日本橋箱崎町20-12",
+      "en": "20-12 Nihonbashihakozakicho, Chuo-ku, Tokyo, 103-0015, Japan"
+    },
+    "phone": null,
+    "mapUrl": "https://maps.google.com/?q=35.6821,139.7867",
+    "roomType": "公寓型客房",
+    "roomDetail": "2 位成人 + 3 位孩童 (2, 4, 10 歲)",
+    "checkIn": "15:00",
+    "checkOut": "10:00",
+    "reservations": [
+      { "date": "2026-07-25", "orderId": null, "chargeDate": null, "note": "Day 2 早上成田機場ヤマト宅急便寄送行李至此（フロント気付）" }
+    ],
+    "tips": ["附近有 Maruetsu Petit 濱町店可補貨", "步行 12 分鐘可達新大橋河畔看花火"]
+  },
+  {
+    "id": "yoshimura-villa",
+    "name": "Yoshimura ooike sense",
+    "nameJa": "Yoshimura ooike sense",
+    "nameEn": "Yoshimura ooike sense Villa",
+    "emoji": "🗻",
+    "subtitle": "富士山下的巨無霸別墅",
+    "days": [4, 5, 6, 7],
+    "dates": ["2026-07-27", "2026-07-28", "2026-07-29", "2026-07-30"],
+    "address": {
+      "ja": "〒401-0301 山梨県南都留郡富士河口湖町船津6713-91",
+      "en": "6713-91 Funatsu, Fujikawaguchiko, Minamitsuru District, Yamanashi, 401-0301, Japan"
+    },
+    "phone": null,
+    "mapUrl": "https://maps.google.com/?q=35.4975,138.7564",
+    "roomType": "兩家合體包棟",
+    "roomDetail": "4 大 5 小共 9 人同住",
+    "checkIn": "15:00",
+    "checkOut": "10:00",
+    "reservations": [
+      { "date": "2026-07-27", "orderId": null, "chargeDate": null, "note": "與奕緺一家（2大2小）合體包棟" }
+    ],
+    "tips": ["退房日 7/31 早上 10:00 前，需配合 08:40 河口湖還車動線", "有大廚房可開伙，附近 OGINO 超市可採買"]
+  }
+]

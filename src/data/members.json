@@ -1,0 +1,7 @@
+[
+  { "id": "dad", "name": "爸爸", "emoji": "👨", "role": "driver" },
+  { "id": "mom", "name": "媽媽", "emoji": "👩", "role": "coordinator" },
+  { "id": "kid1", "name": "大寶", "emoji": "👦", "age": 10, "height": null, "note": "小學生，鐵道迷" },
+  { "id": "kid2", "name": "二寶", "emoji": "🧒", "age": 4, "height": 101, "note": "身高101cm < 110cm，部分設施受限" },
+  { "id": "kid3", "name": "三寶", "emoji": "👶", "age": 2, "height": null, "note": "膝上坐免費，需紙尿褲" }
+]

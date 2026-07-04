@@ -1,0 +1,276 @@
+import { useState } from 'react';
+import ticketsData from '../data/tickets.json';
+
+const STATUS_BADGE: Record<string, { text: string; class: string }> = {
+  confirmed: { text: '✅ 已確認', class: 'bg-forest-light text-forest-green' },
+  pending: { text: '📋 待確認', class: 'bg-sunset-light text-sunset-orange' },
+  'action-required': { text: '⚠️ 需行動', class: 'bg-danger-light text-danger' },
+};
+
+const CATEGORY_TABS = [
+  { key: 'all', label: '全部' },
+  { key: 'transport', label: '🚆 交通' },
+  { key: 'attraction', label: '🎫 景點' },
+];
+
+interface TicketCardProps {
+  ticket: (typeof ticketsData)[0];
+  onViewImage: (src: string, title: string) => void;
+  onViewGuide: () => void;
+}
+
+function TicketCard({ ticket, onViewImage, onViewGuide }: TicketCardProps) {
+  const [expanded, setExpanded] = useState(false);
+  const badge = STATUS_BADGE[ticket.status] || STATUS_BADGE.pending;
+
+  return (
+    <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+      <button onClick={() => setExpanded(!expanded)} className="w-full p-4 text-left tap-highlight">
+        <div className="flex items-start gap-3">
+          <span className="text-3xl">{ticket.emoji}</span>
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-2 mb-1">
+              <h3 className="font-bold text-base truncate text-dark-navy">{ticket.name}</h3>
+              {ticket.important && <span className="text-xs">🔴</span>}
+            </div>
+            <span className={`inline-block text-[11px] font-semibold px-2 py-0.5 rounded-full ${badge.class}`}>
+              {badge.text}
+            </span>
+            {ticket.dates && (
+              <p className="text-xs text-warm-gray mt-1 font-medium">
+                Day {ticket.useDays.join(', ')} • {ticket.dates[0]?.slice(5)}
+              </p>
+            )}
+          </div>
+          <span className={`text-warm-gray text-sm transition-transform ${expanded ? 'rotate-180' : ''}`}>▼</span>
+        </div>
+      </button>
+
+      {expanded && (
+        <div className="px-4 pb-4 space-y-3 border-t border-gray-100/50 pt-3">
+          {/* Details */}
+          {ticket.details && (
+            <div className="space-y-1 bg-fuji-snow/30 p-3 rounded-xl">
+              {Object.entries(ticket.details).map(([key, val]) => val && (
+                <div key={key} className="flex gap-2 text-sm">
+                  <span className="text-warm-gray min-w-[70px] text-xs font-semibold">{key}</span>
+                  <span className="font-semibold text-dark-navy">{String(val)}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Warning */}
+          {ticket.warning && (
+            <div className="bg-danger-light rounded-xl p-3">
+              <p className="text-sm text-danger font-semibold">⚠️ {ticket.warning}</p>
+            </div>
+          )}
+
+          {/* Pickup instructions */}
+          {ticket.pickupInstructions && ticket.pickupInstructions.length > 0 && (
+            <div className="bg-fuji-ice rounded-xl p-3">
+              <div className="flex justify-between items-center mb-2">
+                <p className="text-xs font-semibold text-fuji-blue">📋 取票/使用說明</p>
+                {(ticket.id === 'fuji-excursion' || ticket.id === 'kaiji') && (
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onViewGuide();
+                    }}
+                    className="text-xs bg-fuji-blue text-white px-2 py-1 rounded-md font-bold tap-highlight"
+                  >
+                    📖 步驟圖解
+                  </button>
+                )}
+              </div>
+              <ol className="space-y-1">
+                {ticket.pickupInstructions.map((inst, i) => (
+                  <li key={i} className="text-xs text-dark-navy flex gap-2">
+                    <span className="text-warm-gray font-bold">{i + 1}.</span>
+                    <span className="font-medium">{inst}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
+
+          {/* Ticket image preview */}
+          {ticket.ticketImage && (
+            <div className="bg-white border-2 border-dashed border-gray-200 rounded-xl p-4 text-center">
+              <button
+                onClick={() => onViewImage(ticket.ticketImage!, ticket.name)}
+                className="block w-full focus:outline-none"
+              >
+                <img
+                  src={ticket.ticketImage}
+                  alt={ticket.name}
+                  className="max-h-48 rounded-lg mx-auto shadow-sm hover:opacity-90 transition-opacity"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                />
+                <p className="text-xs text-fuji-blue font-semibold mt-2">🔍 點擊放大顯示（過閘專用）</p>
+              </button>
+            </div>
+          )}
+
+          {/* Map link */}
+          {ticket.mapUrl && (
+            <a href={ticket.mapUrl} target="_blank" rel="noopener noreferrer"
+              className="block w-full text-center bg-forest-green text-white rounded-xl py-2.5 text-sm font-semibold tap-highlight shadow-sm">
+              🗺️ 開啟 Google Maps
+            </a>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function TicketsPage() {
+  const [tab, setTab] = useState('all');
+  const [modalImage, setModalImage] = useState<{ src: string; title: string } | null>(null);
+  const [showGuide, setShowGuide] = useState(false);
+  const [guideIndex, setGuideIndex] = useState(0);
+
+  const filtered = tab === 'all' ? ticketsData : ticketsData.filter(t => t.category === tab);
+
+  const guideImages = [
+    { src: '/tickets/guide-1.jpg', desc: '1. 到達車站尋找指定售票機（有 "えきねっと" 標誌）' },
+    { src: '/tickets/guide-2.jpg', desc: '2. 螢幕右上角選繁中，選「領取車票」→「JR東京列車預訂」→「QR碼或取票碼」' },
+    { src: '/tickets/guide-3.jpg', desc: '3. 掃描下方 QR Code 或輸入受取代碼領取實體票' }
+  ];
+
+  return (
+    <div className="max-w-lg mx-auto px-4 pt-6 pb-24">
+      <h1 className="text-xl font-bold mb-4">🎟️ 票券與物流中心</h1>
+
+      {/* Category tabs */}
+      <div className="flex gap-2 mb-4">
+        {CATEGORY_TABS.map(t => (
+          <button
+            key={t.key}
+            onClick={() => setTab(t.key)}
+            className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all tap-highlight ${
+              tab === t.key ? 'bg-fuji-blue text-white' : 'bg-white text-dark-navy border border-gray-100'
+            }`}
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Ticket list */}
+      <div className="space-y-3">
+        {filtered.map(ticket => (
+          <TicketCard
+            key={ticket.id}
+            ticket={ticket}
+            onViewImage={(src, title) => setModalImage({ src, title })}
+            onViewGuide={() => {
+              setGuideIndex(0);
+              setShowGuide(true);
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Full screen QR Code / Barcode Modal */}
+      {modalImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black flex flex-col items-center justify-between p-6"
+          onClick={() => setModalImage(null)}
+        >
+          {/* Header */}
+          <div className="w-full flex justify-between items-center text-white pt-safe">
+            <h3 className="font-bold text-lg">{modalImage.title}</h3>
+            <button className="text-2xl font-semibold p-2">&times;</button>
+          </div>
+
+          {/* QR Container - White background for scanning */}
+          <div className="bg-white p-6 rounded-3xl max-w-sm w-full aspect-square flex items-center justify-center shadow-2xl">
+            <img
+              src={modalImage.src}
+              alt={modalImage.title}
+              className="max-h-full max-w-full object-contain"
+            />
+          </div>
+
+          {/* Footer guidance */}
+          <div className="text-center pb-safe">
+            <p className="text-white/80 text-sm font-semibold mb-1">請將此 QR Code 靠近售票機掃描器</p>
+            <p className="text-white/60 text-xs">建議調高螢幕亮度</p>
+          </div>
+        </div>
+      )}
+
+      {/* Pickup Vending Machine Guide Modal */}
+      {showGuide && (
+        <div className="fixed inset-0 z-50 bg-black/90 flex flex-col items-center justify-center p-4">
+          <div className="bg-white rounded-3xl max-w-sm w-full overflow-hidden shadow-2xl flex flex-col">
+            {/* Modal Header */}
+            <div className="p-4 border-b border-gray-100 flex justify-between items-center">
+              <h3 className="font-bold text-dark-navy">JR 上野站取票教學</h3>
+              <button
+                onClick={() => setShowGuide(false)}
+                className="text-warm-gray text-xl p-1"
+              >
+                &times;
+              </button>
+            </div>
+
+            {/* Modal Content - Carousel */}
+            <div className="p-4 flex-1 flex flex-col justify-center">
+              <img
+                src={guideImages[guideIndex].src}
+                alt={`Guide Step ${guideIndex + 1}`}
+                className="max-h-80 w-full object-contain rounded-xl mb-4 bg-gray-50"
+              />
+              <p className="text-sm font-semibold text-dark-navy text-center mb-4 min-h-[40px]">
+                {guideImages[guideIndex].desc}
+              </p>
+
+              {/* Navigation dots */}
+              <div className="flex justify-center gap-2 mb-4">
+                {guideImages.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setGuideIndex(idx)}
+                    className={`w-2.5 h-2.5 rounded-full transition-all ${
+                      guideIndex === idx ? 'bg-fuji-blue w-6' : 'bg-gray-300'
+                    }`}
+                  />
+                ))}
+              </div>
+
+              {/* Prev / Next Buttons */}
+              <div className="flex gap-3">
+                <button
+                  disabled={guideIndex === 0}
+                  onClick={() => setGuideIndex(prev => prev - 1)}
+                  className="flex-1 py-2.5 rounded-xl border border-gray-200 text-sm font-bold text-warm-gray disabled:opacity-40 tap-highlight"
+                >
+                  上一步
+                </button>
+                {guideIndex < guideImages.length - 1 ? (
+                  <button
+                    onClick={() => setGuideIndex(prev => prev + 1)}
+                    className="flex-1 py-2.5 rounded-xl bg-fuji-blue text-white text-sm font-bold tap-highlight"
+                  >
+                    下一步
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => setShowGuide(false)}
+                    className="flex-1 py-2.5 rounded-xl bg-forest-green text-white text-sm font-bold tap-highlight"
+                  >
+                    完成
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

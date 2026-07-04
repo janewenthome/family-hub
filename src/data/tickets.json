@@ -1,0 +1,241 @@
+[
+  {
+    "id": "skyliner",
+    "name": "Skyliner 藍色子彈",
+    "category": "transport",
+    "status": "confirmed",
+    "emoji": "🚄",
+    "useDays": [2, 8],
+    "dates": ["2026-07-25", "2026-07-31"],
+    "details": {
+      "route": "成田機場 ↔ 京成上野站",
+      "duration": "41 分鐘直達",
+      "seats": "4 張（大人 x2 + 兒童 x2），劃 ABCD 同排連號",
+      "price": null,
+      "source": "KKday"
+    },
+    "pickupInstructions": [
+      "在成田機場京成電鐵乘車處的 E-TICKETS 自動售票機",
+      "掃描 KKday QR Code 兌換實體票",
+      "劃位選 A/B/C/D 同排，全家包下一整排"
+    ],
+    "ticketImage": null,
+    "important": true,
+    "warning": null
+  },
+  {
+    "id": "fuji-excursion",
+    "name": "富士回遊 15 号",
+    "category": "transport",
+    "status": "confirmed",
+    "emoji": "🚃",
+    "useDays": [4],
+    "dates": ["2026-07-27"],
+    "details": {
+      "route": "新宿 10:30 → 河口湖 12:24",
+      "duration": "1 時 54 分",
+      "seats": "3号車 14番ABC + 15番AB（5席連坐）",
+      "price": "¥14,650",
+      "reservationCode": "E06117",
+      "pickupCode": "27452392380521278"
+    },
+    "pickupInstructions": [
+      "Day 2 在 JR 上野站內的紫色指定席券売機",
+      "選擇語言 → 繁體中文 → Pick up Tickets → JR-EAST Train Reservation",
+      "選擇 QR code or pickup code",
+      "掃描 えきねっと QR Code 或輸入受取コード",
+      "一次領取富士回遊 + 特急かいじ兩張實體票"
+    ],
+    "ticketImage": "/tickets/fuji-excursion-qr.png",
+    "important": true,
+    "warning": "車上無販售食物，務必在新宿站買齊便當與飲料"
+  },
+  {
+    "id": "kaiji",
+    "name": "特急かいじ 14 号",
+    "category": "transport",
+    "status": "pending",
+    "emoji": "🚆",
+    "useDays": [8],
+    "dates": ["2026-07-31"],
+    "details": {
+      "route": "大月 10:23 → 新宿 11:27",
+      "duration": "1 時 04 分",
+      "seats": "4人（三寶膝上坐免費）",
+      "price": "¥6,200",
+      "reservationCode": "E96991"
+    },
+    "pickupInstructions": [
+      "與富士回遊一起在 Day 2 JR 上野站領取",
+      "事前受付完了，7/1 收結果信確認"
+    ],
+    "ticketImage": "/tickets/kaiji-qr.png",
+    "important": false,
+    "warning": null
+  },
+  {
+    "id": "toyota-noah",
+    "name": "Toyota NOAH Hybrid",
+    "category": "transport",
+    "status": "confirmed",
+    "emoji": "🚙",
+    "useDays": [5, 6, 7, 8],
+    "dates": ["2026-07-28", "2026-07-29", "2026-07-30", "2026-07-31"],
+    "details": {
+      "pickup": "Toyota 富士河口湖店（河口湖駅正對面）",
+      "pickupTime": "7/28 09:00",
+      "returnTime": "7/31 09:00",
+      "price": "¥66,770",
+      "carSeats": "1 嬰幼兒座(三寶) + 1 增高座(二寶)",
+      "capacity": "7人座"
+    },
+    "pickupInstructions": [
+      "爸爸單獨搭計程車/步行去車站正對面 Toyota 取車",
+      "現場確認安全座椅裝妥、導航設定",
+      "還車前需加滿油"
+    ],
+    "ticketImage": null,
+    "important": true,
+    "warning": null,
+    "mapUrl": "https://maps.google.com/?q=Toyota+Rent+a+Car+Fuji+Kawaguchiko"
+  },
+  {
+    "id": "hotaluna",
+    "name": "水上巴士 ホタルナ",
+    "category": "attraction",
+    "status": "confirmed",
+    "emoji": "🚀",
+    "useDays": [3],
+    "dates": ["2026-07-26"],
+    "details": {
+      "route": "日の出桟橋 → 台場",
+      "time": "10:45 出發",
+      "duration": "20 分鐘",
+      "passengers": "大人 2 + 小人 1(大寶) + 幼兒 2(二寶/三寶)",
+      "price": "¥2,500",
+      "reservationCode": "716514"
+    },
+    "pickupInstructions": [
+      "⚠️ 電子票禁止截圖",
+      "當天必須保留原 URL 連結以網路即時顯示",
+      "需於 10:25 前抵達碼頭辦理"
+    ],
+    "ticketImage": null,
+    "important": true,
+    "warning": "電子票禁止截圖，當天必須保留原 URL 連結"
+  },
+  {
+    "id": "jungle-bus",
+    "name": "叢林巴士 Jungle Bus",
+    "category": "attraction",
+    "status": "confirmed",
+    "emoji": "🦁",
+    "useDays": [6],
+    "dates": ["2026-07-29"],
+    "details": {
+      "location": "富士野生動物園",
+      "time": "13:30",
+      "price": "2歲三寶免費",
+      "note": "鐵網巴士，親手用鐵夾餵食獅子與黑熊"
+    },
+    "pickupInstructions": [
+      "12:50 抵達巴士案內所完成劃位報到",
+      "園內因安全規定不可撐傘，請備妥雨衣"
+    ],
+    "ticketImage": null,
+    "important": false,
+    "warning": "園內不可撐傘，備妥雨衣"
+  },
+  {
+    "id": "compass",
+    "name": "ComPASS 幼童神殿",
+    "category": "attraction",
+    "status": "confirmed",
+    "emoji": "🦖",
+    "useDays": [8],
+    "dates": ["2026-07-31"],
+    "details": {
+      "location": "國立科學博物館 3F",
+      "time": "15:00",
+      "duration": "45 分鐘",
+      "note": "安全木質攀爬設施"
+    },
+    "pickupInstructions": [
+      "需提早 5-10 分鐘報到",
+      "已預約 15:00 場次"
+    ],
+    "ticketImage": null,
+    "important": false,
+    "warning": null
+  },
+  {
+    "id": "omiya-mini",
+    "name": "鐵博 ミニ運転列車",
+    "category": "attraction",
+    "status": "action-required",
+    "emoji": "🚂",
+    "useDays": [2],
+    "dates": ["2026-07-25"],
+    "details": {
+      "location": "大宮鐵道博物館",
+      "time": "11:05-11:35",
+      "ticketCode": "116403",
+      "note": "大寶開車，二寶+三寶乘坐"
+    },
+    "pickupInstructions": [
+      "7/19 10:00 JST 在 7ticket.jp 搶票",
+      "選擇日期 7/25，時段 11:05-11:35",
+      "入館券買 4 張（爸/媽/大寶/二寶，三寶免費）",
+      "付款後至日本 7-11 的 multi-copy 機取票"
+    ],
+    "ticketImage": null,
+    "important": true,
+    "warning": "7/19 10:00 JST 開賣搶票"
+  },
+  {
+    "id": "omiya-e5",
+    "name": "鐵博 E5 シミュレータ",
+    "category": "attraction",
+    "status": "action-required",
+    "emoji": "🚅",
+    "useDays": [2],
+    "dates": ["2026-07-25"],
+    "details": {
+      "location": "大宮鐵道博物館",
+      "time": "13:00-14:30",
+      "ticketCode": "116407",
+      "note": "大寶專屬新幹線駕駛模擬"
+    },
+    "pickupInstructions": [
+      "7/19 10:00 JST 在 7ticket.jp 搶票",
+      "選擇日期 7/25，時段 13:00-14:30",
+      "入館券買 1 張（大寶專屬）"
+    ],
+    "ticketImage": null,
+    "important": true,
+    "warning": "7/19 10:00 JST 開賣搶票"
+  },
+  {
+    "id": "fujiq",
+    "name": "富士急樂園入園",
+    "category": "attraction",
+    "status": "action-required",
+    "emoji": "🎢",
+    "useDays": [7],
+    "dates": ["2026-07-30"],
+    "details": {
+      "location": "富士急ハイランド",
+      "note": "大人免費入園(WEB券)，小孩買一日通票",
+      "strategy": "大人設施門口用 Suica 單次購票省 ¥9,600"
+    },
+    "pickupInstructions": [
+      "Day 6 晚上登入 CLUBフジQ 官網",
+      "申請 WEB 無料入園券",
+      "完成事前臉部照片登錄",
+      "入園當天掃 QR + 臉部辨識秒速通過"
+    ],
+    "ticketImage": null,
+    "important": true,
+    "warning": "Day 6 晚上務必完成 WEB 入園券申請與臉部登錄"
+  }
+]

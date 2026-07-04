@@ -1,0 +1,107 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-fuji-blue: #4A90D9;
+  --color-fuji-deep: #2563EB;
+  --color-fuji-snow: #F0F4F8;
+  --color-fuji-ice: #E8EFF7;
+  --color-sakura-pink: #F2A7B3;
+  --color-sakura-light: #FDE8EC;
+  --color-sunset-orange: #FF8C42;
+  --color-sunset-light: #FFF3E8;
+  --color-forest-green: #2D936C;
+  --color-forest-light: #E6F5EE;
+  --color-dark-navy: #1A2744;
+  --color-warm-gray: #6B7280;
+  --color-warm-gray-light: #9CA3AF;
+  --color-danger: #EF4444;
+  --color-danger-light: #FEE2E2;
+  --color-card-bg: #FFFFFF;
+  --color-card-shadow: rgba(26, 39, 68, 0.08);
+  --font-sans: 'Noto Sans TC', 'Inter', system-ui, sans-serif;
+  --radius-card: 16px;
+  --radius-button: 12px;
+  --radius-badge: 8px;
+  --radius-full: 9999px;
+}
+
+html {
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background: var(--color-fuji-snow);
+  color: var(--color-dark-navy);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-warm-gray-light);
+  border-radius: var(--radius-full);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.tap-highlight {
+  transition: transform 100ms ease, opacity 100ms ease;
+}
+
+.tap-highlight:active {
+  transform: scale(0.97);
+  opacity: 0.85;
+}
+
+.gradient-fuji {
+  background: linear-gradient(135deg, #4A90D9 0%, #2563EB 50%, #1A2744 100%);
+}
+
+.gradient-sunset {
+  background: linear-gradient(135deg, #FF8C42 0%, #F2A7B3 100%);
+}
+
+.gradient-sakura {
+  background: linear-gradient(135deg, #F2A7B3 0%, #FDE8EC 100%);
+}
