@@ -30,7 +30,8 @@
           "description": "成田日航酒店免費接駁車",
           "tips": [
             "抵達後跟著 Hotel Nikko Narita 指標走"
-          ]
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第2ターミナル"
         },
         {
           "time": "22:00",
@@ -111,7 +112,8 @@
             "單程票 4 張（大人 ×2 + 兒童 ×2）",
             "劃位選 A/B/C/D 同排連號，包下一整排"
           ],
-          "kidFocus": "要搭藍色子彈列車了！"
+          "kidFocus": "要搭藍色子彈列車了！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田空港駅"
         },
         {
           "time": "09:20",
@@ -120,7 +122,8 @@
           "icon": "train",
           "category": "transport",
           "description": "41 分鐘直達，ABCD 4 連座",
-          "kidFocus": "坐在超快的藍色子彈列車裡！"
+          "kidFocus": "坐在超快的藍色子彈列車裡！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=京成上野駅"
         },
         {
           "time": "10:01",
@@ -138,7 +141,8 @@
           "tips": [
             "找有護照/QR掃描槽的紫色指定席券売機",
             "選繁體中文 → Pick up Tickets → JR-EAST Train Reservation"
-          ]
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
         },
         {
           "time": "10:35",
@@ -166,7 +170,8 @@
           "title": "搭車返回上野站",
           "icon": "train",
           "category": "transport",
-          "description": "提早離場，搭計程車返回飯店"
+          "description": "提早離場，搭計程車返回飯店",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
         },
         {
           "time": "17:00",
@@ -244,7 +249,8 @@
           "description": "Jumbo Taxi / Uber XL，約 15 分鐘，¥1,200",
           "tips": [
             "叫大台計程車載全家"
-          ]
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=日の出桟橋"
         },
         {
           "time": "10:25",
@@ -291,7 +297,8 @@
           "kidFocus": "搶站到車廂最前方！無人駕駛雲霄飛車視角！",
           "adultNotes": [
             "車資：大人 ¥200、兒童 ¥100，刷 Suica"
-          ]
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=台場駅"
         },
         {
           "time": "12:30",
@@ -317,7 +324,8 @@
           "title": "🚕 Jumbo Taxi 返回飯店",
           "icon": "taxi",
           "category": "transport",
-          "description": "車資約 ¥3,000–3,500，途中經超市補貨"
+          "description": "車資約 ¥3,000–3,500，途中經超市補貨",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
         }
       ]
     },
@@ -380,14 +388,16 @@
             "全車指定席，3号車 14番ABC + 15番AB（5席連坐）",
             "予約番号：E06117",
             "實體票已於 Day 2 領妥"
-          ]
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=河口湖駅"
         },
         {
           "time": "12:30",
           "title": "🚕 計程車前往別墅",
           "icon": "taxi",
           "category": "transport",
-          "description": "河口湖站前計程車排班處，3–5 分鐘，¥700–900"
+          "description": "河口湖站前計程車排班處，3–5 分鐘，¥700–900",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=吉村大池荘"
         },
         {
           "time": "13:00",
@@ -467,7 +477,8 @@
           "icon": "car",
           "category": "transport",
           "description": "NOAH 載兩家大部隊出發",
-          "kidFocus": "爸爸開著大戰車載大家去探險！"
+          "kidFocus": "爸爸開著大戰車載大家去探險！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=山中湖"
         },
         {
           "time": "10:15",
@@ -638,7 +649,8 @@
           "title": "🚗 啟程北上返回鳴沢",
           "icon": "car",
           "category": "transport",
-          "description": "50 分鐘車程，孩子車上午睡"
+          "description": "50 分鐘車程，孩子車上午睡",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=道の駅なるさわ"
         },
         {
           "time": "15:40",
@@ -823,7 +835,8 @@
           "adultNotes": [
             "Toyota 08:00 開門",
             "河口湖駅正對面"
-          ]
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=トヨタレンタカー 富士河口湖店"
         },
         {
           "time": "09:16",
@@ -835,7 +848,8 @@
           "tips": [
             "始發站車廂空曠，全家悠閒上車",
             "車上吃昨晚買的愛心早餐"
-          ]
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=大月駅"
         },
         {
           "time": "10:23",
@@ -849,7 +863,8 @@
             "予約番号：E96991",
             "4 人（三寶膝上坐免費）",
             "¥6,200"
-          ]
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=新宿駅"
         },
         {
           "time": "11:27",
@@ -858,7 +873,8 @@
           "icon": "train",
           "category": "transport",
           "description": "山手線外回り（池袋・上野方面）約 25 分鐘",
-          "warning": "確認不要搭成內回り"
+          "warning": "確認不要搭成內回り",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
         },
         {
           "time": "11:55",
@@ -870,7 +886,8 @@
             "広小路口出站，右手邊特大置物櫃",
             "旁邊 E-TICKETS 售票機掃 KKday 回程 QR Code",
             "兌換 18:00 Skyliner 實體票（劃 ABCD 4 連座）"
-          ]
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=京成上野駅"
         },
         {
           "time": "12:30",
@@ -920,7 +937,8 @@
           "title": "🚄 Skyliner 返回機場",
           "icon": "train",
           "category": "transport",
-          "description": "京成上野 → 成田機場 T2（41 分鐘）"
+          "description": "京成上野 → 成田機場 T2（41 分鐘）",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港"
         },
         {
           "time": "19:00",
@@ -960,14 +978,16 @@
           "title": "退房＋搭接駁巴士去 T1",
           "icon": "bus",
           "category": "transport",
-          "description": "免費接駁巴士在 T1 下車"
+          "description": "免費接駁巴士在 T1 下車",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第1ターミナル"
         },
         {
           "time": "10:00",
           "title": "🚌 T1 → T2 穿梭巴士",
           "icon": "bus",
           "category": "transport",
-          "description": "免費航廈穿梭巴士前往 T2"
+          "description": "免費航廈穿梭巴士前往 T2",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第2ターミナル"
         },
         {
           "time": "11:30",

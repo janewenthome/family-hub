@@ -126,7 +126,76 @@ function TicketCard({ ticket, onViewImage, onViewGuide }: TicketCardProps) {
   );
 }
 
+function TicketPinLock({ onUnlock }: { onUnlock: () => void }) {
+  const [pin, setPin] = useState('');
+  const [error, setError] = useState(false);
+
+  const handleDigit = (d: string) => {
+    if (pin.length >= 3) return;
+    const next = pin + d;
+    setPin(next);
+    setError(false);
+    if (next.length === 3) {
+      if (next === '520') {
+        sessionStorage.setItem('tickets-unlocked', 'true');
+        onUnlock();
+      } else {
+        setError(true);
+        setTimeout(() => { setPin(''); setError(false); }, 600);
+      }
+    }
+  };
+
+  const handleDelete = () => {
+    setPin(p => p.slice(0, -1));
+    setError(false);
+  };
+
+  return (
+    <div className="flex flex-col items-center justify-center py-12 px-6 bg-white rounded-3xl shadow-sm border border-gray-100 max-w-[280px] mx-auto mt-16">
+      <span className="text-4xl mb-3">🔒</span>
+      <h2 className="font-bold text-lg text-dark-navy mb-1 text-center">解鎖票券中心</h2>
+      <p className="text-[11px] text-warm-gray mb-6 text-center leading-normal">此頁面包含個人車票與 QR Code 敏感資訊，請輸入解鎖密碼 (520)</p>
+
+      {/* PIN dots */}
+      <div className="flex gap-4 mb-8">
+        {[0, 1, 2].map(i => (
+          <div
+            key={i}
+            className={`w-3.5 h-3.5 rounded-full transition-all duration-200 ${
+              error
+                ? 'bg-red-400'
+                : i < pin.length
+                  ? 'bg-fuji-blue scale-110'
+                  : 'bg-fuji-ice border border-gray-250'
+            }`}
+          />
+        ))}
+      </div>
+
+      {/* Numpad */}
+      <div className="grid grid-cols-3 gap-3.5 w-full">
+        {['1','2','3','4','5','6','7','8','9','','0','⌫'].map((key, idx) => (
+          <button
+            key={key || `empty-${idx}`}
+            disabled={key === ''}
+            onClick={() => key === '⌫' ? handleDelete() : key && handleDigit(key)}
+            className={`h-14 rounded-2xl text-xl font-bold transition-all tap-highlight ${
+              key === ''
+                ? 'invisible'
+                : 'bg-fuji-snow text-dark-navy hover:bg-fuji-ice active:bg-fuji-blue active:text-white'
+            }`}
+          >
+            {key}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function TicketsPage() {
+  const [unlocked, setUnlocked] = useState(() => sessionStorage.getItem('tickets-unlocked') === 'true');
   const [tab, setTab] = useState('all');
   const [modalImage, setModalImage] = useState<{ src: string; title: string } | null>(null);
   const [showGuide, setShowGuide] = useState(false);
@@ -139,6 +208,10 @@ export default function TicketsPage() {
     { src: '/tickets/guide-2.jpg', desc: '2. 螢幕右上角選繁中，選「領取車票」→「JR東京列車預訂」→「QR碼或取票碼」' },
     { src: '/tickets/guide-3.jpg', desc: '3. 掃描下方 QR Code 或輸入受取代碼領取實體票' }
   ];
+
+  if (!unlocked) {
+    return <TicketPinLock onUnlock={() => setUnlocked(true)} />;
+  }
 
   return (
     <div className="max-w-lg mx-auto px-4 pt-6 pb-24">
