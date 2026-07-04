@@ -55,9 +55,9 @@ function TimelineEvent({ event }: { event: ItineraryEvent }) {
           </div>
           
           <div className="flex items-center gap-1.5 flex-shrink-0">
-            {event.mapUrl && (
+            {(event.mapUrl || (event.mapUrls && event.mapUrls.length > 0)) && (
               <a
-                href={event.mapUrl}
+                href={event.mapUrl || event.mapUrls?.[0]?.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
@@ -103,6 +103,25 @@ function TimelineEvent({ event }: { event: ItineraryEvent }) {
                 {event.adultNotes.map((note: string, i: number) => (
                   <p key={i} className="text-xs text-warm-gray pl-4">• {note}</p>
                 ))}
+              </div>
+            )}
+            {event.mapUrls && event.mapUrls.length > 0 && (
+              <div className="bg-fuji-snow/70 rounded-xl p-2 mt-2 space-y-1">
+                <p className="text-[10px] font-bold text-dark-navy mb-1.5">📍 景點定位連結：</p>
+                <div className="flex flex-wrap gap-2">
+                  {event.mapUrls.map((m, idx) => (
+                    <a
+                      key={idx}
+                      href={m.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center gap-1 text-xs bg-white border border-gray-200 rounded-lg px-2.5 py-1 text-fuji-blue font-bold shadow-sm tap-highlight"
+                    >
+                      🗺️ {m.name}
+                    </a>
+                  ))}
+                </div>
               </div>
             )}
           </div>

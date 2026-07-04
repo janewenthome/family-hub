@@ -155,7 +155,7 @@ function TicketPinLock({ onUnlock }: { onUnlock: () => void }) {
     <div className="flex flex-col items-center justify-center py-12 px-6 bg-white rounded-3xl shadow-sm border border-gray-100 max-w-[280px] mx-auto mt-16">
       <span className="text-4xl mb-3">🔒</span>
       <h2 className="font-bold text-lg text-dark-navy mb-1 text-center">解鎖票券中心</h2>
-      <p className="text-[11px] text-warm-gray mb-6 text-center leading-normal">此頁面包含個人車票與 QR Code 敏感資訊，請輸入解鎖密碼 (520)</p>
+      <p className="text-[11px] text-warm-gray mb-6 text-center leading-normal">此頁面包含個人車票與 QR Code 敏感資訊，請輸入解鎖密碼</p>
 
       {/* PIN dots */}
       <div className="flex gap-4 mb-8">

@@ -171,7 +171,7 @@
           "icon": "train",
           "category": "transport",
           "description": "提早離場，搭計程車返回飯店",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 鉄道博物館駅"
         },
         {
           "time": "17:00",
@@ -325,7 +325,7 @@
           "icon": "taxi",
           "category": "transport",
           "description": "車資約 ¥3,000–3,500，途中經超市補貨",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=日本科学未来館"
         }
       ]
     },
@@ -389,7 +389,7 @@
             "予約番号：E06117",
             "實體票已於 Day 2 領妥"
           ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=河口湖駅"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=新宿駅"
         },
         {
           "time": "12:30",
@@ -397,7 +397,7 @@
           "icon": "taxi",
           "category": "transport",
           "description": "河口湖站前計程車排班處，3–5 分鐘，¥700–900",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=吉村大池荘"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=河口湖駅"
         },
         {
           "time": "13:00",
@@ -437,6 +437,16 @@
             "カチカチ山纜車：往復大人 ¥1,000、小人 ¥500",
             "暑假旺季常排 1 小時以上",
             "山頂多階梯，推車需折疊，三寶需爸爸抱"
+          ],
+          "mapUrls": [
+            {
+              "name": "大石公園",
+              "url": "https://www.google.com/maps/search/?api=1&query=大石公園"
+            },
+            {
+              "name": "富士山全景纜車",
+              "url": "https://www.google.com/maps/search/?api=1&query=～河口湖～+富士山パノラマロープウェイ"
+            }
           ]
         },
         {
@@ -478,7 +488,7 @@
           "category": "transport",
           "description": "NOAH 載兩家大部隊出發",
           "kidFocus": "爸爸開著大戰車載大家去探險！",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=山中湖"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=吉村大池荘"
         },
         {
           "time": "10:15",
@@ -650,7 +660,7 @@
           "icon": "car",
           "category": "transport",
           "description": "50 分鐘車程，孩子車上午睡",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=道の駅なるさわ"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士サファリパーク"
         },
         {
           "time": "15:40",
@@ -678,7 +688,17 @@
           "backup": {
             "condition": "SL 個室訂不到",
             "plan": "回 Yoshimura 民宿用 OGINO 買的頂級和牛開火"
-          }
+          },
+          "mapUrls": [
+            {
+              "name": "SL火車餐廳 (お狩場)",
+              "url": "https://www.google.com/maps/search/?api=1&query=元祖へっころほうとう+お狩場"
+            },
+            {
+              "name": "OGINO 超市",
+              "url": "https://www.google.com/maps/search/?api=1&query=オギノ+河口湖店"
+            }
+          ]
         },
         {
           "time": "20:00",
@@ -836,7 +856,7 @@
             "Toyota 08:00 開門",
             "河口湖駅正對面"
           ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=トヨタレンタカー 富士河口湖店"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=吉村大池荘"
         },
         {
           "time": "09:16",
@@ -849,7 +869,7 @@
             "始發站車廂空曠，全家悠閒上車",
             "車上吃昨晚買的愛心早餐"
           ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=大月駅"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=河口湖駅"
         },
         {
           "time": "10:23",
@@ -864,7 +884,7 @@
             "4 人（三寶膝上坐免費）",
             "¥6,200"
           ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=新宿駅"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=大月駅"
         },
         {
           "time": "11:27",
@@ -874,7 +894,7 @@
           "category": "transport",
           "description": "山手線外回り（池袋・上野方面）約 25 分鐘",
           "warning": "確認不要搭成內回り",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=新宿駅"
         },
         {
           "time": "11:55",
@@ -887,7 +907,7 @@
             "旁邊 E-TICKETS 售票機掃 KKday 回程 QR Code",
             "兌換 18:00 Skyliner 實體票（劃 ABCD 4 連座）"
           ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=京成上野駅"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
         },
         {
           "time": "12:30",
@@ -938,7 +958,7 @@
           "icon": "train",
           "category": "transport",
           "description": "京成上野 → 成田機場 T2（41 分鐘）",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=京成上野駅"
         },
         {
           "time": "19:00",
@@ -979,7 +999,7 @@
           "icon": "bus",
           "category": "transport",
           "description": "免費接駁巴士在 T1 下車",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第1ターミナル"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
         },
         {
           "time": "10:00",
@@ -987,7 +1007,7 @@
           "icon": "bus",
           "category": "transport",
           "description": "免費航廈穿梭巴士前往 T2",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第2ターミナル"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第1ターミナル"
         },
         {
           "time": "11:30",
@@ -1020,7 +1040,16 @@
             "Kinder Platz：兒童 ¥2,200、陪同大人 ¥1,100",
             "SHIKISAI GARDEN 看飛機、免費泡足湯、扭蛋"
           ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田空港 第一ターミナル"
+          "mapUrls": [
+            {
+              "name": "第一航廈 (Kinder Platz)",
+              "url": "https://www.google.com/maps/search/?api=1&query=成田空港+第一ターミナル"
+            },
+            {
+              "name": "足湯 (展望デッキ)",
+              "url": "https://www.google.com/maps/search/?api=1&query=成田空港+第一ターミナル+展望デッキ"
+            }
+          ]
         },
         {
           "time": "13:30",

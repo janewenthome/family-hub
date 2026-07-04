@@ -16,6 +16,7 @@ export interface ItineraryEvent {
   mapUrl?: string;
   warning?: string;
   backup?: BackupPlan;
+  mapUrls?: { name: string; url: string }[];
 }
 
 export interface BackupPlan {
