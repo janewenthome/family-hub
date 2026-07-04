@@ -25,10 +25,6 @@ function TimelineEvent({ event }: { event: ItineraryEvent }) {
   const [expanded, setExpanded] = useState(false);
   const colorClass = CATEGORY_COLORS[event.category] || 'border-l-gray-300 bg-gray-50';
 
-  // Extract clean query text by removing emojis and starting symbols
-  const cleanTitle = event.title.replace(/^[\s\p{Emoji}\p{Symbol}]+/u, '').trim();
-  const mapsUrl = event.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(cleanTitle)}`;
-
   return (
     <div className="flex gap-3 items-start">
       {/* Time column */}
@@ -59,16 +55,18 @@ function TimelineEvent({ event }: { event: ItineraryEvent }) {
           </div>
           
           <div className="flex items-center gap-1.5 flex-shrink-0">
-            <a
-              href={mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-              className="p-1.5 text-xs bg-white/95 border border-gray-200 rounded-lg hover:bg-fuji-blue hover:text-white transition-colors shadow-sm tap-highlight flex items-center justify-center"
-              title="導航至此處"
-            >
-              🗺️
-            </a>
+            {event.mapUrl && (
+              <a
+                href={event.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="p-1.5 text-xs bg-white/95 border border-gray-200 rounded-lg hover:bg-fuji-blue hover:text-white transition-colors shadow-sm tap-highlight flex items-center justify-center"
+                title="導航至此處"
+              >
+                🗺️
+              </a>
+            )}
             {(event.important || event.warning) && (
               <span className="text-xs">
                 {event.warning ? '⚠️' : '🔴'}
