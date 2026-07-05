@@ -4,7 +4,10 @@ import packingData from '../data/packing.json';
 
 export default function PackingPage() {
   const { checkedItems, toggleItem, resetAll, getProgress, getTotalProgress } = usePackingStore();
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>(() => {
+    // Expand the first category (Documents) by default
+    return { documents: true };
+  });
 
   const categories = packingData.categories;
   const { checked: totalChecked, total: totalItems } = getTotalProgress(categories);
@@ -16,21 +19,44 @@ export default function PackingPage() {
     }
   };
 
+  const toggleCategory = (id: string) => {
+    setExpandedCategories(prev => ({ ...prev, [id]: !prev[id] }));
+  };
+
+  const allExpanded = categories.every(cat => expandedCategories[cat.id]);
+  const handleToggleAll = () => {
+    if (allExpanded) {
+      setExpandedCategories({});
+    } else {
+      const next: Record<string, boolean> = {};
+      categories.forEach(cat => { next[cat.id] = true; });
+      setExpandedCategories(next);
+    }
+  };
+
   return (
     <div className="max-w-lg mx-auto px-4 pt-6 pb-24">
-      <header className="flex justify-between items-center mb-6">
+      <header className="flex justify-between items-center mb-4">
         <div>
           <h1 className="text-xl font-bold">🧳 動態行李清單</h1>
           <p className="text-xs text-warm-gray mt-0.5">勾選狀態會自動儲存在手機中</p>
         </div>
-        {totalChecked > 0 && (
+        <div className="flex gap-2">
           <button
-            onClick={handleReset}
-            className="text-xs font-semibold text-danger bg-danger-light px-3 py-2 rounded-xl transition-all tap-highlight"
+            onClick={handleToggleAll}
+            className="text-xs font-semibold text-fuji-blue bg-fuji-ice px-3 py-2 rounded-xl transition-all tap-highlight"
           >
-            🔄 重置
+            {allExpanded ? '收合全部' : '展開全部'}
           </button>
-        )}
+          {totalChecked > 0 && (
+            <button
+              onClick={handleReset}
+              className="text-xs font-semibold text-danger bg-danger-light px-3 py-2 rounded-xl transition-all tap-highlight"
+            >
+              🔄 重置
+            </button>
+          )}
+        </div>
       </header>
 
       {/* Overall Progress Dashboard */}
@@ -80,19 +106,19 @@ export default function PackingPage() {
         {categories.map((category) => {
           const { checked, total } = getProgress(category.id, category.items);
           const percent = total > 0 ? Math.round((checked / total) * 100) : 0;
-          const isOpen = activeCategory === category.id;
+          const isOpen = !!expandedCategories[category.id];
 
           return (
             <div key={category.id} className="bg-white rounded-2xl shadow-sm overflow-hidden transition-all">
               {/* Category Header Button */}
               <button
-                onClick={() => setActiveCategory(isOpen ? null : category.id)}
+                onClick={() => toggleCategory(category.id)}
                 className="w-full p-4 text-left flex items-center justify-between tap-highlight"
               >
                 <div className="flex items-center gap-3 flex-1 min-w-0">
                   <span className="text-2xl flex-shrink-0">{category.emoji}</span>
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-center justify-between mb-1 pr-2">
+                     <div className="flex items-center justify-between mb-1 pr-2">
                       <span className="font-bold text-base text-dark-navy">{category.name}</span>
                       <span className="text-xs text-warm-gray font-semibold tabular-nums">
                         {checked}/{total}

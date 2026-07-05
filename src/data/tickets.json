@@ -54,23 +54,24 @@
     "id": "kaiji",
     "name": "特急かいじ 14 号",
     "category": "transport",
-    "status": "pending",
+    "status": "confirmed",
     "emoji": "🚆",
     "useDays": [8],
     "dates": ["2026-07-31"],
     "details": {
       "route": "大月 10:23 → 新宿 11:27",
       "duration": "1 時 04 分",
-      "seats": "4人（三寶膝上坐免費）",
+      "seats": "7号車 1番AB, 2番AB (4席連坐)",
       "price": "¥6,200",
-      "reservationCode": "E96991"
+      "reservationCode": "E96991",
+      "pickupCode": "27462362132521278"
     },
     "pickupInstructions": [
       "與富士回遊一起在 Day 2 JR 上野站領取",
-      "事前受付完了，7/1 收結果信確認"
+      "使用えきねっと QR Code 或輸入受取コード一次領取實體票"
     ],
     "ticketImage": "/tickets/kaiji-qr.png",
-    "important": false,
+    "important": true,
     "warning": null
   },
   {

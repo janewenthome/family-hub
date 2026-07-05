@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import BottomNav from './components/ui/BottomNav';
+import SosFab from './components/ui/SosFab';
 import DashboardPage from './pages/DashboardPage';
 import ItineraryPage from './pages/ItineraryPage';
 import TicketsPage from './pages/TicketsPage';
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
+      <SosFab />
       <BottomNav />
     </div>
   );

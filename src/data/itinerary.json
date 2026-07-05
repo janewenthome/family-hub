@@ -15,7 +15,7 @@
         {
           "time": "16:25",
           "endTime": "20:50",
-          "title": "中華航空 CI101 起飛",
+          "title": "中華航空 CI106 起飛",
           "icon": "plane",
           "category": "transport",
           "description": "TPE → NRT",
@@ -82,7 +82,8 @@
           "title": "退房＋搭接駁車去機場",
           "icon": "hotel",
           "category": "hotel",
-          "description": "辦理退房，搭免費接駁車前往成田機場 T2"
+          "description": "辦理退房，搭免費接駁車前往成田機場 T2",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
         },
         {
           "time": "08:40",
@@ -100,7 +101,8 @@
           "tips": [
             "背包需備好當晚衣物、紙尿褲、必需品"
           ],
-          "warning": "若當日配暫停，背包內需備好一晚衣物"
+          "warning": "若當日配暫停，背包內需備好一晚衣物",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第2ターミナル ヤマト運輸"
         },
         {
           "time": "08:50",
@@ -258,7 +260,8 @@
           "icon": "ticket",
           "category": "task",
           "description": "出示手機預約 QR Code（預約號碼：716514）",
-          "warning": "電子票禁止截圖！必須保留原 URL 連結即時顯示"
+          "warning": "電子票禁止截圖！必須保留原 URL 連結即時顯示",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=日の出桟橋"
         },
         {
           "time": "10:45",
@@ -345,7 +348,8 @@
           "title": "早餐＋退房",
           "icon": "hotel",
           "category": "hotel",
-          "description": "辦理 Hotel Axas 退房，行李寄放櫃檯"
+          "description": "辦理 Hotel Axas 退房，行李寄放櫃檯",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
         },
         {
           "time": "09:00",
@@ -364,7 +368,8 @@
           "title": "🚕 Jumbo Taxi 直達新宿站",
           "icon": "taxi",
           "category": "transport",
-          "description": "日本橋 → 新宿，約 25–35 分鐘"
+          "description": "日本橋 → 新宿，約 25–35 分鐘",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
         },
         {
           "time": "10:10",
@@ -637,7 +642,8 @@
           "title": "叢林巴士報到",
           "icon": "ticket",
           "category": "task",
-          "description": "巴士案內所完成 13:30 劃位報到"
+          "description": "巴士案內所完成 13:30 劃位報到",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士サファリパーク"
         },
         {
           "time": "13:30",
@@ -965,7 +971,7 @@
           "title": "🏨 入住成田日航酒店（第 2 晚）",
           "icon": "hotel",
           "category": "hotel",
-          "description": "ORD0026706564",
+          "description": "房型：主樓舒適三人房 (含5份早餐)。確認號：1128142272413654",
           "important": true,
           "adultNotes": [
             "預約編號：ORD0026706564",
@@ -1026,7 +1032,8 @@
           "title": "搭接駁巴士回 T1 5F",
           "icon": "bus",
           "category": "transport",
-          "description": "輕裝返回 T1 放電"
+          "description": "輕裝返回 T1 放電",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
         },
         {
           "time": "12:00",
@@ -1070,7 +1077,8 @@
           "category": "transport",
           "description": "NRT → TPE，平安回家！",
           "important": true,
-          "kidFocus": "坐飛機回台灣囉！帶著滿滿的回憶！"
+          "kidFocus": "坐飛機回台灣囉！帶著滿滿的回憶！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第2ターミナル"
         }
       ]
     }

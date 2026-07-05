@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import itineraryData from '../data/itinerary.json';
 import hotelsData from '../data/hotels.json';
 import emergencyData from '../data/emergency.json';
+import ticketsData from '../data/tickets.json';
 
 const TRIP_START = new Date('2026-07-24T16:25:00+08:00');
 
@@ -61,7 +62,7 @@ function CountdownSection() {
           </div>
         ))}
       </div>
-      <p className="text-white/60 text-xs mt-3">2026/07/24 CI101 16:25 TPE → NRT</p>
+      <p className="text-white/60 text-xs mt-3">2026/07/24 CI106 16:25 TPE → NRT</p>
     </div>
   );
 }
@@ -98,6 +99,9 @@ function HotelQuickView() {
                 <p className="text-xs text-warm-gray mt-1 font-semibold">
                   入住天數：Day {hotel.days.join(' & ')} ({hotel.roomType})
                 </p>
+                <p className="text-[11px] text-warm-gray mt-0.5 font-semibold">
+                  ⏰ Check-in: {hotel.checkIn} | Check-out: {hotel.checkOut}
+                </p>
 
                 {/* Hotel Details */}
                 <div className="mt-2 text-xs text-warm-gray space-y-1.5 border-t border-gray-100 pt-2 font-medium">
@@ -111,6 +115,16 @@ function HotelQuickView() {
                       {res.note && <p className="text-danger font-bold mt-0.5">⚠️ 提醒：{res.note}</p>}
                     </div>
                   ))}
+                  {hotel.tips && hotel.tips.length > 0 && (
+                    <div className="mt-2 space-y-1">
+                      <p className="text-[10px] font-bold text-fuji-blue">💡 住宿貼士</p>
+                      {hotel.tips.map((tip, idx) => (
+                        <p key={idx} className="text-xs text-warm-gray pl-3 relative before:content-['•'] before:absolute before:left-0 before:text-warm-gray">
+                          {tip}
+                        </p>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -195,19 +209,22 @@ function WeatherSection() {
   useEffect(() => {
     async function fetchWeather() {
       try {
-        const res = await fetch(
-          'https://api.open-meteo.com/v1/forecast?latitude=35.5122,35.6895&longitude=138.7740,139.6917&current_weather=true&timezone=Asia/Tokyo'
-        );
-        const data = await res.json();
-        if (data && data.length === 2) {
+        const [kawaguchikoRes, tokyoRes] = await Promise.all([
+          fetch('https://api.open-meteo.com/v1/forecast?latitude=35.5122&longitude=138.7740&current_weather=true&timezone=Asia/Tokyo'),
+          fetch('https://api.open-meteo.com/v1/forecast?latitude=35.6895&longitude=139.6917&current_weather=true&timezone=Asia/Tokyo')
+        ]);
+        const kawaguchikoData = await kawaguchikoRes.json();
+        const tokyoData = await tokyoRes.json();
+
+        if (kawaguchikoData?.current_weather && tokyoData?.current_weather) {
           setWeatherData({
             kawaguchiko: {
-              temp: Math.round(data[0].current_weather.temperature),
-              code: data[0].current_weather.weathercode,
+              temp: Math.round(kawaguchikoData.current_weather.temperature),
+              code: kawaguchikoData.current_weather.weathercode,
             },
             tokyo: {
-              temp: Math.round(data[1].current_weather.temperature),
-              code: data[1].current_weather.weathercode,
+              temp: Math.round(tokyoData.current_weather.temperature),
+              code: tokyoData.current_weather.weathercode,
             },
           });
         }
@@ -301,6 +318,65 @@ function TripOverview() {
   );
 }
 
+function ActionRequiredCard() {
+  const pendingActions = ticketsData.filter(t => t.status === 'action-required');
+
+  if (pendingActions.length === 0) return null;
+
+  return (
+    <div className="bg-danger-light/50 border border-danger/20 rounded-2xl p-4 shadow-sm">
+      <div className="flex items-center gap-2 mb-2">
+        <span className="text-lg">⚠️</span>
+        <h3 className="text-sm font-bold text-danger">待辦提醒與行動</h3>
+      </div>
+      <div className="space-y-2">
+        {pendingActions.map(action => (
+          <div key={action.id} className="bg-white p-3 rounded-xl text-xs space-y-1 border border-danger/10 shadow-sm">
+            <div className="flex items-center gap-1.5 font-bold text-dark-navy">
+              <span>{action.emoji}</span>
+              <span className="truncate">{action.name}</span>
+            </div>
+            {action.warning && <p className="text-danger font-semibold">{action.warning}</p>}
+            {action.pickupInstructions && action.pickupInstructions[0] && (
+              <p className="text-warm-gray font-medium">{action.pickupInstructions[0]}</p>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function TodayHighlights() {
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const todayDay = itineraryData.days.find(d => d.date === todayStr);
+
+  if (!todayDay) return null;
+
+  const keyEvents = todayDay.events.filter(e => e.important || e.category === 'attraction' || e.category === 'hotel').slice(0, 3);
+  const displayEvents = keyEvents.length > 0 ? keyEvents : todayDay.events.slice(0, 2);
+
+  return (
+    <div className="bg-white rounded-2xl p-4 shadow-sm border border-fuji-blue/15">
+      <div className="flex items-center gap-2 mb-3">
+        <span className="text-lg">📅</span>
+        <h3 className="text-sm font-bold text-dark-navy">今日行程焦點 ({todayDay.label})</h3>
+      </div>
+      <div className="space-y-2">
+        {displayEvents.map((event, idx) => (
+          <div key={idx} className="flex items-start gap-2.5 text-xs bg-fuji-snow/40 p-2.5 rounded-xl border border-gray-150/60 shadow-sm">
+            <span className="text-xs font-semibold shrink-0 pt-0.5 text-fuji-blue tabular-nums">⏱️ {event.time}</span>
+            <div className="flex-1 min-w-0">
+              <p className="font-bold text-dark-navy truncate">{event.title}</p>
+              {event.description && <p className="text-[10px] text-warm-gray mt-0.5 truncate">{event.description}</p>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function DashboardPage() {
   return (
     <div className="px-4 pt-6 pb-24 space-y-4 max-w-lg mx-auto">
@@ -309,6 +385,8 @@ export default function DashboardPage() {
         <p className="text-xs text-warm-gray font-semibold mt-0.5">2026 仲夏親子富士山大探險</p>
       </header>
       <CountdownSection />
+      <ActionRequiredCard />
+      <TodayHighlights />
       <WeatherSection />
       <HotelQuickView />
       <TripOverview />

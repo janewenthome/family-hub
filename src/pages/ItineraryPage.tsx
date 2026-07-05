@@ -48,7 +48,10 @@ function TimelineEvent({ event }: { event: ItineraryEvent }) {
       >
         <div className="flex items-start justify-between gap-2">
           <div className="flex-1 min-w-0">
-            <h4 className="font-semibold text-sm leading-snug">{event.title}</h4>
+            <h4 className="font-semibold text-sm leading-snug flex items-center gap-1.5">
+              <span className="text-base shrink-0">{ICON_MAP[event.icon] || '📍'}</span>
+              <span>{event.title}</span>
+            </h4>
             {event.description && (
               <p className="text-xs text-warm-gray mt-0.5">{event.description}</p>
             )}
@@ -87,6 +90,12 @@ function TimelineEvent({ event }: { event: ItineraryEvent }) {
               <div className="bg-danger-light rounded-lg p-2">
                 <p className="text-xs font-semibold text-danger">⚠️ 注意</p>
                 <p className="text-sm mt-1">{event.warning}</p>
+              </div>
+            )}
+            {event.backup && (
+              <div className="bg-amber-50 border border-amber-200 rounded-xl p-2.5">
+                <p className="text-xs font-semibold text-amber-700">🔄 備案計畫 ({event.backup.condition})</p>
+                <p className="text-xs mt-1 text-amber-800 font-medium leading-relaxed">{event.backup.plan}</p>
               </div>
             )}
             {event.tips && event.tips.length > 0 && (

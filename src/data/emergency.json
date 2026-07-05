@@ -33,7 +33,7 @@
   ],
   "hotels": [
     { "name": "成田日航酒店", "phone": "+81-476-32-0032", "emoji": "🏨" },
-    { "name": "日本橋阿克薩斯", "phone": null, "emoji": "🏠" },
+    { "name": "日本橋阿克薩斯", "phone": "+81-3-5640-8066", "emoji": "🏠" },
     { "name": "Yoshimura ooike sense", "phone": null, "emoji": "🏡" }
   ]
 }
