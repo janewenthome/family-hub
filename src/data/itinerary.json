@@ -575,6 +575,18 @@
             "可委託 VISA 秘書或直接預訂"
           ],
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=しゃぶしゃぶ はやし"
+        },
+        {
+          "time": "19:30",
+          "title": "🛒 mont-bell 富士吉田店",
+          "icon": "shopping",
+          "category": "shopping",
+          "description": "日本最大戶外用品專賣店，採購 mont-bell 服飾與裝備",
+          "tips": [
+            "吃完涮涮鍋後開車前往，車程約 10 分鐘",
+            "營業至 20:00，有免費大型停車場"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=モンベル 富士吉田店"
         }
       ]
     },
@@ -957,6 +969,18 @@
             "隔板折攏，全家一字排開"
           ],
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=一蘭 アトレ上野山下口店"
+        },
+        {
+          "time": "17:15",
+          "title": "🛒 無印良品 アトレ上野",
+          "icon": "shopping",
+          "category": "shopping",
+          "description": "無印良品上野車站店，採購衣服、零食或生活雜貨",
+          "tips": [
+            "位於上野站 Atre 購物中心內，交通方便",
+            "採購後直接前往京成上野站搭乘 18:00 Skyliner 列車"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=無印良品 500 アトレ上野"
         },
         {
           "time": "18:00",
