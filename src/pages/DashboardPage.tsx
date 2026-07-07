@@ -3,6 +3,7 @@ import itineraryData from '../data/itinerary.json';
 import hotelsData from '../data/hotels.json';
 import emergencyData from '../data/emergency.json';
 import ticketsData from '../data/tickets.json';
+import insuranceData from '../data/insurance.json';
 
 const TRIP_START = new Date('2026-07-24T16:25:00+08:00');
 
@@ -377,6 +378,53 @@ function TodayHighlights() {
   );
 }
 
+function InsurancePublicView() {
+  const guide = insuranceData.taiwanFamilyGuide;
+  const claims = insuranceData.claimsGuide;
+
+  return (
+    <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 space-y-3">
+      <div className="flex items-center gap-2 mb-1">
+        <span className="text-lg">🛡️</span>
+        <h3 className="text-sm font-bold text-dark-navy">旅平險保單與理賠速查</h3>
+      </div>
+
+      {/* Guide for Taiwan Family */}
+      <div className="bg-fuji-ice/50 border border-fuji-blue/10 rounded-xl p-3 text-xs space-y-2">
+        <p className="font-bold text-dark-navy flex items-center gap-1">
+          <span>🇹🇼</span> {guide.title}
+        </p>
+        <p className="text-[11px] text-warm-gray leading-normal">{guide.description}</p>
+        <div className="bg-white p-2.5 rounded-lg border border-gray-150 space-y-1 bg-opacity-70">
+          <p className="text-[11px] font-semibold text-danger">☎️ 客服/海外專線：{guide.hotline}</p>
+          {guide.detailsToReport.map((detail, idx) => (
+            <p key={idx} className="text-[11px] text-dark-navy font-semibold">
+              • {detail}
+            </p>
+          ))}
+        </div>
+      </div>
+
+      {/* Claims Guide */}
+      <div className="space-y-2">
+        <p className="text-[11px] font-bold text-warm-gray px-1 uppercase tracking-wider">{claims.title}</p>
+        <div className="grid grid-cols-1 gap-2">
+          {claims.categories.map((cat, idx) => (
+            <div key={idx} className="bg-fuji-snow/40 border border-gray-150 rounded-xl p-2.5 text-xs">
+              <p className="font-bold text-dark-navy mb-1.5">{cat.type}</p>
+              <ul className="space-y-1 list-disc list-inside text-[11px] text-warm-gray pl-1 leading-relaxed">
+                {cat.docs.map((doc, i) => (
+                  <li key={i} className="marker:text-fuji-blue font-medium">{doc}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function DashboardPage() {
   return (
     <div className="px-4 pt-6 pb-24 space-y-4 max-w-lg mx-auto">
@@ -390,6 +438,7 @@ export default function DashboardPage() {
       <WeatherSection />
       <HotelQuickView />
       <TripOverview />
+      <InsurancePublicView />
       <EmergencySection />
     </div>
   );

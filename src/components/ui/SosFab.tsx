@@ -120,8 +120,23 @@ export default function SosFab() {
 
               {/* Insurance */}
               <div className="space-y-2">
-                <p className="text-[11px] font-bold text-warm-gray px-1 uppercase tracking-wider">旅遊保險明細</p>
+                <p className="text-[11px] font-bold text-warm-gray px-1 uppercase tracking-wider">旅遊保險與緊急救援</p>
                 <div className="space-y-2">
+                  {/* Fubon Emergency Hotline Action Link */}
+                  <a
+                    href="tel:+886-2-25636292"
+                    className="flex items-center gap-3 p-3 bg-red-50 hover:bg-red-100/70 border border-red-100 rounded-2xl tap-highlight active:scale-[0.98] text-xs"
+                  >
+                    <span className="text-2xl shrink-0">🛡️</span>
+                    <div className="flex-1 min-w-0">
+                      <p className="font-bold text-red-700">富邦產物海外緊急救援專線</p>
+                      <p className="text-[10px] text-red-600 leading-normal">點擊撥打：+886-2-25636292</p>
+                    </div>
+                    <span className="text-[10px] font-bold bg-red-600 text-white px-2 py-0.5 rounded-md shrink-0">
+                      撥打
+                    </span>
+                  </a>
+
                   {data.insurance.map((ins, i) => (
                     <div key={i} className="flex items-start gap-3 p-3 bg-fuji-snow/40 border border-gray-150 rounded-2xl text-xs">
                       <span className="text-lg shrink-0">{ins.emoji}</span>
@@ -134,6 +149,22 @@ export default function SosFab() {
                     </div>
                   ))}
                 </div>
+              </div>
+
+              {/* Japanese Translation Card for Hotels */}
+              <div className="bg-amber-50 border border-amber-250 rounded-2xl p-3.5 text-xs space-y-2">
+                <div className="flex items-center gap-1.5 text-amber-700 font-bold">
+                  <span>🇯🇵</span>
+                  <span>日文緊急求助卡 (請出示給日本飯店人員)</span>
+                </div>
+                <p className="text-[11px] text-amber-900 leading-relaxed font-semibold bg-white p-3 rounded-xl border border-amber-100 font-mono">
+                  緊急事態が発生したため、台湾の保険会社へ連絡する必要があります。下記の番号へ電話したいのですが、お手伝いいだたけないでしょうか。
+                  <br />
+                  <span className="text-red-700 font-bold block mt-1">富邦產險 / Fubon Insurance: +886-2-25636292</span>
+                </p>
+                <p className="text-[9px] text-warm-gray leading-normal">
+                  （翻譯意指：因為發生緊急狀況，我需要聯絡台灣的保險公司，能否協助我撥打這個電話？）
+                </p>
               </div>
             </div>
           </div>

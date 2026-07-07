@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ticketsData from '../data/tickets.json';
+import insuranceData from '../data/insurance.json';
 
 const STATUS_BADGE: Record<string, { text: string; class: string }> = {
   confirmed: { text: '✅ 已確認', class: 'bg-forest-light text-forest-green' },
@@ -194,8 +195,94 @@ function TicketPinLock({ onUnlock }: { onUnlock: () => void }) {
   );
 }
 
+function InsuranceMembersDetail() {
+  const [expandedMember, setExpandedMember] = useState<string | null>(null);
+
+  return (
+    <div className="space-y-4">
+      <div className="bg-fuji-ice/50 border border-fuji-blue/10 rounded-2xl p-4">
+        <h3 className="text-sm font-bold text-dark-navy mb-1 flex items-center gap-1.5">
+          <span>🔒</span> 家族極密保單資料 (已解鎖)
+        </h3>
+        <p className="text-[11px] text-warm-gray leading-normal">
+          此處包含護照號碼與身分證字號等個人極密資訊，供就醫、登機或緊急事故時快速核對查閱。
+        </p>
+      </div>
+
+      <div className="space-y-3">
+        {insuranceData.members.map(m => {
+          const isOpen = expandedMember === m.id;
+          return (
+            <div key={m.id} className="bg-white rounded-2xl shadow-sm border border-gray-150/40 overflow-hidden">
+              <button
+                onClick={() => setExpandedMember(isOpen ? null : m.id)}
+                className="w-full p-4 flex items-center justify-between text-left tap-highlight"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl shrink-0">👤</span>
+                  <div>
+                    <h4 className="font-bold text-base text-dark-navy">
+                      {m.nameZhFull} <span className="text-xs text-warm-gray font-normal">({m.nameEn})</span>
+                    </h4>
+                    <p className="text-[11px] text-warm-gray font-medium mt-0.5">
+                      保單：{m.policyNumber}
+                    </p>
+                  </div>
+                </div>
+                <span className={`text-warm-gray text-xs transition-transform ${isOpen ? 'rotate-180' : ''}`}>▼</span>
+              </button>
+
+              {isOpen && (
+                <div className="px-4 pb-4 border-t border-gray-100/60 pt-3.5 space-y-3 bg-fuji-snow/20 text-xs">
+                  {/* Personal info table */}
+                  <div className="bg-white rounded-xl p-3 border border-gray-150/60 space-y-2">
+                    <div className="flex justify-between border-b border-gray-100 pb-1.5">
+                      <span className="text-warm-gray font-semibold">身分證字號</span>
+                      <span className="font-bold text-dark-navy font-mono">{m.idNumber}</span>
+                    </div>
+                    <div className="flex justify-between border-b border-gray-100 pb-1.5">
+                      <span className="text-warm-gray font-semibold">護照號碼</span>
+                      <span className="font-bold text-dark-navy font-mono">{m.passport}</span>
+                    </div>
+                    <div className="flex justify-between border-b border-gray-100 pb-1.5">
+                      <span className="text-warm-gray font-semibold">出生日期</span>
+                      <span className="font-bold text-dark-navy">{m.birthDate}</span>
+                    </div>
+                    <div className="flex justify-between border-b border-gray-100 pb-1.5">
+                      <span className="text-warm-gray font-semibold">投保方案</span>
+                      <span className="font-bold text-fuji-blue">{m.plan}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-warm-gray font-semibold">保費金額</span>
+                      <span className="font-bold text-dark-navy">{m.premium} 元</span>
+                    </div>
+                  </div>
+
+                  {/* Coverage details */}
+                  <div className="space-y-1.5">
+                    <p className="text-[11px] font-bold text-warm-gray px-1 uppercase tracking-wider">🛡️ 本人承保內容明細</p>
+                    <div className="bg-white rounded-xl p-3 border border-gray-150/60 space-y-1.5">
+                      {m.coverages.map((cov, idx) => (
+                        <p key={idx} className="text-dark-navy font-semibold flex items-start gap-1.5">
+                          <span className="text-fuji-blue font-bold">•</span>
+                          <span>{cov}</span>
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 export default function TicketsPage() {
   const [unlocked, setUnlocked] = useState(() => sessionStorage.getItem('tickets-unlocked') === 'true');
+  const [subTab, setSubTab] = useState<'tickets' | 'insurance'>('tickets');
   const [tab, setTab] = useState('all');
   const [modalImage, setModalImage] = useState<{ src: string; title: string } | null>(null);
   const [showGuide, setShowGuide] = useState(false);
@@ -215,37 +302,63 @@ export default function TicketsPage() {
 
   return (
     <div className="max-w-lg mx-auto px-4 pt-6 pb-24">
-      <h1 className="text-xl font-bold mb-4">🎟️ 票券與物流中心</h1>
+      <h1 className="text-xl font-bold mb-4">🎟️ 票券與保單中心</h1>
 
-      {/* Category tabs */}
-      <div className="flex gap-2 mb-4">
-        {CATEGORY_TABS.map(t => (
-          <button
-            key={t.key}
-            onClick={() => setTab(t.key)}
-            className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all tap-highlight ${
-              tab === t.key ? 'bg-fuji-blue text-white' : 'bg-white text-dark-navy border border-gray-100'
-            }`}
-          >
-            {t.label}
-          </button>
-        ))}
+      {/* SubTab switcher */}
+      <div className="flex bg-fuji-ice/60 p-1 rounded-2xl mb-5">
+        <button
+          onClick={() => setSubTab('tickets')}
+          className={`flex-1 py-2.5 text-center text-xs font-bold rounded-xl transition-all tap-highlight ${
+            subTab === 'tickets' ? 'bg-white text-fuji-blue shadow-sm' : 'text-warm-gray'
+          }`}
+        >
+          🎫 乘車景點票券
+        </button>
+        <button
+          onClick={() => setSubTab('insurance')}
+          className={`flex-1 py-2.5 text-center text-xs font-bold rounded-xl transition-all tap-highlight ${
+            subTab === 'insurance' ? 'bg-white text-fuji-blue shadow-sm' : 'text-warm-gray'
+          }`}
+        >
+          🛡️ 家族保單明細
+        </button>
       </div>
 
-      {/* Ticket list */}
-      <div className="space-y-3">
-        {filtered.map(ticket => (
-          <TicketCard
-            key={ticket.id}
-            ticket={ticket}
-            onViewImage={(src, title) => setModalImage({ src, title })}
-            onViewGuide={() => {
-              setGuideIndex(0);
-              setShowGuide(true);
-            }}
-          />
-        ))}
-      </div>
+      {subTab === 'tickets' ? (
+        <>
+          {/* Category tabs */}
+          <div className="flex gap-2 mb-4">
+            {CATEGORY_TABS.map(t => (
+              <button
+                key={t.key}
+                onClick={() => setTab(t.key)}
+                className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all tap-highlight ${
+                  tab === t.key ? 'bg-fuji-blue text-white' : 'bg-white text-dark-navy border border-gray-100'
+                }`}
+              >
+                {t.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Ticket list */}
+          <div className="space-y-3">
+            {filtered.map(ticket => (
+              <TicketCard
+                key={ticket.id}
+                ticket={ticket}
+                onViewImage={(src, title) => setModalImage({ src, title })}
+                onViewGuide={() => {
+                  setGuideIndex(0);
+                  setShowGuide(true);
+                }}
+              />
+            ))}
+          </div>
+        </>
+      ) : (
+        <InsuranceMembersDetail />
+      )}
 
       {/* Full screen QR Code / Barcode Modal */}
       {modalImage && (
@@ -281,7 +394,7 @@ export default function TicketsPage() {
         <div className="fixed inset-0 z-50 bg-black/90 flex flex-col items-center justify-center p-4">
           <div className="bg-white rounded-3xl max-w-sm w-full overflow-hidden shadow-2xl flex flex-col">
             {/* Modal Header */}
-            <div className="p-4 border-b border-gray-100 flex justify-between items-center">
+            <div className="p-4 border-b border-gray-150 flex justify-between items-center">
               <h3 className="font-bold text-dark-navy">JR 上野站取票教學</h3>
               <button
                 onClick={() => setShowGuide(false)}
