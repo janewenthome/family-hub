@@ -1,0 +1,809 @@
+{
+  "tripStart": "2026-07-24",
+  "tripEnd": "2026-08-01",
+  "days": [
+    {
+      "date": "2026-07-24",
+      "dayNumber": 1,
+      "label": "Day 1",
+      "title": "日本到着＆成田ステイ",
+      "emoji": "✈️",
+      "location": "台湾 → 成田",
+      "hotel": "nikko-narita",
+      "phase": "フェーズ1：都心・鉄道アドベンチャー",
+      "events": [
+        {
+          "time": "16:25",
+          "endTime": "20:50",
+          "title": "チャイナエアライン CI106 便出発",
+          "icon": "plane",
+          "category": "transport",
+          "description": "台北桃園 (TPE) ➡️ 成田空港 (NRT)",
+          "important": true,
+          "kidFocus": "飛行機に乗って日本へ出発！"
+        },
+        {
+          "time": "21:30",
+          "title": "ホテル無料シャトルバス乗車",
+          "icon": "bus",
+          "category": "transport",
+          "description": "ホテル日航成田の無料シャトルバス",
+          "tips": [
+            "到着後はホテル日航成田のバス乗り場案内板に従って進んでください"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第2ターミナル"
+        },
+        {
+          "time": "22:00",
+          "title": "ホテル日航成田 チェックイン",
+          "icon": "hotel",
+          "category": "hotel",
+          "description": "成田での前泊拠点",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "dayNumber": 2,
+      "label": "Day 2",
+      "title": "鉄道博物館と下町花火大会",
+      "emoji": "🚄",
+      "location": "成田 → 大宮 → 日本橋",
+      "hotel": "axas-nihonbashi",
+      "phase": "フェーズ1：都心・鉄道アドベンチャー",
+      "events": [
+        {
+          "time": "08:15",
+          "title": "ホテルチェックアウト＆荷物発送",
+          "icon": "luggage",
+          "category": "task",
+          "description": "成田空港のヤマト運輸カウンターからホテルアクサス日本橋へ当日便で発送",
+          "adultNotes": [
+            "成田空港第2ビルのヤマト運輸カウンターで発送手続き"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第2ターミナル ヤマト運輸"
+        },
+        {
+          "time": "09:00",
+          "title": "Skyliner 切符引き換え＆指定席予約",
+          "icon": "ticket",
+          "category": "task",
+          "description": "KKdayの引換券で実体切符を発券",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田空港駅"
+        },
+        {
+          "time": "09:30",
+          "endTime": "10:11",
+          "title": "🚄 京成スカイライナーで上野へ",
+          "icon": "train",
+          "category": "transport",
+          "description": "成田空港 ➡️ 京成上野駅（41分直達）",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=京成上野駅"
+        },
+        {
+          "time": "10:20",
+          "title": "JR上野駅にて特急券受取＆乗り換え",
+          "icon": "ticket",
+          "category": "task",
+          "description": "JR上野駅の紫色の指定席券売機で「富士回遊」と「特急かいじ」の切符を受け取り",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
+        },
+        {
+          "time": "10:45",
+          "endTime": "11:15",
+          "title": "大宮鉄道博物館へ移動",
+          "icon": "train",
+          "category": "transport",
+          "description": "上野駅 ➡️ 大宮駅 ➡️ 鉄道博物館駅（ニューシャトル）",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
+        },
+        {
+          "time": "11:15",
+          "endTime": "16:00",
+          "title": "🚂 大宮鉄道博物館の体験",
+          "icon": "museum",
+          "category": "attraction",
+          "important": true,
+          "description": "ミニ運転列車＆E5新幹線シミュレータ体験",
+          "kidFocus": "大宝が運転士になって、二宝と三宝を乗せてミニ電車を運転！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=鉄道博物館"
+        },
+        {
+          "time": "16:00",
+          "title": "大宮から上野へ戻る",
+          "icon": "train",
+          "category": "transport",
+          "description": "ニューシャトルと高崎線で上野へ",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 鉄道博物館駅"
+        },
+        {
+          "time": "16:45",
+          "title": "ホテルアクサス日本橋 チェックイン",
+          "icon": "hotel",
+          "category": "hotel",
+          "description": "水天宮前駅近くのコンドミニアム型ホテル",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
+        },
+        {
+          "time": "18:00",
+          "endTime": "20:30",
+          "title": "🎆 隅田川花火大会の鑑賞",
+          "icon": "fireworks",
+          "category": "attraction",
+          "important": true,
+          "description": "新大橋付近の河畔で江戸の花火を鑑賞",
+          "tips": [
+            "大混雑を避けるため、新大橋近くの河畔テラスを鑑賞スポットに推奨"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=隅田川花火大会"
+        },
+        {
+          "time": "21:00",
+          "title": "マルエツプチで夜食調達",
+          "icon": "shopping",
+          "category": "shopping",
+          "description": "近所のスーパーで軽食と翌朝の食材を購入",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=マルエツ プチ 浜町店"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "dayNumber": 3,
+      "label": "Day 3",
+      "title": "お台場近未来テクノロジー体験",
+      "emoji": "🚀",
+      "location": "日本橋 → お台場 → 日本橋",
+      "hotel": "axas-nihonbashi",
+      "phase": "フェーズ1：都心・鉄道アドベンチャー",
+      "events": [
+        {
+          "time": "08:30",
+          "title": "Truffle BAKERYのパン購入",
+          "icon": "food",
+          "category": "food",
+          "description": "パパが門前仲町店まで歩いて名物の塩パンを購入",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=トリュフベーカリー 門前仲町店"
+        },
+        {
+          "time": "09:45",
+          "title": "タクシーで日の出桟橋へ",
+          "icon": "taxi",
+          "category": "transport",
+          "description": "大人と子供の移動負担軽減のためタクシー利用",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=日の出桟橋"
+        },
+        {
+          "time": "10:15",
+          "title": "日の出桟橋乗船口に整列",
+          "icon": "walk",
+          "category": "transport",
+          "description": "出航30分前から並んで好みの席を確保",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=日の出桟橋"
+        },
+        {
+          "time": "10:45",
+          "endTime": "11:05",
+          "title": "🚀 水上バス「ホタルナ」乗船",
+          "icon": "ship",
+          "category": "attraction",
+          "important": true,
+          "description": "松本零士氏デザインの近未来的水上バスで東京湾クルーズ",
+          "kidFocus": "SFの宇宙船みたいなカッコいい船に乗って、お台場海浜公園へ！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=日の出桟橋"
+        },
+        {
+          "time": "11:30",
+          "endTime": "13:00",
+          "title": "🍽️ アクアシティお台場にてランチ",
+          "icon": "food",
+          "category": "food",
+          "description": "東京湾とレインボーブリッジを一望できるレストランで昼食",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=アクアシティお台場"
+        },
+        {
+          "time": "13:30",
+          "endTime": "16:00",
+          "title": "🏛️ 日本科学未来館の体験",
+          "icon": "museum",
+          "category": "attraction",
+          "important": true,
+          "description": "ロボット「ASIMO」や地球ドームなどのインタラクティブ展示",
+          "kidFocus": "本物のロボットとおしゃべりしたり、巨大な地球のスクリーンを見よう！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=日本科学未来館"
+        },
+        {
+          "time": "16:15",
+          "title": "ゆりかもめ自動運転体験",
+          "icon": "train",
+          "category": "transport",
+          "description": "一番前の席を狙って臨海景観を楽しむ",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=台場駅"
+        },
+        {
+          "time": "17:00",
+          "title": "ジャンボタクシーでホテルへ直行",
+          "icon": "taxi",
+          "category": "transport",
+          "description": "パパチームとお台場科学館前で合流しジャンボタクシーでホテルへ",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=日本科学未来館"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "dayNumber": 4,
+      "label": "Day 4",
+      "title": "富士山麓別墅合流",
+      "emoji": "🗻",
+      "location": "東京 → 河口湖",
+      "hotel": "yoshimura-villa",
+      "phase": "フェーズ2：富士山麓コンドミニアムライフ",
+      "events": [
+        {
+          "time": "08:30",
+          "title": "ホテル朝食＆チェックアウト",
+          "icon": "hotel",
+          "category": "hotel",
+          "description": "荷物をまとめてジャンボタクシーで新宿駅へ",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
+        },
+        {
+          "time": "09:00",
+          "title": "ジャンボタクシーで新宿駅へ直行",
+          "icon": "taxi",
+          "category": "transport",
+          "description": "大雨や子供のぐずり対策としてドア・ツー・ドア移動",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
+        },
+        {
+          "time": "09:50",
+          "title": "新宿駅でお弁当購入",
+          "icon": "food",
+          "category": "food",
+          "description": "特急「富士回遊」に備え、新宿駅で駅弁や飲み物を調達",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=新宿駅"
+        },
+        {
+          "time": "10:30",
+          "endTime": "12:24",
+          "title": "🚃 特急「富士回遊 15号」出発",
+          "icon": "train",
+          "category": "transport",
+          "important": true,
+          "description": "新宿 ➡️ 河口湖（直通1時間54分）",
+          "kidFocus": "特別な富士山特急に乗って、パノラマ窓から大きな富士山を見よう！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=新宿駅"
+        },
+        {
+          "time": "12:35",
+          "title": "タクシーで別墅へ直行",
+          "icon": "taxi",
+          "category": "transport",
+          "description": "河口湖駅から吉村大池荘までタクシー移動",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=河口湖駅"
+        },
+        {
+          "time": "13:00",
+          "title": "吉村大池荘 到着＆昼食",
+          "icon": "hotel",
+          "category": "hotel",
+          "description": "チェックイン前にお弁当でランチタイム。オーナーの車でお出迎え",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=吉村大池荘"
+        },
+        {
+          "time": "15:00",
+          "title": "別墅正式チェックイン",
+          "icon": "hotel",
+          "category": "hotel",
+          "description": "別墅キーの引き渡し＆設備確認",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=吉村大池荘"
+        },
+        {
+          "time": "15:30",
+          "title": "別墅の周辺を散策",
+          "icon": "walk",
+          "category": "attraction",
+          "titleJa": "散策：大石公園またはパノラマロープウェイ",
+          "description": "当日の天候に応じて活動を決定（雨天・強風対策あり）",
+          "backup": {
+            "condition": "雨天または曇天で富士山が見えない場合",
+            "plan": "大石公園散策の代わりに、河口湖ハーブ館でのクラフト体験や屋内施設見学へ変更します。"
+          },
+          "mapUrls": [
+            {
+              "name": "大石公園",
+              "url": "https://www.google.com/maps/search/?api=1&query=大石公園"
+            },
+            {
+              "name": "カチカチ山ロープウェイ",
+              "url": "https://www.google.com/maps/search/?api=1&query=～河口湖～+富士山パノラマロープウェイ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "dayNumber": 5,
+      "label": "Day 5",
+      "title": "巨大白鳥ボートと音楽の森",
+      "emoji": "🦢",
+      "location": "河口湖 → 山中湖 → 河口湖",
+      "hotel": "yoshimura-villa",
+      "phase": "フェーズ2：富士山麓コンドミニアムライフ",
+      "events": [
+        {
+          "time": "08:45",
+          "title": "パパ単独でレンタカー引取",
+          "icon": "car",
+          "category": "task",
+          "description": "トヨタレンタカー富士河口湖店でNOAH Hybrid（7人乗り）をレンタル",
+          "adultNotes": [
+            "河口湖駅の正面にあるトヨタレンタカー店舗",
+            "チャイルドシート2台装着を確認し、別墅に戻って全員をピックアップ"
+          ]
+        },
+        {
+          "time": "09:30",
+          "title": "🚙 山中湖へドライブ出発",
+          "icon": "car",
+          "category": "transport",
+          "description": "NOAHで両家族全員（大所帯）で出発",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=吉村大池荘"
+        },
+        {
+          "time": "10:15",
+          "title": "山中湖 旭日丘桟橋に到着",
+          "icon": "walk",
+          "category": "attraction",
+          "description": "湖畔を散歩し、白鳥やコイに餌やり体験",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=山中湖 旭日丘桟橋"
+        },
+        {
+          "time": "10:45",
+          "endTime": "11:10",
+          "title": "🦢 遊覧船「白鳥の湖」乗船",
+          "icon": "ship",
+          "category": "attraction",
+          "important": true,
+          "description": "水戸岡鋭治氏デザインの温かみのある木製内装の遊覧船",
+          "kidFocus": "可愛い大きな白鳥の船に乗って、みんなで富士山を探そう！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=山中湖 旭日丘桟橋"
+        },
+        {
+          "time": "11:15",
+          "endTime": "13:00",
+          "title": "🍜 小作 山中湖店でほうとうランチ",
+          "icon": "food",
+          "category": "food",
+          "description": "予約不可、現地ウェイティングボードに記帳",
+          "important": true,
+          "kidFocus": "もちもちの太麺とかぼちゃの甘いスープのほうとうを食べよう！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=甲州ほうとう 小作 山中湖店"
+        },
+        {
+          "time": "13:30",
+          "title": "🚗 河口湖へドライブで戻る",
+          "icon": "car",
+          "category": "transport",
+          "description": "約35分の道のり、ドライブ中に子供はお昼寝タイム",
+          "kidFocus": "チャイルドシートでぐっすり夢の中へ～"
+        },
+        {
+          "time": "14:30",
+          "endTime": "16:30",
+          "title": "🎵 河口湖 音楽と森の美術館",
+          "icon": "museum",
+          "category": "attraction",
+          "description": "ヨーロッパ風のオルゴール庭園とオルガン演奏・砂絵ショー",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=河口湖 音楽と森の美術館"
+        },
+        {
+          "time": "17:00",
+          "title": "🛒 オギノ河口湖店で買い出し",
+          "icon": "shopping",
+          "category": "shopping",
+          "description": "別墅での生活用に食材やドリンクを調達",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=オギノ 河口湖店"
+        },
+        {
+          "time": "18:00",
+          "title": "🍲 しゃぶしゃぶ はやし で夕食",
+          "icon": "food",
+          "category": "food",
+          "description": "地元の絶品しゃぶしゃぶ、子供フレンドリーな個室風席",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=しゃぶしゃぶ はやし"
+        },
+        {
+          "time": "19:30",
+          "title": "🛒 モンベル 富士吉田店",
+          "icon": "shopping",
+          "category": "shopping",
+          "description": "日本最大級のアウトドアショップでモンベルグッズのお買い物",
+          "tips": [
+            "しゃぶしゃぶの後に車で約10分",
+            "20:00まで営業。広々とした駐車場あり"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=モンベル 富士吉田店"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "dayNumber": 6,
+      "label": "Day 6",
+      "title": "富士サファリ野生動物体験",
+      "emoji": "🦁",
+      "location": "河口湖 → 富士サファリ → 鳴沢",
+      "hotel": "yoshimura-villa",
+      "phase": "フェーズ3：野生動物＆絶叫パークアドベンチャー",
+      "events": [
+        {
+          "time": "08:00",
+          "title": "🚗 富士サファリパークへドライブ出発",
+          "icon": "car",
+          "category": "transport",
+          "description": "別墅から車で約50分",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士サファリパーク"
+        },
+        {
+          "time": "08:50",
+          "title": "サファリパークゲート到着",
+          "icon": "walk",
+          "category": "attraction",
+          "description": "朝イチで並んで人気のジャングルバスの予約枠を確保",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士サファリパーク"
+        },
+        {
+          "time": "09:30",
+          "endTime": "11:00",
+          "title": "🚙 自家用車でサファリゾーン体験",
+          "icon": "car",
+          "category": "attraction",
+          "important": true,
+          "description": "エアコンの効いた快適なマイカーからライオンやクマを間近で観察",
+          "kidFocus": "車の窓のすぐ外に本物のライオンやゾウが歩いているよ！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士サファリパーク"
+        },
+        {
+          "time": "11:00",
+          "endTime": "12:00",
+          "title": "🐐 ふれあい牧場体験",
+          "icon": "walk",
+          "category": "attraction",
+          "description": "カピバラやウサギと触れ合い、カンガルーへのエサやり",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士サファリパーク"
+        },
+        {
+          "time": "12:00",
+          "title": "🍽️ パーク内レストランでランチ",
+          "icon": "food",
+          "category": "food",
+          "description": "混雑を避けてサファリレストランで早めの昼食",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士サファリパーク"
+        },
+        {
+          "time": "13:30",
+          "endTime": "14:20",
+          "title": "🦁 大迫力ジャングルバス乗車",
+          "icon": "bus",
+          "category": "attraction",
+          "important": true,
+          "description": "金網張りの特別バスからライオンやクマに生エサやり体験",
+          "kidFocus": "金網の隙間からハサミを使って、大きなお口のライオンに直接お肉をあげよう！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士サファリパーク"
+        },
+        {
+          "time": "15:00",
+          "title": "サファリパークを出発し北上",
+          "icon": "car",
+          "category": "transport",
+          "description": "お疲れの子供たちは車内でぐっすり昼寝",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士サファリパーク"
+        },
+        {
+          "time": "16:00",
+          "endTime": "18:00",
+          "title": "♨️ 富士眺望の湯 ゆらりで温泉",
+          "icon": "bath",
+          "category": "attraction",
+          "description": "富士山を目の前に望む絶景露天風呂で疲れを癒す",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士眺望の湯ゆらり"
+        },
+        {
+          "time": "18:30",
+          "title": "夕食の選択：SLレストランまたはコンドミニアムでBBQ",
+          "icon": "food",
+          "category": "food",
+          "description": "SLが料理を運ぶ面白レストラン、または別墅でスーパーの食材を使って調理",
+          "backup": {
+            "condition": "子供たちが疲れて外食が難しい場合",
+            "plan": "SLレストランの代わりに、オギノスーパーで地元食材を調達し、別墅のキッチンで自家製BBQや鍋を楽しみます。"
+          },
+          "mapUrls": [
+            {
+              "name": "SLレストラン (お狩場)",
+              "url": "https://www.google.com/maps/search/?api=1&query=元祖へっころほうとう+お狩場"
+            },
+            {
+              "name": "オギノスーパー",
+              "url": "https://www.google.com/maps/search/?api=1&query=オギノ+河口湖店"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "dayNumber": 7,
+      "label": "Day 7",
+      "title": "富士急絶叫とトーマスランド",
+      "emoji": "🎢",
+      "location": "河口湖 → 富士急ハイランド → 河口湖",
+      "hotel": "yoshimura-villa",
+      "phase": "フェーズ3：野生動物＆絶叫パークアドベンチャー",
+      "events": [
+        {
+          "time": "08:40",
+          "title": "🚗 富士急ハイランドへドライブ",
+          "icon": "car",
+          "category": "transport",
+          "description": "別墅からすぐ、車で約10分",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士急ハイランド"
+        },
+        {
+          "time": "09:00",
+          "title": "富士急ハイランド 優先入園",
+          "icon": "walk",
+          "category": "attraction",
+          "description": "事前顔登録パスでスマートにチケットレス入場",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士急ハイランド"
+        },
+        {
+          "time": "09:15",
+          "endTime": "11:45",
+          "title": "🚂 トーマスランドでのアトラクション体験",
+          "icon": "star",
+          "category": "attraction",
+          "important": true,
+          "description": "トーマスの宝探し冒険や立体迷路の体験",
+          "kidFocus": "本物のトーマスやパーシーと一緒に宝探しの冒険に出発進行！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士急ハイランド"
+        },
+        {
+          "time": "11:45",
+          "endTime": "13:00",
+          "title": "🍽️ トーマスレストランにてランチ",
+          "icon": "food",
+          "category": "food",
+          "description": "12:00の混雑ピーク前に早めのランチを確保",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士急ハイランド"
+        },
+        {
+          "time": "13:00",
+          "endTime": "16:00",
+          "title": "🎢 富士急絶叫ゾーンと観覧車",
+          "icon": "camera",
+          "category": "attraction",
+          "description": "パパチームとママ子供チームに分かれて絶叫マシン＆大観覧車",
+          "kidFocus": "家族みんなで世界一きれいな富士山が見える巨大な観覧車に乗ろう！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=富士急ハイランド"
+        },
+        {
+          "time": "16:00",
+          "endTime": "17:30",
+          "title": "🇫🇷 リサとガスパールタウン散策",
+          "icon": "walk",
+          "category": "attraction",
+          "description": "エッフェル塔のあるフレンチタウンの夜景とイルミネーション",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=リサとガスパール タウン"
+        },
+        {
+          "time": "18:00",
+          "title": "🛒 オギノ河口湖店で食材調達",
+          "icon": "shopping",
+          "category": "shopping",
+          "description": "別墅最後の夜。地元の牛肉などを買ってコンドミニアムでディナー",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=オギノ 河口湖店"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "dayNumber": 8,
+      "label": "Day 8",
+      "title": "都心への帰還＆科博探險",
+      "emoji": "🏙️",
+      "location": "河口湖 → 大月 → 東京 → 成田",
+      "hotel": "nikko-narita",
+      "phase": "フェーズ4：帰国準備と最後のショッピング",
+      "events": [
+        {
+          "time": "08:15",
+          "title": "パパ単獨でレンタカー返却",
+          "icon": "car",
+          "category": "task",
+          "description": "ガソリン満タンでトヨタ富士河口湖店にNOAHを返却",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=吉村大池荘"
+        },
+        {
+          "time": "08:45",
+          "title": "別墅チェックアウト＆荷物発送",
+          "icon": "hotel",
+          "category": "hotel",
+          "description": "吉村大池荘をチェックアウト、パパが駅から民宿に迎えに行き、荷物と共に駅へ移動"
+        },
+        {
+          "time": "09:00",
+          "endTime": "09:50",
+          "title": "🚃 富士急特急で大月へ移動",
+          "icon": "train",
+          "category": "transport",
+          "description": "河口湖駅 ➡️ 大月駅",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=河口湖駅"
+        },
+        {
+          "time": "10:23",
+          "endTime": "11:27",
+          "title": "🚆 特急「かいじ 14号」乗車",
+          "icon": "train",
+          "category": "transport",
+          "important": true,
+          "description": "大月駅 ➡️ 新宿駅（1時間4分）",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=大月駅"
+        },
+        {
+          "time": "11:30",
+          "endTime": "11:55",
+          "title": "山手線で新宿から上野へ",
+          "icon": "train",
+          "category": "transport",
+          "description": "山手線外回り（池袋・上野方面）約25分",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=新宿駅"
+        },
+        {
+          "time": "11:55",
+          "title": "🧳 上野駅でコインロッカー預入",
+          "icon": "luggage",
+          "category": "task",
+          "description": "上野駅構内の特大ロッカーに大型荷物を預け入れ",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
+        },
+        {
+          "time": "12:30",
+          "endTime": "15:00",
+          "title": "🦖 国立科学博物館の見学＆ランチ",
+          "icon": "museum",
+          "category": "attraction",
+          "important": true,
+          "description": "館内カフェで昼食、巨大恐龍化石の見学",
+          "kidFocus": "大きな本物のティラノサウルスの化石のすぐ隣でみんなでご飯を食べよう！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=国立科学博物館"
+        },
+        {
+          "time": "15:00",
+          "endTime": "15:45",
+          "title": "🏰 親子広場「コンパス(ComPASS)」体験",
+          "icon": "star",
+          "category": "attraction",
+          "important": true,
+          "description": "科博館3Fの屋内アスレチック（15:00の部予約済み）",
+          "kidFocus": "木で作られた特別なアスレチックや吊り橋で思いっきり遊ぼう！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=国立科学博物館"
+        },
+        {
+          "time": "16:30",
+          "title": "🍜 一蘭アトレ上野店でラーメン夕食",
+          "icon": "food",
+          "category": "food",
+          "description": "混雑回避のため早い時間の一蘭ディナー",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=一蘭 アトレ上野山下口店"
+        },
+        {
+          "time": "17:15",
+          "title": "🛒 無印良品 アトレ上野でお買い物",
+          "icon": "shopping",
+          "category": "shopping",
+          "description": "駅直結アトレ内の無印良品で最後のお菓子や服飾品の購入",
+          "tips": [
+            "上野駅構内のアトレにあり、お買い物後はすぐに京成上野駅へ移動可能"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=無印良品 500 アトレ上野"
+        },
+        {
+          "time": "18:00",
+          "endTime": "18:41",
+          "title": "🚄 京成スカイライナーで成田へ",
+          "icon": "train",
+          "category": "transport",
+          "description": "京成上野駅 ➡️ 成田空港T2（41分）",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=京成上野駅"
+        },
+        {
+          "time": "19:00",
+          "title": "🏨 ホテル日航成田チェックイン（第2泊）",
+          "icon": "hotel",
+          "category": "hotel",
+          "description": "チェックイン時に事前にネット購入したプラレール大荷物を受け取り",
+          "important": true,
+          "kidFocus": "ホテルに届いたピカピカの大きなプラレールを開けよう！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-01",
+      "dayNumber": 9,
+      "label": "Day 9",
+      "title": "帰路",
+      "emoji": "✈️",
+      "location": "成田空港",
+      "hotel": null,
+      "phase": "フェーズ4：帰国準備と最後のショッピング",
+      "events": [
+        {
+          "time": "09:00",
+          "title": "ホテル朝食＆荷物の整理",
+          "icon": "hotel",
+          "category": "hotel",
+          "description": "パッキングとおもちゃの梱包を完了",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
+        },
+        {
+          "time": "10:30",
+          "title": "無料シャトルバスで成田第1ターミナルへ",
+          "icon": "bus",
+          "category": "transport",
+          "description": "ホテル発のシャトルバスで空港へ移動",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
+        },
+        {
+          "time": "11:00",
+          "title": "T1からT2への連絡バス移動",
+          "icon": "bus",
+          "category": "transport",
+          "description": "第1ターミナルから第2ターミナルへの連絡バスに乗車",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第1ターミナル"
+        },
+        {
+          "time": "11:30",
+          "title": "成田空港第2ビル 散策＆足湯体験",
+          "icon": "walk",
+          "category": "attraction",
+          "description": "空港展望デッキ近くで飛行機を見ながら足湯を楽しむ",
+          "mapUrls": [
+            {
+              "name": "第二ターミナル (キッズ広場)",
+              "url": "https://www.google.com/maps/search/?api=1&query=成田空港+第一ターミナル"
+            },
+            {
+              "name": "展望デッキ足湯",
+              "url": "https://www.google.com/maps/search/?api=1&query=成田空港+第一ターミナル+展望デッキ"
+            }
+          ]
+        },
+        {
+          "time": "12:30",
+          "title": "京成友膳にて空港ラストランチ",
+          "icon": "food",
+          "category": "food",
+          "description": "帰国前の美味しい日本食ランチ",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=京成友膳 成田空港"
+        },
+        {
+          "time": "14:30",
+          "endTime": "17:15",
+          "title": "✈️ チャイナエアライン CI101 便帰国",
+          "icon": "plane",
+          "category": "transport",
+          "important": true,
+          "description": "成田空港 (NRT) T2 ➡️ 台北桃園 (TPE) T2（飛行時間3時間45分）",
+          "kidFocus": "飛行機に乗って台湾のお家に帰ろう！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第2ターミナル"
+        }
+      ]
+    }
+  ]
+}

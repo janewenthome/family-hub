@@ -4,6 +4,7 @@ import hotelsData from '../data/hotels.json';
 import emergencyData from '../data/emergency.json';
 import ticketsData from '../data/tickets.json';
 import insuranceData from '../data/insurance.json';
+import itineraryDataJa from '../data/itinerary_ja.json';
 
 const TRIP_START = new Date('2026-07-24T16:25:00+08:00');
 
@@ -33,7 +34,7 @@ function getTodayHotel() {
   return hotelsData.find(h => h.dates.includes(today));
 }
 
-function CountdownSection() {
+function CountdownSection({ lang }: { lang: 'zh' | 'ja' }) {
   const cd = useCountdown();
 
   if (cd.started) {
@@ -41,7 +42,7 @@ function CountdownSection() {
       <div className="gradient-fuji rounded-2xl p-6 text-white text-center">
         <div className="text-4xl mb-2">🗻</div>
         <h2 className="text-xl font-bold">Day {cd.dayNumber}</h2>
-        <p className="text-white/80 text-sm mt-1">旅途進行中！</p>
+        <p className="text-white/80 text-sm mt-1">{lang === 'zh' ? '旅途進行中！' : '旅行中です！'}</p>
       </div>
     );
   }
@@ -49,13 +50,13 @@ function CountdownSection() {
   return (
     <div className="gradient-fuji rounded-2xl p-6 text-white text-center">
       <div className="text-4xl mb-2">✈️</div>
-      <h2 className="text-lg font-bold mb-4">距離出發還有</h2>
+      <h2 className="text-lg font-bold mb-4">{lang === 'zh' ? '距離出發還有' : '日本出発まであと'}</h2>
       <div className="flex justify-center gap-3">
         {[
-          { val: cd.days, label: '天' },
-          { val: cd.hours, label: '時' },
-          { val: cd.minutes, label: '分' },
-          { val: cd.seconds, label: '秒' },
+          { val: cd.days, label: lang === 'zh' ? '天' : '日' },
+          { val: cd.hours, label: lang === 'zh' ? '時' : '時間' },
+          { val: cd.minutes, label: lang === 'zh' ? '分' : '分' },
+          { val: cd.seconds, label: lang === 'zh' ? '秒' : '秒' },
         ].map(item => (
           <div key={item.label} className="bg-white/15 rounded-xl px-3 py-2 min-w-[56px]">
             <div className="text-2xl font-bold tabular-nums">{item.val}</div>
@@ -68,12 +69,21 @@ function CountdownSection() {
   );
 }
 
-function HotelQuickView() {
+function HotelQuickView({ lang }: { lang: 'zh' | 'ja' }) {
   const today = new Date().toISOString().slice(0, 10);
+
+  const translateSubtitle = (sub: string) => {
+    if (sub === '飛機旁邊的家') return '空港すぐ近くの快適ホテル';
+    if (sub === '城市裡的魔術房') return '都会の便利なコンドミニアム';
+    if (sub === '富士山下的巨無霸別墅') return '富士山麓のプライベート一棟貸し別荘';
+    return sub;
+  };
 
   return (
     <div className="space-y-3">
-      <h3 className="text-sm font-bold text-warm-gray px-1">🏨 住宿安排與預約資訊</h3>
+      <h3 className="text-sm font-bold text-warm-gray px-1">
+        {lang === 'zh' ? '🏨 住宿安排與預約資訊' : '🏨 宿泊先ホテル'}
+      </h3>
       {hotelsData.map((hotel) => {
         const isCurrent = hotel.dates.includes(today);
         return (
@@ -89,16 +99,22 @@ function HotelQuickView() {
               <span className="text-3xl flex-shrink-0">{hotel.emoji}</span>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2">
-                  <h4 className="font-bold text-base text-dark-navy truncate">{hotel.name}</h4>
+                  <h4 className="font-bold text-base text-dark-navy truncate">
+                    {lang === 'zh' ? hotel.name : (hotel.nameJa || hotel.name)}
+                  </h4>
                   {isCurrent && (
                     <span className="text-[10px] font-bold bg-fuji-blue text-white px-2 py-0.5 rounded-full shrink-0">
-                      今晚入住
+                      {lang === 'zh' ? '今晚入住' : '今夜宿泊'}
                     </span>
                   )}
                 </div>
-                <p className="text-sm text-warm-gray font-semibold mt-0.5">{hotel.subtitle}</p>
+                <p className="text-sm text-warm-gray font-semibold mt-0.5">
+                  {lang === 'zh' ? hotel.subtitle : translateSubtitle(hotel.subtitle)}
+                </p>
                 <p className="text-xs text-warm-gray mt-1 font-semibold">
-                  入住天數：Day {hotel.days.join(' & ')} ({hotel.roomType})
+                  {lang === 'zh'
+                    ? `入住天數：Day ${hotel.days.join(' & ')} (${hotel.roomType})`
+                    : `宿泊日：Day ${hotel.days.join(' & ')} (${hotel.roomType})`}
                 </p>
                 <p className="text-[11px] text-warm-gray mt-0.5 font-semibold">
                   ⏰ Check-in: {hotel.checkIn} | Check-out: {hotel.checkOut}
@@ -107,18 +123,25 @@ function HotelQuickView() {
                 {/* Hotel Details */}
                 <div className="mt-2 text-xs text-warm-gray space-y-1.5 border-t border-gray-100 pt-2 font-medium">
                   <p className="text-dark-navy">📍 {hotel.address.ja}</p>
-                  {hotel.roomDetail && <p>🛏️ 房型明細：{hotel.roomDetail}</p>}
-                  {hotel.reservations.map((res, idx) => (
-                    <div key={idx} className="bg-fuji-snow/60 p-2 rounded-xl mt-1 text-dark-navy">
-                      <p className="font-bold">🗓️ 預定日期：{res.date.slice(5)}</p>
-                      {res.orderId && <p>🔑 訂單編號：{res.orderId}</p>}
-                      {res.chargeDate && <p>💳 扣款日期：{res.chargeDate}</p>}
-                      {res.note && <p className="text-danger font-bold mt-0.5">⚠️ 提醒：{res.note}</p>}
-                    </div>
-                  ))}
+                  {/* Reservations - Hide completely in Japanese mode for privacy */}
+                  {lang === 'zh' && (
+                    <>
+                      {hotel.roomDetail && <p>🛏️ 房型明細：{hotel.roomDetail}</p>}
+                      {hotel.reservations.map((res, idx) => (
+                        <div key={idx} className="bg-fuji-snow/60 p-2 rounded-xl mt-1 text-dark-navy">
+                          <p className="font-bold">🗓️ 預定日期：{res.date.slice(5)}</p>
+                          {res.orderId && <p>🔑 訂單編號：{res.orderId}</p>}
+                          {res.chargeDate && <p>💳 扣款日期：{res.chargeDate}</p>}
+                          {res.note && <p className="text-danger font-bold mt-0.5">⚠️ 提醒：{res.note}</p>}
+                        </div>
+                      ))}
+                    </>
+                  )}
                   {hotel.tips && hotel.tips.length > 0 && (
                     <div className="mt-2 space-y-1">
-                      <p className="text-[10px] font-bold text-fuji-blue">💡 住宿貼士</p>
+                      <p className="text-[10px] font-bold text-fuji-blue">
+                        {lang === 'zh' ? '💡 住宿貼士' : '💡 ホテルメモ'}
+                      </p>
                       {hotel.tips.map((tip, idx) => (
                         <p key={idx} className="text-xs text-warm-gray pl-3 relative before:content-['•'] before:absolute before:left-0 before:text-warm-gray">
                           {tip}
@@ -136,7 +159,7 @@ function HotelQuickView() {
                   href={`tel:${hotel.phone}`}
                   className="flex-1 text-center bg-fuji-ice text-fuji-blue rounded-xl py-2 text-xs font-bold tap-highlight"
                 >
-                  📞 撥打電話
+                  {lang === 'zh' ? '📞 撥打電話' : '📞 電話をかける'}
                 </a>
               )}
               <a
@@ -145,7 +168,7 @@ function HotelQuickView() {
                 rel="noopener noreferrer"
                 className="flex-1 text-center bg-forest-light text-forest-green rounded-xl py-2 text-xs font-bold tap-highlight"
               >
-                🗺️ 開啟地圖
+                {lang === 'zh' ? '🗺️ 開啟地圖' : '🗺️ 地図で開く'}
               </a>
             </div>
           </div>
@@ -200,7 +223,7 @@ function EmergencySection() {
   );
 }
 
-function WeatherSection() {
+function WeatherSection({ lang }: { lang: 'zh' | 'ja' }) {
   const [weatherData, setWeatherData] = useState<{
     kawaguchiko: { temp: number; code: number } | null;
     tokyo: { temp: number; code: number } | null;
@@ -239,14 +262,14 @@ function WeatherSection() {
   }, []);
 
   const getWeatherEmoji = (code: number) => {
-    if (code === 0) return '☀️ 晴天';
-    if (code <= 3) return '🌤️ 多雲';
-    if (code === 45 || code === 48) return '🌫️ 濃霧';
-    if (code <= 55) return '🌧️ 細雨';
-    if (code <= 65) return '🌧️ 雨天';
-    if (code <= 75) return '❄️ 下雪';
-    if (code <= 82) return '🌦️ 陣雨';
-    return '⛈️ 雷雨';
+    if (code === 0) return lang === 'zh' ? '☀️ 晴天' : '☀️ 晴れ';
+    if (code <= 3) return lang === 'zh' ? '🌤️ 多雲' : '🌤️ 曇り';
+    if (code === 45 || code === 48) return lang === 'zh' ? '🌫️ 濃霧' : '🌫️ 霧';
+    if (code <= 55) return lang === 'zh' ? '🌧️ 細雨' : '🌧️ 小雨';
+    if (code <= 65) return lang === 'zh' ? '🌧️ 雨天' : '🌧️ 雨';
+    if (code <= 75) return lang === 'zh' ? '❄️ 下雪' : '❄️ 雪';
+    if (code <= 82) return lang === 'zh' ? '🌦️ 陣雨' : '🌦️ にわか雨';
+    return lang === 'zh' ? '⛈️ 雷雨' : '⛈️ 雷雨';
   };
 
   if (loading) {
@@ -263,7 +286,7 @@ function WeatherSection() {
 
   return (
     <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
-      <h3 className="text-sm font-semibold text-warm-gray mb-3">🌤️ 雙城天氣</h3>
+      <h3 className="text-sm font-semibold text-warm-gray mb-3">{lang === 'zh' ? '🌤️ 雙城天氣' : '🌤️ お天気'}</h3>
       <div className="grid grid-cols-2 gap-3">
         <div className="bg-fuji-snow/40 p-3 rounded-xl border border-gray-50">
           <p className="text-xs text-warm-gray font-semibold">河口湖</p>
@@ -277,7 +300,7 @@ function WeatherSection() {
               </span>
             </div>
           ) : (
-            <p className="text-xs text-warm-gray mt-1">讀取失敗</p>
+            <p className="text-xs text-warm-gray mt-1">{lang === 'zh' ? '讀取失敗' : '取得失敗'}</p>
           )}
         </div>
 
@@ -293,7 +316,7 @@ function WeatherSection() {
               </span>
             </div>
           ) : (
-            <p className="text-xs text-warm-gray mt-1">讀取失敗</p>
+            <p className="text-xs text-warm-gray mt-1">{lang === 'zh' ? '讀取失敗' : '取得失敗'}</p>
           )}
         </div>
       </div>
@@ -301,16 +324,19 @@ function WeatherSection() {
   );
 }
 
-function TripOverview() {
-  const days = itineraryData.days;
+function TripOverview({ lang }: { lang: 'zh' | 'ja' }) {
+  const currentItinerary = lang === 'ja' ? itineraryDataJa : itineraryData;
+  const days = currentItinerary.days;
   return (
     <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
-      <h3 className="text-sm font-semibold text-warm-gray mb-3">📍 行程速覽</h3>
+      <h3 className="text-sm font-semibold text-warm-gray mb-3">
+        {lang === 'zh' ? '📍 行程速覽' : '📍 スケジュール概要'}
+      </h3>
       <div className="space-y-2">
         {days.map(day => (
           <div key={day.dayNumber} className="flex items-center gap-3 text-sm">
             <span className="text-lg">{day.emoji}</span>
-            <span className="text-warm-gray min-w-[48px] font-semibold">{day.label}</span>
+            <span className="text-warm-gray min-w-[48px] font-bold">{day.label}</span>
             <span className="font-semibold text-dark-navy flex-1 truncate">{day.title}</span>
           </div>
         ))}
@@ -348,9 +374,10 @@ function ActionRequiredCard() {
   );
 }
 
-function TodayHighlights() {
+function TodayHighlights({ lang }: { lang: 'zh' | 'ja' }) {
+  const currentItinerary = lang === 'ja' ? itineraryDataJa : itineraryData;
   const todayStr = new Date().toISOString().slice(0, 10);
-  const todayDay = itineraryData.days.find(d => d.date === todayStr);
+  const todayDay = currentItinerary.days.find(d => d.date === todayStr);
 
   if (!todayDay) return null;
 
@@ -361,7 +388,9 @@ function TodayHighlights() {
     <div className="bg-white rounded-2xl p-4 shadow-sm border border-fuji-blue/15">
       <div className="flex items-center gap-2 mb-3">
         <span className="text-lg">📅</span>
-        <h3 className="text-sm font-bold text-dark-navy">今日行程焦點 ({todayDay.label})</h3>
+        <h3 className="text-sm font-bold text-dark-navy">
+          {lang === 'zh' ? `今日行程焦點 (${todayDay.label})` : `本日の見どころ (${todayDay.label})`}
+        </h3>
       </div>
       <div className="space-y-2">
         {displayEvents.map((event, idx) => (
@@ -425,21 +454,29 @@ function InsurancePublicView() {
   );
 }
 
-export default function DashboardPage() {
+interface DashboardPageProps {
+  lang: 'zh' | 'ja';
+}
+
+export default function DashboardPage({ lang }: DashboardPageProps) {
   return (
     <div className="px-4 pt-6 pb-24 space-y-4 max-w-lg mx-auto">
       <header className="text-center mb-2">
-        <h1 className="text-xl font-black text-dark-navy">🗻 Family Hub</h1>
-        <p className="text-xs text-warm-gray font-semibold mt-0.5">2026 仲夏親子富士山大探險</p>
+        <h1 className="text-xl font-black text-dark-navy">
+          {lang === 'zh' ? '🗻 Family Hub' : '🗻 富士山ファミリー旅行戦情室'}
+        </h1>
+        <p className="text-xs text-warm-gray font-semibold mt-0.5">
+          {lang === 'zh' ? '2026 仲夏親子富士山大探險' : '2026年 仲夏ファミリー富士山アドベンチャー'}
+        </p>
       </header>
-      <CountdownSection />
-      <ActionRequiredCard />
-      <TodayHighlights />
-      <WeatherSection />
-      <HotelQuickView />
-      <TripOverview />
-      <InsurancePublicView />
-      <EmergencySection />
+      <CountdownSection lang={lang} />
+      {lang === 'zh' && <ActionRequiredCard />}
+      <TodayHighlights lang={lang} />
+      <WeatherSection lang={lang} />
+      <HotelQuickView lang={lang} />
+      <TripOverview lang={lang} />
+      {lang === 'zh' && <InsurancePublicView />}
+      {lang === 'zh' && <EmergencySection />}
     </div>
   );
 }

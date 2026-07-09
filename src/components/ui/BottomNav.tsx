@@ -1,13 +1,22 @@
 import { NavLink } from 'react-router-dom';
 
-const tabs = [
-  { to: '/', label: '首頁', emoji: '🏠' },
-  { to: '/itinerary', label: '行程', emoji: '📅' },
-  { to: '/tickets', label: '票券', emoji: '🎟️' },
-  { to: '/packing', label: '行李', emoji: '🧳' },
-];
+interface BottomNavProps {
+  lang: 'zh' | 'ja';
+}
 
-export default function BottomNav() {
+export default function BottomNav({ lang }: BottomNavProps) {
+  const tabs = lang === 'ja'
+    ? [
+        { to: '/', label: 'ホーム', emoji: '🏠' },
+        { to: '/itinerary', label: 'スケジュール', emoji: '📅' },
+      ]
+    : [
+        { to: '/', label: '首頁', emoji: '🏠' },
+        { to: '/itinerary', label: '行程', emoji: '📅' },
+        { to: '/tickets', label: '票券', emoji: '🎟️' },
+        { to: '/packing', label: '行李', emoji: '🧳' },
+      ];
+
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 glass border-t border-white/20 safe-bottom">
       <div className="flex justify-around items-center h-16 max-w-lg mx-auto">
@@ -25,7 +34,7 @@ export default function BottomNav() {
             }
           >
             <span className="text-xl leading-none">{tab.emoji}</span>
-            <span className="text-[11px] font-medium leading-none">{tab.label}</span>
+            <span className="text-[11px] font-bold leading-none">{tab.label}</span>
           </NavLink>
         ))}
       </div>

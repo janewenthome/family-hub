@@ -1,9 +1,15 @@
 import { useState } from 'react';
 import emergencyData from '../../data/emergency.json';
 
-export default function SosFab() {
+interface SosFabProps {
+  lang: 'zh' | 'ja';
+}
+
+export default function SosFab({ lang }: SosFabProps) {
   const [open, setOpen] = useState(false);
   const data = emergencyData;
+
+  if (lang === 'ja') return null;
 
   return (
     <>

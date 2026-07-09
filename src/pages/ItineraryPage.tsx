@@ -1,8 +1,10 @@
 import { useState, useMemo } from 'react';
 import itineraryDataRaw from '../data/itinerary.json';
+import itineraryDataJaRaw from '../data/itinerary_ja.json';
 import { ItineraryDay, ItineraryEvent } from '../types';
 
 const itineraryData = itineraryDataRaw as unknown as { tripStart: string; tripEnd: string; days: ItineraryDay[] };
+const itineraryDataJa = itineraryDataJaRaw as unknown as { tripStart: string; tripEnd: string; days: ItineraryDay[] };
 
 const ICON_MAP: Record<string, string> = {
   plane: '✈️', train: '🚆', bus: '🚌', car: '🚗', taxi: '🚕', ship: '🚢',
@@ -21,7 +23,7 @@ const CATEGORY_COLORS: Record<string, string> = {
   free: 'border-l-cyan-400 bg-cyan-50',
 };
 
-function TimelineEvent({ event }: { event: ItineraryEvent }) {
+function TimelineEvent({ event, lang }: { event: ItineraryEvent; lang: 'zh' | 'ja' }) {
   const [expanded, setExpanded] = useState(false);
   const colorClass = CATEGORY_COLORS[event.category] || 'border-l-gray-300 bg-gray-50';
 
@@ -65,7 +67,7 @@ function TimelineEvent({ event }: { event: ItineraryEvent }) {
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
                 className="p-1.5 text-xs bg-white/95 border border-gray-200 rounded-lg hover:bg-fuji-blue hover:text-white transition-colors shadow-sm tap-highlight flex items-center justify-center"
-                title="導航至此處"
+                title={lang === 'zh' ? '導航至此處' : '地図アプリで開く'}
               >
                 🗺️
               </a>
@@ -82,41 +84,51 @@ function TimelineEvent({ event }: { event: ItineraryEvent }) {
           <div className="mt-3 space-y-2 border-t border-gray-200/50 pt-3">
             {event.kidFocus && (
               <div className="bg-sakura-light rounded-lg p-2">
-                <p className="text-xs font-semibold text-sakura-pink">🧒 小朋友重點</p>
-                <p className="text-sm mt-1">{event.kidFocus}</p>
+                <p className="text-xs font-bold text-sakura-pink">
+                  {lang === 'zh' ? '🧒 小朋友重點' : '🧒 子供向けポイント'}
+                </p>
+                <p className="text-sm mt-1 font-semibold">{event.kidFocus}</p>
               </div>
             )}
             {event.warning && (
               <div className="bg-danger-light rounded-lg p-2">
-                <p className="text-xs font-semibold text-danger">⚠️ 注意</p>
-                <p className="text-sm mt-1">{event.warning}</p>
+                <p className="text-xs font-bold text-danger">
+                  {lang === 'zh' ? '⚠️ 注意' : '⚠️ 注意事項'}
+                </p>
+                <p className="text-sm mt-1 font-semibold">{event.warning}</p>
               </div>
             )}
             {event.backup && (
               <div className="bg-amber-50 border border-amber-200 rounded-xl p-2.5">
-                <p className="text-xs font-semibold text-amber-700">🔄 備案計畫 ({event.backup.condition})</p>
-                <p className="text-xs mt-1 text-amber-800 font-medium leading-relaxed">{event.backup.plan}</p>
+                <p className="text-xs font-bold text-amber-700">
+                  {lang === 'zh'
+                    ? `🔄 備案計畫 (${event.backup.condition})`
+                    : `🔄 代替プラン (${event.backup.condition})`}
+                </p>
+                <p className="text-xs mt-1 text-amber-800 font-bold leading-relaxed">{event.backup.plan}</p>
               </div>
             )}
             {event.tips && event.tips.length > 0 && (
               <div className="space-y-1">
-                <p className="text-xs font-semibold text-warm-gray">💡 攻略</p>
+                <p className="text-xs font-bold text-warm-gray">{lang === 'zh' ? '💡 攻略' : '💡 メモ'}</p>
                 {event.tips.map((tip: string, i: number) => (
-                  <p key={i} className="text-xs text-warm-gray pl-4">• {tip}</p>
+                  <p key={i} className="text-xs text-warm-gray pl-4 font-semibold">• {tip}</p>
                 ))}
               </div>
             )}
             {event.adultNotes && event.adultNotes.length > 0 && (
               <div className="space-y-1">
-                <p className="text-xs font-semibold text-warm-gray">📋 大人筆記</p>
+                <p className="text-xs font-bold text-warm-gray">{lang === 'zh' ? '📋 大人筆記' : '📋 大人メモ'}</p>
                 {event.adultNotes.map((note: string, i: number) => (
-                  <p key={i} className="text-xs text-warm-gray pl-4">• {note}</p>
+                  <p key={i} className="text-xs text-warm-gray pl-4 font-semibold">• {note}</p>
                 ))}
               </div>
             )}
             {event.mapUrls && event.mapUrls.length > 0 && (
               <div className="bg-fuji-snow/70 rounded-xl p-2 mt-2 space-y-1">
-                <p className="text-[10px] font-bold text-dark-navy mb-1.5">📍 景點定位連結：</p>
+                <p className="text-[10px] font-bold text-dark-navy mb-1.5">
+                  {lang === 'zh' ? '📍 景點定位連結：' : '📍 スポット位置情報：'}
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {event.mapUrls.map((m, idx) => (
                     <a
@@ -140,15 +152,19 @@ function TimelineEvent({ event }: { event: ItineraryEvent }) {
   );
 }
 
-export default function ItineraryPage() {
-  const days = itineraryData.days;
+interface ItineraryPageProps {
+  lang: 'zh' | 'ja';
+}
+
+export default function ItineraryPage({ lang }: ItineraryPageProps) {
+  const days = lang === 'ja' ? itineraryDataJa.days : itineraryData.days;
   
   // Auto-select today's day, or default to Day 1
   const todayStr = new Date().toISOString().slice(0, 10);
   const defaultIndex = useMemo(() => {
     const idx = days.findIndex(d => d.date === todayStr);
     return idx >= 0 ? idx : 0;
-  }, [todayStr]);
+  }, [days, todayStr]);
   
   const [selectedIndex, setSelectedIndex] = useState(defaultIndex);
   const day = days[selectedIndex];
@@ -186,10 +202,10 @@ export default function ItineraryPage() {
       {/* Day header */}
       <div className="px-4 pt-2 pb-3">
         <h2 className="text-xl font-bold">{day.emoji} {day.title}</h2>
-        <p className="text-sm text-warm-gray">{day.location}</p>
+        <p className="text-sm text-warm-gray font-semibold">{day.location}</p>
         {day.meetup && (
           <div className="mt-2 bg-sakura-light rounded-xl px-3 py-2">
-            <p className="text-sm text-sakura-pink font-semibold">🤝 {day.meetup}</p>
+            <p className="text-sm text-sakura-pink font-bold">🤝 {day.meetup}</p>
           </div>
         )}
       </div>
@@ -197,7 +213,7 @@ export default function ItineraryPage() {
       {/* Timeline */}
       <div className="px-2 pb-6">
         {day.events.map((event, i) => (
-          <TimelineEvent key={`${day.date}-${i}`} event={event} />
+          <TimelineEvent key={`${day.date}-${i}`} event={event} lang={lang} />
         ))}
       </div>
     </div>
