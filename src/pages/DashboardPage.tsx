@@ -69,7 +69,7 @@ function CountdownSection({ lang }: { lang: 'zh' | 'ja' }) {
   );
 }
 
-function HotelQuickView({ lang }: { lang: 'zh' | 'ja' }) {
+function HotelQuickView({ lang, unlocked }: { lang: 'zh' | 'ja'; unlocked: boolean }) {
   const today = new Date().toISOString().slice(0, 10);
 
   const translateSubtitle = (sub: string) => {
@@ -123,19 +123,26 @@ function HotelQuickView({ lang }: { lang: 'zh' | 'ja' }) {
                 {/* Hotel Details */}
                 <div className="mt-2 text-xs text-warm-gray space-y-1.5 border-t border-gray-100 pt-2 font-medium">
                   <p className="text-dark-navy">📍 {hotel.address.ja}</p>
-                  {/* Reservations - Hide completely in Japanese mode for privacy */}
+                  {/* Reservations - Show in Chinese mode only if unlocked */}
                   {lang === 'zh' && (
-                    <>
-                      {hotel.roomDetail && <p>🛏️ 房型明細：{hotel.roomDetail}</p>}
-                      {hotel.reservations.map((res, idx) => (
-                        <div key={idx} className="bg-fuji-snow/60 p-2 rounded-xl mt-1 text-dark-navy">
-                          <p className="font-bold">🗓️ 預定日期：{res.date.slice(5)}</p>
-                          {res.orderId && <p>🔑 訂單編號：{res.orderId}</p>}
-                          {res.chargeDate && <p>💳 扣款日期：{res.chargeDate}</p>}
-                          {res.note && <p className="text-danger font-bold mt-0.5">⚠️ 提醒：{res.note}</p>}
-                        </div>
-                      ))}
-                    </>
+                    unlocked ? (
+                      <>
+                        {hotel.roomDetail && <p>🛏️ 房型明細：{hotel.roomDetail}</p>}
+                        {hotel.reservations.map((res, idx) => (
+                          <div key={idx} className="bg-fuji-snow/60 p-2 rounded-xl mt-1 text-dark-navy">
+                            <p className="font-bold">🗓️ 預定日期：{res.date.slice(5)}</p>
+                            {res.orderId && <p>🔑 訂單編號：{res.orderId}</p>}
+                            {res.chargeDate && <p>💳 扣款日期：{res.chargeDate}</p>}
+                            {res.note && <p className="text-danger font-bold mt-0.5">⚠️ 提醒：{res.note}</p>}
+                          </div>
+                        ))}
+                      </>
+                    ) : (
+                      <div className="bg-fuji-ice/50 border border-fuji-blue/10 rounded-xl p-2 text-[10px] text-warm-gray mt-1 flex items-center gap-1.5 font-semibold">
+                        <span>🔒</span>
+                        <span>訂單編號已隱藏 (解鎖票券專區即可檢視)</span>
+                      </div>
+                    )
                   )}
                   {hotel.tips && hotel.tips.length > 0 && (
                     <div className="mt-2 space-y-1">
@@ -459,6 +466,8 @@ interface DashboardPageProps {
 }
 
 export default function DashboardPage({ lang }: DashboardPageProps) {
+  const unlocked = sessionStorage.getItem('tickets-unlocked') === 'true';
+
   return (
     <div className="px-4 pt-6 pb-24 space-y-4 max-w-lg mx-auto">
       <header className="text-center mb-2">
@@ -470,10 +479,10 @@ export default function DashboardPage({ lang }: DashboardPageProps) {
         </p>
       </header>
       <CountdownSection lang={lang} />
-      {lang === 'zh' && <ActionRequiredCard />}
+      {lang === 'zh' && unlocked && <ActionRequiredCard />}
       <TodayHighlights lang={lang} />
       <WeatherSection lang={lang} />
-      <HotelQuickView lang={lang} />
+      <HotelQuickView lang={lang} unlocked={unlocked} />
       <TripOverview lang={lang} />
       {lang === 'zh' && <InsurancePublicView />}
       {lang === 'zh' && <EmergencySection />}
