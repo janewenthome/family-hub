@@ -110,41 +110,116 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=鉄道博物館"
         },
         {
-          "time": "16:00",
-          "title": "大宮から上野へ戻る",
+          "time": "16:30",
+          "title": "「上野東京ライン」で東京駅へ移動",
           "icon": "train",
           "category": "transport",
-          "description": "ニューシャトルと高崎線で上野へ",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 鉄道博物館駅"
+          "important": true,
+          "description": "大宮駅 ➡️ 東京駅（快速列車、わずか 32 分で直通）",
+          "adultNotes": [
+            "オレンジと緑のラインの上野東京ライン（Ueno-Tokyo Line）にご乗車ください！",
+            "京浜東北線は各駅停車のため避けてください（乗車時間 48 分）。",
+            "一日中遊んで疲れ果てた子供たちにとって、車内での追加の 15 分間は非常に過酷なため、必ず上野東京ラインをご利用ください！"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=大宮駅"
         },
         {
-          "time": "16:45",
+          "time": "17:50",
+          "title": "東京駅八重洲口からタクシー乗車",
+          "icon": "taxi",
+          "category": "transport",
+          "important": true,
+          "description": "「八重洲口 (Yaesu Exit)」から出てタクシーでホテルへ直行（約 2.5 km）",
+          "adultNotes": [
+            "出口案内：東京駅に到着後、必ず『八重洲口 (Yaesu Exit)』方向の改札から出てください。『丸の内口』は反対方向になりますのでご注意ください。",
+            "タクシー運賃：日本橋のホテルまで総額約 1,200 円〜1,500 円程度となります。",
+            "混雑する駅からタクシーで冷房の効いたホテルへ直行できるため、非常に快適でおすすめです！"
+          ],
+          "mapUrls": [
+            { "name": "東京駅八重洲口タクシー乗り場", "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口+タクシー乗り場" }
+          ]
+        },
+        {
+          "time": "18:10",
           "title": "ホテルアクサス日本橋 チェックイン",
           "icon": "hotel",
           "category": "hotel",
-          "description": "水天宮前駅近くのコンドミニアム型ホテル",
+          "description": "チェックインを済ませ、涼しいお部屋で着替えて少し休憩",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
         },
         {
-          "time": "18:00",
+          "time": "18:30",
+          "title": "🛒 パパと長男のディナー惣菜買い出し",
+          "icon": "shopping",
+          "category": "shopping",
+          "important": true,
+          "description": "パパと大宝（10歳）でホテル近くのスーパーへ行き、お惣菜や冷たい飲み物を調達",
+          "adultNotes": [
+            "主要な買い出し先：",
+            "1. マルエツ プチ 水天宮前店：ホテルから徒歩2分。最も近いスーパーです。",
+            "2. ピーコックストア 日本橋浜町店：浜町公園方向へ徒歩8分。惣菜コーナーが非常に充実した大型スーパーです。",
+            "👧 ママ＋下の子2人（ホテルでディナー）：カットフルーツ、茶碗蒸し（レンジ溫め）、オムライス/ハンバーグ弁当、お寿司盛り合わせ、梅酒など。",
+            "👦 パパ＋長男（花火ピクニック）：唐揚げ、焼き鳥盛り合わせ、メンチカツ/コロッケ、枝豆、焼きそばなど。"
+          ],
+          "tips": [
+            "コンビニのレジ横ホットスナックもおすすめ：セブン-イレブンのアメリカンドッグ、ファミリーマートのファミチキ、ローソンのからあげクン。",
+            "注意：ゴミ袋をホテルから持参してください。会場周辺のゴミ箱は満杯になるため、持ち帰りを推奨します。"
+          ],
+          "mapUrls": [
+            { "name": "マルエツ プチ 水天宮前店", "url": "https://www.google.com/maps/search/?api=1&query=マルエツ+プチ+水天宮前店" },
+            { "name": "ピーコックストア 日本橋浜町店", "url": "https://www.google.com/maps/search/?api=1&query=ピーコックストア+トルナーレ日本橋浜町店" },
+            { "name": "セブン-イレブン 日本橋水天宮前店", "url": "https://www.google.com/maps/search/?api=1&query=セブン-イレブン+日本橋水天宮前店" },
+            { "name": "ファミリーマート 水天宮駅前店", "url": "https://www.google.com/maps/search/?api=1&query=ファミリーマート+水天宮駅前店" }
+          ]
+        },
+        {
+          "time": "18:50",
+          "title": "🚶 浜町公園の隅田川テラスへ徒歩移動",
+          "icon": "walk",
+          "category": "transport",
+          "description": "美味しい惣菜や飲み物を持って、隅田川沿いの遊歩道（隅田川テラス）へ移動",
+          "mapUrls": [
+            { "name": "浜町公園", "url": "https://www.google.com/maps/search/?api=1&query=浜町公園" },
+            { "name": "隅田川テラス", "url": "https://www.google.com/maps/search/?api=1&query=隅田川テラス" }
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "🎆 第一会場打ち上げ開始＆北上",
+          "icon": "fireworks",
+          "category": "attraction",
+          "description": "第一会場の花火がスタート。隅田川テラスを北（左手方向）に向けて散策します",
+          "mapUrls": [
+            { "name": "新大橋", "url": "https://www.google.com/maps/search/?api=1&query=新大橋" }
+          ]
+        },
+        {
+          "time": "19:30",
           "endTime": "20:30",
-          "title": "🎆 隅田川花火大会の鑑賞",
+          "title": "🎆 第二会場打ち上げ開始（花火大会本番）",
           "icon": "fireworks",
           "category": "attraction",
           "important": true,
-          "description": "新大橋付近の河畔で江戸の花火を鑑賞",
-          "tips": [
-            "大混雑を避けるため、新大橋近くの河畔テラスを鑑賞スポットに推奨"
+          "description": "第二会場の打ち上げ開始。新大橋から両国橋・柳橋の間の快適なエリアでピクニックしながら鑑賞！",
+          "kidFocus": "パパとファミチキを食べながら、目の前で上がる大迫力の打ち上げ花火を楽しもう！",
+          "adultNotes": [
+            "混雑を避ける穴場ルート：浜町・新大橋・両国橋エリアは、大混雑を避けて隅田川からの広い視野で花火を楽しめる絶好のスポットです。",
+            "両国橋・柳橋方面に近づくほど花火が大きく見えます。混雑具合を見ながら、ちょうど良い場所を見つけて座って鑑賞してください。"
           ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=隅田川花火大会"
+          "mapUrls": [
+            { "name": "両国橋", "url": "https://www.google.com/maps/search/?api=1&query=両国橋" },
+            { "name": "柳橋", "url": "https://www.google.com/maps/search/?api=1&query=柳橋" }
+          ]
         },
         {
-          "time": "21:00",
-          "title": "マルエツプチで夜食調達",
-          "icon": "shopping",
-          "category": "shopping",
-          "description": "近所のスーパーで軽食と翌朝の食材を購入",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=マルエツ プチ 浜町店"
+          "time": "20:30",
+          "title": "🚶 花火大会終了＆ホテルへスムーズに撤退",
+          "icon": "walk",
+          "category": "transport",
+          "description": "打ち上げ終了後、大混雑の地下鉄駅を避けて、川沿いの風を感じながら徒歩でホテルへ帰還",
+          "adultNotes": [
+            "徒歩帰還 of 圧倒的メリット：数十万人が殺到する駅での入場規制に巻き込まれることなく、隅田川テラスを南へ徒歩 12 分歩くだけでホテルの冷房の効いたお部屋に帰ることができます。"
+          ]
         }
       ]
     },

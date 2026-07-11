@@ -168,48 +168,116 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=鉄道博物館"
         },
         {
-          "time": "16:00",
-          "title": "搭車返回上野站",
+          "time": "16:30",
+          "title": "搭乘「上野東京線」返回東京站",
           "icon": "train",
           "category": "transport",
-          "description": "提早離場，搭計程車返回飯店",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 鉄道博物館駅"
+          "important": true,
+          "description": "大宮站 ➡️ 東京站（特快車，僅需 32 分鐘）",
+          "adultNotes": [
+            "認明橘綠色相間的上野東京線 (Ueno-Tokyo Line) 列車！",
+            "放棄京濱東北線！那是站站停的慢車，搭乘時間長達 48 分鐘。",
+            "三個玩了一整天快斷電的孩子，在車上多待 15 分鐘都是折磨，請務必搭乘上野東京線！"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=大宮駅"
         },
         {
-          "time": "17:00",
-          "title": "入住日本橋阿克薩斯",
+          "time": "17:50",
+          "title": "東京站八重洲口搭計程車",
+          "icon": "taxi",
+          "category": "transport",
+          "important": true,
+          "description": "朝「八重洲口 (Yaesu Exit)」出站搭計程車直達飯店（約 2.5 公里）",
+          "adultNotes": [
+            "出口提示：抵達東京站後，務必朝著『八重洲口 (Yaesu Exit)』方向出站！千萬不要走去『丸之內口』(那是反方向，搭車不順路)。",
+            "車資修正：至日本橋飯店總車資約落在 ¥1,200 ～ ¥1,500 之間。",
+            "花台幣 300 讓全家五口瞬間從擁擠車站直達冷氣大廳，這筆錢花得絕對超值！"
+          ],
+          "mapUrls": [
+            { "name": "東京站八重洲口計程車搭乘處", "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口+タクシー乗り場" }
+          ]
+        },
+        {
+          "time": "18:10",
+          "title": "入住日本橋阿克薩斯飯店",
           "icon": "hotel",
           "category": "hotel",
-          "description": "當日配行李箱已在房內等候",
-          "adultNotes": [
-            "地址：〒103-0015 東京都中央区日本橋箱崎町20-12"
-          ],
+          "description": "登登記安頓，全家在冷氣房換上舒服衣服稍微休息",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
         },
         {
-          "time": "17:30",
-          "title": "Maruetsu Petit 補貨",
+          "time": "18:30",
+          "title": "🛒 爸爸大寶熟食採購大掃蕩",
           "icon": "shopping",
           "category": "shopping",
-          "description": "爸爸去濱町店買水果與鮮奶",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=マルエツ プチ 浜町店"
+          "important": true,
+          "description": "爸爸帶大寶去附近超市大採購看煙火的熟食炸物與冷飲",
+          "adultNotes": [
+            "兩大主力採買基地：",
+            "1. Maruetsu Petit 水天宮前店 (マルエツ プチ)：飯店出門僅 2 分鐘轉彎即達，主力速食補給站。",
+            "2. Peacock Store ピーコックストア (日本橋浜町店)：往濱町公園方向步行 8 分鐘，大型高級超市，熟食炸物區極為豪華！",
+            "👧 媽媽＋雙幼童 (冷氣房豪華晚餐)：綜合水果切盤、茶碗蒸(微波加熱)、蛋包飯/漢堡排便當、豪華綜合壽司拼盤與梅酒。",
+            "👦 爸爸＋10歲大寶 (煙火野餐)：無骨炸雞 (唐揚げ)、烤肉串拼盤 (焼き鳥)、炸肉餅可樂餅、水煮毛豆、日式炒麵。"
+          ],
+          "tips": [
+            "便利商店炸物保溫箱：7-11 美國熱狗/炸熱狗串；全家 Famichiki 無骨炸雞排；Lawson からあげクン 炸雞塊。",
+            "實戰提醒：出門時務必從房間帶 1-2 個小塑膠袋，吃完的垃圾裝好自己提回飯店丟，現場垃圾桶會爆滿。"
+          ],
+          "mapUrls": [
+            { "name": "Maruetsu Petit 水天宮前店", "url": "https://www.google.com/maps/search/?api=1&query=マルエツ+プチ+水天宮前店" },
+            { "name": "Peacock Store 日本橋浜町店", "url": "https://www.google.com/maps/search/?api=1&query=ピーコックストア+トルナーレ日本橋浜町店" },
+            { "name": "7-Eleven 日本橋水天宮前店", "url": "https://www.google.com/maps/search/?api=1&query=セブン-イレブン+日本橋水天宮前店" },
+            { "name": "FamilyMart 水天宮駅前店", "url": "https://www.google.com/maps/search/?api=1&query=ファミリーマート+水天宮駅前店" }
+          ]
+        },
+        {
+          "time": "18:50",
+          "title": "🚶 散步出發至濱町公園河岸",
+          "icon": "walk",
+          "category": "transport",
+          "description": "爸爸與大寶提著美味炸物與冰涼飲料，出發往隅田川步道走",
+          "mapUrls": [
+            { "name": "濱町公園", "url": "https://www.google.com/maps/search/?api=1&query=浜町公園" },
+            { "name": "隅田川步道入口", "url": "https://www.google.com/maps/search/?api=1&query=隅田川テラス" }
+          ]
         },
         {
           "time": "19:00",
-          "endTime": "20:30",
-          "title": "🎆 第 49 回隅田川花火大会",
+          "title": "🎆 第一會場開炸 ＆ 河畔北上",
           "icon": "fireworks",
           "category": "attraction",
-          "description": "游擊觀賞策略",
+          "description": "第一會場煙火施放開始。沿著隅田川河堤步道（隅田川テラス）朝北（左手邊）走",
+          "mapUrls": [
+            { "name": "新大橋", "url": "https://www.google.com/maps/search/?api=1&query=新大橋" }
+          ]
+        },
+        {
+          "time": "19:30",
+          "endTime": "20:30",
+          "title": "🎆 第二會場正式開炸 (煙火重頭戲)",
+          "icon": "fireworks",
+          "category": "attraction",
           "important": true,
-          "kidFocus": "看超大的煙火秀！",
+          "description": "第二會場施放開始，在新大橋與兩國橋/柳橋之間的舒適河畔席地而坐，一邊野餐一邊直擊煙火！",
+          "kidFocus": "跟爸爸一邊吃全家炸雞塊，一邊近距離看超高空煙火！",
           "adultNotes": [
-            "媽媽＋雙幼童：房間吹冷氣看 NHK 直播",
-            "爸爸＋大寶：步行 12 分鐘到「新大橋・濱町公園」河畔",
-            "距第二會場約 1.5km，免票免擠，高空煙火視野清晰",
-            "20:30 步行返回飯店"
+            "避開百萬人潮的後方秘境：南側下游（濱町、新大橋、兩國橋）是避開人潮又有開闊河川視野的完美位置！",
+            "隅田川河畔步道向北散步 10-15 分鐘，越靠近『兩國橋 / 柳橋』方向，第二會場煙火就越大，走到覺得人潮變擠就可以停下坐著觀賞。"
           ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=隅田川花火大会"
+          "mapUrls": [
+            { "name": "兩國橋", "url": "https://www.google.com/maps/search/?api=1&query=両国橋" },
+            { "name": "柳橋", "url": "https://www.google.com/maps/search/?api=1&query=柳橋" }
+          ]
+        },
+        {
+          "time": "20:30",
+          "title": "🚶 煙火結束 ＆ 無痛撤退特權",
+          "icon": "walk",
+          "category": "transport",
+          "description": "煙火施放完畢，避開排隊人潮，沿著河畔微風散步返回飯店",
+          "adultNotes": [
+            "無痛撤退特權：完全不需要去搭地鐵和百萬人潮排隊擠一個小時。轉身沿著河畔步道往南步行 12 分鐘，直接走回飯店冷氣房洗澡！"
+          ]
         }
       ]
     },
