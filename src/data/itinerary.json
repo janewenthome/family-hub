@@ -194,8 +194,14 @@
             "花台幣 300 讓全家五口瞬間從擁擠車站直達冷氣大廳，這筆錢花得絕對超值！"
           ],
           "mapUrls": [
-            { "name": "東京站八重洲口 (Yaesu Exit)", "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口" },
-            { "name": "東京站八重洲口計程車搭乘處", "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口+タクシー乗り場" }
+            {
+              "name": "東京站八重洲口 (Yaesu Exit)",
+              "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口"
+            },
+            {
+              "name": "東京站八重洲口計程車搭乘處",
+              "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口+タクシー乗り場"
+            }
           ]
         },
         {
@@ -225,11 +231,26 @@
             "實戰提醒：出門時務必從房間帶 1-2 個小塑膠袋，吃完的垃圾裝好自己提回飯店丟，現場垃圾桶會爆滿。"
           ],
           "mapUrls": [
-            { "name": "起點：日本橋阿克薩斯飯店", "url": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋" },
-            { "name": "Maruetsu Petit 水天宮前店", "url": "https://www.google.com/maps/search/?api=1&query=マルエツ+プチ+水天宮前店" },
-            { "name": "Peacock Store 日本橋浜町店", "url": "https://www.google.com/maps/search/?api=1&query=ピーコックストア+トルナーレ日本橋浜町店" },
-            { "name": "7-Eleven 日本橋水天宮前店", "url": "https://www.google.com/maps/search/?api=1&query=セブン-イレブン+日本橋水天宮前店" },
-            { "name": "FamilyMart 水天宮駅前店", "url": "https://www.google.com/maps/search/?api=1&query=ファミリーマート+水天宮駅前店" }
+            {
+              "name": "起點：日本橋阿克薩斯飯店",
+              "url": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
+            },
+            {
+              "name": "Maruetsu Petit 水天宮前店",
+              "url": "https://www.google.com/maps/search/?api=1&query=マルエツ+プチ+水天宮前店"
+            },
+            {
+              "name": "Peacock Store 日本橋浜町店",
+              "url": "https://www.google.com/maps/search/?api=1&query=ピーコックストア+トルナーレ日本橋浜町店"
+            },
+            {
+              "name": "7-Eleven 日本橋水天宮前店",
+              "url": "https://www.google.com/maps/search/?api=1&query=セブン-イレブン+日本橋水天宮前店"
+            },
+            {
+              "name": "FamilyMart 水天宮駅前店",
+              "url": "https://www.google.com/maps/search/?api=1&query=ファミリーマート+水天宮駅前店"
+            }
           ]
         },
         {
@@ -239,9 +260,18 @@
           "category": "transport",
           "description": "爸爸與大寶提著美味炸物與冰涼飲料，出發往隅田川步道走",
           "mapUrls": [
-            { "name": "起點：日本橋阿克薩斯飯店", "url": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋" },
-            { "name": "濱町公園", "url": "https://www.google.com/maps/search/?api=1&query=浜町公園" },
-            { "name": "隅田川步道入口", "url": "https://www.google.com/maps/search/?api=1&query=隅田川テラス" }
+            {
+              "name": "起點：日本橋阿克薩斯飯店",
+              "url": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
+            },
+            {
+              "name": "濱町公園",
+              "url": "https://www.google.com/maps/search/?api=1&query=浜町公園"
+            },
+            {
+              "name": "隅田川步道入口",
+              "url": "https://www.google.com/maps/search/?api=1&query=隅田川テラス"
+            }
           ]
         },
         {
@@ -251,7 +281,10 @@
           "category": "attraction",
           "description": "第一會場煙火施放開始。沿著隅田川河堤步道（隅田川テラス）朝北（左手邊）走",
           "mapUrls": [
-            { "name": "新大橋", "url": "https://www.google.com/maps/search/?api=1&query=新大橋" }
+            {
+              "name": "新大橋",
+              "url": "https://www.google.com/maps/search/?api=1&query=新大橋"
+            }
           ]
         },
         {
@@ -268,8 +301,14 @@
             "隅田川河畔步道向北散步 10-15 分鐘，越靠近『兩國橋 / 柳橋』方向，第二會場煙火就越大，走到覺得人潮變擠就可以停下坐著觀賞。"
           ],
           "mapUrls": [
-            { "name": "兩國橋", "url": "https://www.google.com/maps/search/?api=1&query=両国橋" },
-            { "name": "柳橋", "url": "https://www.google.com/maps/search/?api=1&query=柳橋" }
+            {
+              "name": "兩國橋",
+              "url": "https://www.google.com/maps/search/?api=1&query=両国橋"
+            },
+            {
+              "name": "柳橋",
+              "url": "https://www.google.com/maps/search/?api=1&query=柳橋"
+            }
           ]
         },
         {
@@ -928,7 +967,7 @@
       "date": "2026-07-31",
       "dayNumber": 8,
       "label": "Day 8",
-      "title": "鐵路回城＋科博館 ComPASS",
+      "title": "鐵路回城＋科博館＋錯峰拉麵＋太太的香氛綠洲",
       "emoji": "🦖",
       "location": "河口湖 → 大月 → 新宿 → 上野 → 成田",
       "hotel": "nikko-narita",
@@ -936,10 +975,10 @@
       "events": [
         {
           "time": "08:40",
-          "title": "🚗 別墅退房＋還車",
+          "title": "🚗 Toyota 河口湖店還車",
           "icon": "car",
           "category": "task",
-          "description": "開車至 Toyota 富士河口湖店加滿油還車",
+          "description": "開車至 Toyota 富士河口湖店提早還車",
           "important": true,
           "adultNotes": [
             "Toyota 08:00 開門",
@@ -950,10 +989,10 @@
         {
           "time": "09:16",
           "endTime": "10:01",
-          "title": "🚃 富士急特急往大月",
+          "title": "🚆 富士急行線往大月",
           "icon": "train",
           "category": "transport",
-          "description": "河口湖（始發站）→ 大月",
+          "description": "河口湖（始發站）→ 大月，當天買票",
           "tips": [
             "始發站車廂空曠，全家悠閒上車",
             "車上吃昨晚買的愛心早餐"
@@ -966,7 +1005,7 @@
           "title": "🚆 特急かいじ 14 号回城",
           "icon": "train",
           "category": "transport",
-          "description": "大月 → 新宿（指定席已預訂）",
+          "description": "大月 → 新宿（指定席已預訂，實體票已於 Day 2 領妥）",
           "important": true,
           "adultNotes": [
             "予約番号：E96991",
@@ -990,7 +1029,7 @@
           "title": "🧳 上野站寄物＋換 Skyliner 票",
           "icon": "luggage",
           "category": "task",
-          "description": "大行李鎖入特大置物櫃 ¥700–900",
+          "description": "抵達上野，出「広小路口」存 28 吋行李入特大置物箱。順手於售票機刷 KKday QR 換妥傍晚回程 Skyliner 實體票 (4連座)。",
           "adultNotes": [
             "広小路口出站，右手邊特大置物櫃",
             "旁邊 E-TICKETS 售票機掃 KKday 回程 QR Code",
@@ -1001,10 +1040,10 @@
         {
           "time": "12:30",
           "endTime": "15:00",
-          "title": "🦖 國立科學博物館＋午餐",
+          "title": "🍽️ 國立科學博物館＋午餐",
           "icon": "museum",
           "category": "attraction",
-          "description": "MOUSEION 餐廳 + 恐龍化石 + 分組看展",
+          "description": "MOUSEION 餐廳午餐，分組看展",
           "important": true,
           "kidFocus": "在巨大恐龍化石旁邊吃午餐！",
           "adultNotes": [
@@ -1017,10 +1056,10 @@
         {
           "time": "15:00",
           "endTime": "15:45",
-          "title": "🏰 ComPASS 幼童神殿",
+          "title": "🦖 ComPASS 幼童神殿",
           "icon": "star",
           "category": "attraction",
-          "description": "科博館 3F 探險廣場（已預約 15:00）",
+          "description": "科博館 3F 探險廣場 ComPASS（已預約 15:00，提早報到）",
           "important": true,
           "kidFocus": "在安全的木質攀爬設施上瘋狂放電！",
           "tips": [
@@ -1030,11 +1069,12 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=国立科学博物館"
         },
         {
-          "time": "16:30",
+          "time": "16:15",
+          "endTime": "17:00",
           "title": "🍜 一蘭拉麵錯峰晚餐",
           "icon": "food",
           "category": "food",
-          "description": "一蘭拉麵 アトレ上野山下口店",
+          "description": "一蘭拉麵 アトレ上野山下口店（絕對錯峰晚餐，先吃飽再逛街，免顧戰利品）",
           "tips": [
             "此時完全沒有排隊",
             "隔板折攏，全家一字排開"
@@ -1042,16 +1082,26 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=一蘭 アトレ上野山下口店"
         },
         {
-          "time": "17:15",
-          "title": "🛒 無印良品 アトレ上野",
+          "time": "17:00",
+          "endTime": "17:45",
+          "title": "✨ 太太的香氛綠洲時光",
           "icon": "shopping",
           "category": "shopping",
-          "description": "無印良品上野車站店，採購衣服、零食或生活雜貨",
+          "description": "爸爸帶小孩在商場走道/無印良品內休息，太太專心試香購買",
           "tips": [
-            "位於上野站 Atre 購物中心內，交通方便",
-            "採購後直接前往京成上野站搭乘 18:00 Skyliner 列車"
+            "第一站 [Atre WEST 1F] MARKS&WEB：狂掃高質感平價草本洗沐 (約阿原半價，日本買一塊皂只要台幣一百出頭，洗髮乳、身體乳大容量又激省一半以上！)",
+            "第二站 [Atre WEST 1F] Cosme Kitchen：專攻 Waphyto 頂級艾草/和漢精油保養，試聞日系高級香",
+            "第三站 [過馬路對面] 無印良品 (上野マルイ B2F)：挑選 Wood 木質調純精油"
           ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=無印良品 500 アトレ上野"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=MARKS%26WEB+アトレ上野"
+        },
+        {
+          "time": "17:45",
+          "title": "🚶 領出大行李並前往搭車",
+          "icon": "luggage",
+          "category": "task",
+          "description": "走回上野站「広小路口」領出 28 吋大行李，步行前往京成上野站。",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
         },
         {
           "time": "18:00",
@@ -1070,7 +1120,7 @@
           "important": true,
           "adultNotes": [
             "預約編號：ORD0026706564",
-            "⚠️ Check-in 時領取 Plarail 網購大禮包！"
+            "⚠️ Check-in 時領取 Plarail 網購大禮包 ＆ 地の塩社艾草皂！"
           ],
           "kidFocus": "領取超大的 Plarail 火車禮物！",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"

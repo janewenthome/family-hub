@@ -136,8 +136,14 @@
             "混雑する駅からタクシーで冷房の効いたホテルへ直行できるため、非常に快適でおすすめです！"
           ],
           "mapUrls": [
-            { "name": "東京駅八重洲口 (Yaesu Exit)", "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口" },
-            { "name": "東京駅八重洲口タクシー乗り場", "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口+タクシー乗り場" }
+            {
+              "name": "東京駅八重洲口 (Yaesu Exit)",
+              "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口"
+            },
+            {
+              "name": "東京駅八重洲口タクシー乗り場",
+              "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口+タクシー乗り場"
+            }
           ]
         },
         {
@@ -167,11 +173,26 @@
             "注意：ゴミ袋をホテルから持参してください。会場周辺のゴミ箱は満杯になるため、持ち帰りを推奨します。"
           ],
           "mapUrls": [
-            { "name": "起点：ホテルアクサス日本橋", "url": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋" },
-            { "name": "マルエツ プチ 水天宮前店", "url": "https://www.google.com/maps/search/?api=1&query=マルエツ+プチ+水天宮前店" },
-            { "name": "ピーコックストア 日本橋浜町店", "url": "https://www.google.com/maps/search/?api=1&query=ピーコックストア+トルナーレ日本橋浜町店" },
-            { "name": "セブン-イレブン 日本橋水天宮前店", "url": "https://www.google.com/maps/search/?api=1&query=セブン-イレブン+日本橋水天宮前店" },
-            { "name": "ファミリーマート 水天宮駅前店", "url": "https://www.google.com/maps/search/?api=1&query=ファミリーマート+水天宮駅前店" }
+            {
+              "name": "起点：ホテルアクサス日本橋",
+              "url": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
+            },
+            {
+              "name": "マルエツ プチ 水天宮前店",
+              "url": "https://www.google.com/maps/search/?api=1&query=マルエツ+プチ+水天宮前店"
+            },
+            {
+              "name": "ピーコックストア 日本橋浜町店",
+              "url": "https://www.google.com/maps/search/?api=1&query=ピーコックストア+トルナーレ日本橋浜町店"
+            },
+            {
+              "name": "セブン-イレブン 日本橋水天宮前店",
+              "url": "https://www.google.com/maps/search/?api=1&query=セブン-イレブン+日本橋水天宮前店"
+            },
+            {
+              "name": "ファミリーマート 水天宮駅前店",
+              "url": "https://www.google.com/maps/search/?api=1&query=ファミリーマート+水天宮駅前店"
+            }
           ]
         },
         {
@@ -181,9 +202,18 @@
           "category": "transport",
           "description": "美味しい惣菜や飲み物を持って、隅田川沿いの遊歩道（隅田川テラス）へ移動",
           "mapUrls": [
-            { "name": "起点：ホテルアクサス日本橋", "url": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋" },
-            { "name": "浜町公園", "url": "https://www.google.com/maps/search/?api=1&query=浜町公園" },
-            { "name": "隅田川テラス", "url": "https://www.google.com/maps/search/?api=1&query=隅田川テラス" }
+            {
+              "name": "起点：ホテルアクサス日本橋",
+              "url": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
+            },
+            {
+              "name": "浜町公園",
+              "url": "https://www.google.com/maps/search/?api=1&query=浜町公園"
+            },
+            {
+              "name": "隅田川テラス",
+              "url": "https://www.google.com/maps/search/?api=1&query=隅田川テラス"
+            }
           ]
         },
         {
@@ -193,7 +223,10 @@
           "category": "attraction",
           "description": "第一会場の花火がスタート。隅田川テラスを北（左手方向）に向けて散策します",
           "mapUrls": [
-            { "name": "新大橋", "url": "https://www.google.com/maps/search/?api=1&query=新大橋" }
+            {
+              "name": "新大橋",
+              "url": "https://www.google.com/maps/search/?api=1&query=新大橋"
+            }
           ]
         },
         {
@@ -210,8 +243,14 @@
             "両国橋・柳橋方面に近づくほど花火が大きく見えます。混雑具合を見ながら、ちょうど良い場所を見つけて座って鑑賞してください。"
           ],
           "mapUrls": [
-            { "name": "両国橋", "url": "https://www.google.com/maps/search/?api=1&query=両国橋" },
-            { "name": "柳橋", "url": "https://www.google.com/maps/search/?api=1&query=柳橋" }
+            {
+              "name": "両国橋",
+              "url": "https://www.google.com/maps/search/?api=1&query=両国橋"
+            },
+            {
+              "name": "柳橋",
+              "url": "https://www.google.com/maps/search/?api=1&query=柳橋"
+            }
           ]
         },
         {
@@ -692,34 +731,27 @@
       "date": "2026-07-31",
       "dayNumber": 8,
       "label": "Day 8",
-      "title": "都心への帰還＆科博探險",
+      "title": "都心への帰還＆科博探検＆一蘭＆ママの香りのオアシス",
       "emoji": "🏙️",
       "location": "河口湖 → 大月 → 東京 → 成田",
       "hotel": "nikko-narita",
       "phase": "フェーズ4：帰国準備と最後のショッピング",
       "events": [
         {
-          "time": "08:15",
-          "title": "パパ単獨でレンタカー返却",
+          "time": "08:40",
+          "title": "🚗 トヨタレンタカー返却",
           "icon": "car",
           "category": "task",
-          "description": "ガソリン満タンでトヨタ富士河口湖店にNOAHを返却",
+          "description": "トヨタレンタカー富士河口湖店へ返却（ガソリン満タン、早めの返却）",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=吉村大池荘"
         },
         {
-          "time": "08:45",
-          "title": "別墅チェックアウト＆荷物発送",
-          "icon": "hotel",
-          "category": "hotel",
-          "description": "吉村大池荘をチェックアウト、パパが駅から民宿に迎えに行き、荷物と共に駅へ移動"
-        },
-        {
-          "time": "09:00",
-          "endTime": "09:50",
-          "title": "🚃 富士急特急で大月へ移動",
+          "time": "09:16",
+          "endTime": "10:01",
+          "title": "🚆 富士急行線で大月へ移動",
           "icon": "train",
           "category": "transport",
-          "description": "河口湖駅 ➡️ 大月駅",
+          "description": "河口湖駅 ➡️ 大月駅（当日切符購入、始発駅なのでゆったり乗車）",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=河口湖駅"
         },
         {
@@ -729,13 +761,13 @@
           "icon": "train",
           "category": "transport",
           "important": true,
-          "description": "大月駅 ➡️ 新宿駅（1時間4分）",
+          "description": "大月駅 ➡️ 新宿駅（Day 2に実物切符引換済み）",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=大月駅"
         },
         {
-          "time": "11:30",
+          "time": "11:27",
           "endTime": "11:55",
-          "title": "山手線で新宿から上野へ",
+          "title": "🚇 山手線で新宿から上野へ",
           "icon": "train",
           "category": "transport",
           "description": "山手線外回り（池袋・上野方面）約25分",
@@ -743,52 +775,64 @@
         },
         {
           "time": "11:55",
-          "title": "🧳 上野駅でコインロッカー預入",
+          "title": "🧳 上野駅で荷物預入＆切符引換",
           "icon": "luggage",
           "category": "task",
-          "description": "上野駅構内の特大ロッカーに大型荷物を預け入れ",
+          "description": "上野駅「広小路口」を出て、28インチ大型荷物をコインロッカーへ。券売機でKKday QRコードをスキャンし、夕方のスカイライナー実物切符（4連座）を引き換え。",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
         },
         {
           "time": "12:30",
           "endTime": "15:00",
-          "title": "🦖 国立科学博物館の見学＆ランチ",
+          "title": "🍽️ 国立科学博物館の見学＆ランチ",
           "icon": "museum",
           "category": "attraction",
           "important": true,
-          "description": "館内カフェで昼食、巨大恐龍化石の見学",
+          "description": "地球館 M2F MOUSEION レストランにてランチ、分かれて展示見学",
           "kidFocus": "大きな本物のティラノサウルスの化石のすぐ隣でみんなでご飯を食べよう！",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=国立科学博物館"
         },
         {
           "time": "15:00",
           "endTime": "15:45",
-          "title": "🏰 親子広場「コンパス(ComPASS)」体験",
+          "title": "🦖 親子広場「コンパス(ComPASS)」体験",
           "icon": "star",
           "category": "attraction",
           "important": true,
-          "description": "科博館3Fの屋内アスレチック（15:00の部予約済み）",
+          "description": "科博館3Fの屋内アスレチック（15:00の部予約済み、早めに受付）",
           "kidFocus": "木で作られた特別なアスレチックや吊り橋で思いっきり遊ぼう！",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=国立科学博物館"
         },
         {
-          "time": "16:30",
-          "title": "🍜 一蘭アトレ上野店でラーメン夕食",
+          "time": "16:15",
+          "endTime": "17:00",
+          "title": "🍜 一蘭アトレ上野店で夕食",
           "icon": "food",
           "category": "food",
-          "description": "混雑回避のため早い時間の一蘭ディナー",
+          "description": "一蘭 アトレ上野山下口店（完全な混雑回避ディナー、先に食べてから買い物へ、荷物の心配なし）",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=一蘭 アトレ上野山下口店"
         },
         {
-          "time": "17:15",
-          "title": "🛒 無印良品 アトレ上野でお買い物",
+          "time": "17:00",
+          "endTime": "17:45",
+          "title": "✨ ママの香りのオアシス体験",
           "icon": "shopping",
           "category": "shopping",
-          "description": "駅直結アトレ内の無印良品で最後のお菓子や服飾品の購入",
+          "description": "パパと子供たちは通路や無印良品で休憩、ママはゆっくり香りのお買い物",
           "tips": [
-            "上野駅構内のアトレにあり、お買い物後はすぐに京成上野駅へ移動可能"
+            "第1店 [アトレ WEST 1F] MARKS&WEB：高品質ハーブボディケア（台湾の「阿原石鹸」の約半額、1個約100元ちょっと。ヘアシャンプーやボディローションは大容量でさらにお得！）",
+            "第2店 [アトレ WEST 1F] Cosme Kitchen：Waphytoなどのヨモギ・和漢精油スキンケア",
+            "第3店 [向かい側] 無印良品（上野マルイ B2F）：ウッド系のエッセンシャルオイルを選択"
           ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=無印良品 500 アトレ上野"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=MARKS%26WEB+アトレ上野"
+        },
+        {
+          "time": "17:45",
+          "title": "🚶 荷物を取り出して移動",
+          "icon": "luggage",
+          "category": "task",
+          "description": "「広小路口」のロッカーから荷物を取り出し、京成上野駅へ徒歩で移動",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
         },
         {
           "time": "18:00",
@@ -804,7 +848,7 @@
           "title": "🏨 ホテル日航成田チェックイン（第2泊）",
           "icon": "hotel",
           "category": "hotel",
-          "description": "チェックイン時に事前にネット購入したプラレール大荷物を受け取り",
+          "description": "チェックイン時に事前にネット購入したプラレールとおもちゃ、地の塩社よもぎ石鹸を受け取り",
           "important": true,
           "kidFocus": "ホテルに届いたピカピカの大きなプラレールを開けよう！",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
