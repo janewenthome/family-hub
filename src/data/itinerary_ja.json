@@ -131,11 +131,12 @@
           "important": true,
           "description": "「八重洲口 (Yaesu Exit)」から出てタクシーでホテルへ直行（約 2.5 km）",
           "adultNotes": [
-            "出口案内：東京駅に到着後、必ず『八重洲口 (Yaesu Exit)』方向の改札から出てください。『丸の内口』は反対方向になりますのでご注意ください。",
+            "出口案内：東京駅に到着後、必ず『八重洲口 (Yaesu Exit)』方向的改札から出てください。『丸の内口』は反対方向になりますのでご注意ください。",
             "タクシー運賃：日本橋のホテルまで総額約 1,200 円〜1,500 円程度となります。",
             "混雑する駅からタクシーで冷房の効いたホテルへ直行できるため、非常に快適でおすすめです！"
           ],
           "mapUrls": [
+            { "name": "東京駅八重洲口 (Yaesu Exit)", "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口" },
             { "name": "東京駅八重洲口タクシー乗り場", "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口+タクシー乗り場" }
           ]
         },
@@ -166,6 +167,7 @@
             "注意：ゴミ袋をホテルから持参してください。会場周辺のゴミ箱は満杯になるため、持ち帰りを推奨します。"
           ],
           "mapUrls": [
+            { "name": "起点：ホテルアクサス日本橋", "url": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋" },
             { "name": "マルエツ プチ 水天宮前店", "url": "https://www.google.com/maps/search/?api=1&query=マルエツ+プチ+水天宮前店" },
             { "name": "ピーコックストア 日本橋浜町店", "url": "https://www.google.com/maps/search/?api=1&query=ピーコックストア+トルナーレ日本橋浜町店" },
             { "name": "セブン-イレブン 日本橋水天宮前店", "url": "https://www.google.com/maps/search/?api=1&query=セブン-イレブン+日本橋水天宮前店" },
@@ -179,6 +181,7 @@
           "category": "transport",
           "description": "美味しい惣菜や飲み物を持って、隅田川沿いの遊歩道（隅田川テラス）へ移動",
           "mapUrls": [
+            { "name": "起点：ホテルアクサス日本橋", "url": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋" },
             { "name": "浜町公園", "url": "https://www.google.com/maps/search/?api=1&query=浜町公園" },
             { "name": "隅田川テラス", "url": "https://www.google.com/maps/search/?api=1&query=隅田川テラス" }
           ]

@@ -194,6 +194,7 @@
             "花台幣 300 讓全家五口瞬間從擁擠車站直達冷氣大廳，這筆錢花得絕對超值！"
           ],
           "mapUrls": [
+            { "name": "東京站八重洲口 (Yaesu Exit)", "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口" },
             { "name": "東京站八重洲口計程車搭乘處", "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口+タクシー乗り場" }
           ]
         },
@@ -224,6 +225,7 @@
             "實戰提醒：出門時務必從房間帶 1-2 個小塑膠袋，吃完的垃圾裝好自己提回飯店丟，現場垃圾桶會爆滿。"
           ],
           "mapUrls": [
+            { "name": "起點：日本橋阿克薩斯飯店", "url": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋" },
             { "name": "Maruetsu Petit 水天宮前店", "url": "https://www.google.com/maps/search/?api=1&query=マルエツ+プチ+水天宮前店" },
             { "name": "Peacock Store 日本橋浜町店", "url": "https://www.google.com/maps/search/?api=1&query=ピーコックストア+トルナーレ日本橋浜町店" },
             { "name": "7-Eleven 日本橋水天宮前店", "url": "https://www.google.com/maps/search/?api=1&query=セブン-イレブン+日本橋水天宮前店" },
@@ -237,6 +239,7 @@
           "category": "transport",
           "description": "爸爸與大寶提著美味炸物與冰涼飲料，出發往隅田川步道走",
           "mapUrls": [
+            { "name": "起點：日本橋阿克薩斯飯店", "url": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋" },
             { "name": "濱町公園", "url": "https://www.google.com/maps/search/?api=1&query=浜町公園" },
             { "name": "隅田川步道入口", "url": "https://www.google.com/maps/search/?api=1&query=隅田川テラス" }
           ]
