@@ -143,6 +143,21 @@ export default function SosFab({ lang }: SosFabProps) {
                     </span>
                   </a>
 
+                  {/* Shinkong (Taishin Card) Hotline Action Link */}
+                  <a
+                    href="tel:+886-2-25773814"
+                    className="flex items-center gap-3 p-3 bg-blue-50 hover:bg-blue-100/70 border border-blue-100 rounded-2xl tap-highlight active:scale-[0.98] text-xs"
+                  >
+                    <span className="text-2xl shrink-0">💳</span>
+                    <div className="flex-1 min-w-0">
+                      <p className="font-bold text-blue-700">新光產物 (台新不便險) 專線</p>
+                      <p className="text-[10px] text-blue-600 leading-normal">點擊撥打：+886-2-2577-3814</p>
+                    </div>
+                    <span className="text-[10px] font-bold bg-blue-600 text-white px-2 py-0.5 rounded-md shrink-0">
+                      撥打
+                    </span>
+                  </a>
+
                   {data.insurance.map((ins, i) => (
                     <div key={i} className="flex items-start gap-3 p-3 bg-fuji-snow/40 border border-gray-150 rounded-2xl text-xs">
                       <span className="text-lg shrink-0">{ins.emoji}</span>

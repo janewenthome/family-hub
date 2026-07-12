@@ -417,12 +417,13 @@ function TodayHighlights({ lang }: { lang: 'zh' | 'ja' }) {
 function InsurancePublicView() {
   const guide = insuranceData.taiwanFamilyGuide;
   const claims = insuranceData.claimsGuide;
+  const strategies = (insuranceData as any).coordinationStrategy;
 
   return (
-    <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 space-y-3">
+    <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 space-y-4">
       <div className="flex items-center gap-2 mb-1">
         <span className="text-lg">🛡️</span>
-        <h3 className="text-sm font-bold text-dark-navy">旅平險保單與理賠速查</h3>
+        <h3 className="text-sm font-bold text-dark-navy">旅平險與信用卡不便險戰情</h3>
       </div>
 
       {/* Guide for Taiwan Family */}
@@ -431,15 +432,34 @@ function InsurancePublicView() {
           <span>🇹🇼</span> {guide.title}
         </p>
         <p className="text-[11px] text-warm-gray leading-normal">{guide.description}</p>
-        <div className="bg-white p-2.5 rounded-lg border border-gray-150 space-y-1 bg-opacity-70">
+        <div className="bg-white p-2.5 rounded-lg border border-gray-150 space-y-1.5 bg-opacity-70">
           <p className="text-[11px] font-semibold text-danger">☎️ 客服/海外專線：{guide.hotline}</p>
           {guide.detailsToReport.map((detail, idx) => (
-            <p key={idx} className="text-[11px] text-dark-navy font-semibold">
+            <p key={idx} className="text-[10px] text-dark-navy font-semibold leading-relaxed">
               • {detail}
             </p>
           ))}
         </div>
       </div>
+
+      {/* Double Insurance Coordination Strategy */}
+      {strategies && (
+        <div className="space-y-2">
+          <p className="text-[11px] font-bold text-warm-gray px-1 uppercase tracking-wider">{strategies.title}</p>
+          <div className="space-y-2">
+            {strategies.strategies.map((strat: any, idx: number) => (
+              <div key={idx} className="bg-amber-50/50 border border-amber-100 rounded-xl p-3 text-xs">
+                <p className="font-bold text-amber-900 mb-1 flex items-center gap-1">
+                  <span>✨</span> {strat.title}
+                </p>
+                <p className="text-[11px] text-warm-gray leading-relaxed whitespace-pre-wrap font-medium">
+                  {strat.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Claims Guide */}
       <div className="space-y-2">

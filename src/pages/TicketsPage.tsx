@@ -197,6 +197,7 @@ function TicketPinLock({ onUnlock }: { onUnlock: () => void }) {
 
 function InsuranceMembersDetail() {
   const [expandedMember, setExpandedMember] = useState<string | null>(null);
+  const [policyTab, setPolicyTab] = useState<'fubon' | 'taishin'>('fubon');
 
   return (
     <div className="space-y-4">
@@ -215,7 +216,10 @@ function InsuranceMembersDetail() {
           return (
             <div key={m.id} className="bg-white rounded-2xl shadow-sm border border-gray-150/40 overflow-hidden">
               <button
-                onClick={() => setExpandedMember(isOpen ? null : m.id)}
+                onClick={() => {
+                  setExpandedMember(isOpen ? null : m.id);
+                  setPolicyTab('fubon'); // reset tab on expand
+                }}
                 className="w-full p-4 flex items-center justify-between text-left tap-highlight"
               >
                 <div className="flex items-center gap-3">
@@ -224,7 +228,7 @@ function InsuranceMembersDetail() {
                     <h4 className="font-bold text-base text-dark-navy">
                       {m.nameZhFull} <span className="text-xs text-warm-gray font-normal">({m.nameEn})</span>
                     </h4>
-                    <p className="text-[11px] text-warm-gray font-medium mt-0.5">
+                    <p className="text-[11px] text-warm-gray font-medium mt-0.5 leading-snug">
                       保單：{m.policyNumber}
                     </p>
                   </div>
@@ -250,7 +254,11 @@ function InsuranceMembersDetail() {
                     </div>
                     <div className="flex justify-between border-b border-gray-100 pb-1.5">
                       <span className="text-warm-gray font-semibold">投保方案</span>
-                      <span className="font-bold text-fuji-blue">{m.plan}</span>
+                      <span className="font-bold text-fuji-blue text-right leading-tight max-w-[70%]">{m.plan}</span>
+                    </div>
+                    <div className="flex justify-between border-b border-gray-100 pb-1.5">
+                      <span className="text-warm-gray font-semibold">保障期間</span>
+                      <span className="font-bold text-dark-navy text-right leading-tight max-w-[70%]">{m.period}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-warm-gray font-semibold">保費金額</span>
@@ -258,12 +266,38 @@ function InsuranceMembersDetail() {
                     </div>
                   </div>
 
+                  {/* Tabs for Fubon vs Taishin */}
+                  <div className="flex gap-2 p-0.5 bg-gray-100 rounded-lg">
+                    <button
+                      onClick={() => setPolicyTab('fubon')}
+                      className={`flex-1 py-1.5 text-center text-[10px] font-bold rounded-md transition-all ${
+                        policyTab === 'fubon'
+                          ? 'bg-white text-fuji-blue shadow-sm'
+                          : 'text-warm-gray'
+                      }`}
+                    >
+                      🛡️ 富邦公教旅平險 (自購)
+                    </button>
+                    <button
+                      onClick={() => setPolicyTab('taishin')}
+                      className={`flex-1 py-1.5 text-center text-[10px] font-bold rounded-md transition-all ${
+                        policyTab === 'taishin'
+                          ? 'bg-white text-fuji-blue shadow-sm'
+                          : 'text-warm-gray'
+                      }`}
+                    >
+                      💳 台新信用卡險 (刷卡)
+                    </button>
+                  </div>
+
                   {/* Coverage details */}
                   <div className="space-y-1.5">
-                    <p className="text-[11px] font-bold text-warm-gray px-1 uppercase tracking-wider">🛡️ 本人承保內容明細</p>
+                    <p className="text-[11px] font-bold text-warm-gray px-1 uppercase tracking-wider">
+                      {policyTab === 'fubon' ? '🛡️ 富邦承保內容明細' : '💳 台新/新光承保內容明細'}
+                    </p>
                     <div className="bg-white rounded-xl p-3 border border-gray-150/60 space-y-1.5">
-                      {m.coverages.map((cov, idx) => (
-                        <p key={idx} className="text-dark-navy font-semibold flex items-start gap-1.5">
+                      {(policyTab === 'fubon' ? m.coverages : m.creditCardCoverages).map((cov, idx) => (
+                        <p key={idx} className="text-dark-navy font-semibold flex items-start gap-1.5 leading-relaxed">
                           <span className="text-fuji-blue font-bold">•</span>
                           <span>{cov}</span>
                         </p>
