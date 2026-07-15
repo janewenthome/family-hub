@@ -86,6 +86,22 @@ function PublicEmergencyContacts() {
               📞 撥打
             </span>
           </a>
+
+          <a
+            href="https://tokiomarinenichido.jp/zh-hant/china2/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 p-3 bg-emerald-50 hover:bg-emerald-100/70 border border-emerald-100 rounded-2xl tap-highlight active:scale-[0.98] text-xs"
+          >
+            <span className="text-2xl shrink-0">🇯🇵</span>
+            <div className="flex-1 min-w-0">
+              <p className="font-bold text-emerald-700">東京海上日動 線上投保與服務</p>
+              <p className="text-[10px] text-emerald-600 leading-normal">訪日旅客專屬 1,000 萬醫療實支 (入境日本後線上投保)</p>
+            </div>
+            <span className="text-[10px] font-bold bg-emerald-600 text-white px-2.5 py-1 rounded-lg shrink-0">
+              🌐 前往投保
+            </span>
+          </a>
         </div>
 
         {/* 關鍵報案資訊 */}
@@ -214,6 +230,27 @@ function PublicCoverageSummary() {
         </div>
       </div>
 
+      {/* 東京海上日動 */}
+      <div className="bg-emerald-50/40 border border-emerald-100/30 rounded-xl p-3 text-xs space-y-1.5">
+        <p className="font-bold text-emerald-700 flex items-center gap-1">🇯🇵 東京海上日動 OMOTENASHI</p>
+        <p className="text-warm-gray font-medium">保障期間：2026/07/25 ~ 08/01 (8天) | 入境後首晚線上投保</p>
+        <div className="grid grid-cols-2 gap-1.5 mt-2">
+          {[
+            { label: '疾病/意外醫療實支', val: '1,000萬日圓/人' },
+            { label: '無涉卡現金就醫', val: '免現場墊付費用' },
+            { label: '預計總保費', val: '16,300 JPY/5人' },
+            { label: '單人保費', val: '3,260 JPY/8天' },
+            { label: '24H中文電話翻譯', val: '中文即時醫療翻譯' },
+            { label: '護照/信用卡遺失', val: '協助救援服務' },
+          ].map((item, i) => (
+            <div key={i} className="bg-white/80 rounded-lg p-2 border border-emerald-100/10">
+              <p className="text-[10px] text-warm-gray">{item.label}</p>
+              <p className="font-bold text-dark-navy">{item.val}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* 台新 */}
       <div className="bg-blue-50/40 border border-blue-100/40 rounded-xl p-3 text-xs space-y-1.5">
         <p className="font-bold text-blue-700 flex items-center gap-1">💳 台新 Richart 信用卡 (新光產物承保)</p>
@@ -321,7 +358,7 @@ function PrivatePinLock({ onUnlock }: { onUnlock: () => void }) {
 
 function PrivateMemberDetail() {
   const [expandedMember, setExpandedMember] = useState<string | null>(null);
-  const [policyTab, setPolicyTab] = useState<'fubon' | 'shinan' | 'taishin'>('fubon');
+  const [policyTab, setPolicyTab] = useState<'fubon' | 'shinan' | 'tokio' | 'taishin'>('fubon');
 
   return (
     <div className="space-y-3">
@@ -352,7 +389,7 @@ function PrivateMemberDetail() {
                     {m.nameZhFull} <span className="text-xs text-warm-gray font-normal">({m.nameEn})</span>
                   </h4>
                   <p className="text-[11px] text-warm-gray font-medium mt-0.5 leading-snug">
-                    保費 {m.premium} 元 • {m.period}
+                    保費 {m.premium} • {m.period}
                   </p>
                 </div>
               </div>
@@ -370,7 +407,7 @@ function PrivateMemberDetail() {
                     { label: '投保方案', value: m.plan, highlight: true },
                     { label: '保單號碼', value: m.policyNumber, mono: true },
                     { label: '保障期間', value: m.period },
-                    { label: '保費金額', value: `${m.premium} 元` },
+                    { label: '保費金額', value: `${m.premium}` },
                   ].map((row, i) => (
                     <div key={i} className={`flex justify-between ${i < 6 ? 'border-b border-gray-100 pb-1.5' : ''}`}>
                       <span className="text-warm-gray font-semibold">{row.label}</span>
@@ -383,8 +420,8 @@ function PrivateMemberDetail() {
                   ))}
                 </div>
 
-                {/* Tabs for Fubon vs Shinan vs Taishin */}
-                <div className="flex gap-2 p-0.5 bg-gray-100 rounded-lg">
+                {/* Tabs for Fubon vs Shinan vs Tokio vs Taishin */}
+                <div className="flex gap-1.5 p-0.5 bg-gray-100 rounded-lg">
                   <button
                     onClick={() => setPolicyTab('fubon')}
                     className={`flex-1 py-1.5 text-center text-[10px] font-bold rounded-md transition-all ${
@@ -393,7 +430,7 @@ function PrivateMemberDetail() {
                         : 'text-warm-gray'
                     }`}
                   >
-                    🛡️ 富邦公教
+                    🛡️ 富邦
                   </button>
                   <button
                     onClick={() => setPolicyTab('shinan')}
@@ -403,7 +440,17 @@ function PrivateMemberDetail() {
                         : 'text-warm-gray'
                     }`}
                   >
-                    🌸 新安東京
+                    🌸 新安
+                  </button>
+                  <button
+                    onClick={() => setPolicyTab('tokio')}
+                    className={`flex-1 py-1.5 text-center text-[10px] font-bold rounded-md transition-all ${
+                      policyTab === 'tokio'
+                        ? 'bg-white text-fuji-blue shadow-sm'
+                        : 'text-warm-gray'
+                    }`}
+                  >
+                    🇯🇵 東京
                   </button>
                   <button
                     onClick={() => setPolicyTab('taishin')}
@@ -413,7 +460,7 @@ function PrivateMemberDetail() {
                         : 'text-warm-gray'
                     }`}
                   >
-                    💳 台新信用卡
+                    💳 台新
                   </button>
                 </div>
 
@@ -424,7 +471,9 @@ function PrivateMemberDetail() {
                       ? '🛡️ 富邦承保內容明細' 
                       : policyTab === 'shinan' 
                         ? '🌸 新安東京承保內容明細' 
-                        : '💳 台新/新光承保內容明細'}
+                        : policyTab === 'tokio'
+                          ? '🇯🇵 東京海上日動承保內容明細'
+                          : '💳 台新/新光承保內容明細'}
                   </p>
                   <div className="bg-white rounded-xl p-3 border border-gray-150/60 space-y-1.5">
                     {policyTab === 'fubon' ? (
@@ -444,6 +493,17 @@ function PrivateMemberDetail() {
                         ))
                       ) : (
                         <p className="text-warm-gray font-medium text-center py-2">⚠️ 此成員未加保新安東京產險</p>
+                      )
+                    ) : policyTab === 'tokio' ? (
+                      m.tokioCoverages && m.tokioCoverages.length > 0 ? (
+                        m.tokioCoverages.map((cov, idx) => (
+                          <p key={idx} className="text-dark-navy font-semibold flex items-start gap-1.5 leading-relaxed">
+                            <span className="text-emerald-600 font-bold">•</span>
+                            <span>{cov}</span>
+                          </p>
+                        ))
+                      ) : (
+                        <p className="text-warm-gray font-medium text-center py-2">⚠️ 此成員未加保東京海上日動產險</p>
                       )
                     ) : (
                       m.creditCardCoverages.map((cov, idx) => (

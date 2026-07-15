@@ -1,12 +1,46 @@
 [
   {
+    "id": "visit-japan-web",
+    "name": "Visit Japan Web 入境登錄",
+    "category": "transport",
+    "status": "action-required",
+    "emoji": "🇯🇵",
+    "useDays": [
+      1
+    ],
+    "dates": [
+      "2026-07-24"
+    ],
+    "details": {
+      "目的": "日本入境審查 (移民局) 與海關申報電子化登錄",
+      "時機": "出發前 (建議出發前 3-5 天完成)",
+      "網址": "https://services.digital.go.jp/zh-cmn-hant/visit-japan-web/",
+      "對象": "一家五口 (可由爸爸統一在帳號內新增同行家人)"
+    },
+    "pickupInstructions": [
+      "出發前進入日本數位廳 Visit Japan Web 官網註冊帳號",
+      "登錄「登機資訊」並填寫全家人入境審查 (外國人入境記錄) 及海關申報",
+      "二維碼生成：填寫完後會生成「入境審查」與「海關申報」的黃色/藍色 QR Code",
+      "離線存檔：請務必將二維碼截圖保存至手機，成田機場過關時可離線掃描快速通關"
+    ],
+    "ticketImage": null,
+    "important": true,
+    "warning": "此為入境必備！請務必在台灣出發前填妥並截圖 QR Code，避免抵達日本因網路塞車而耽誤通關。"
+  },
+  {
     "id": "skyliner",
     "name": "Skyliner 藍色子彈",
     "category": "transport",
     "status": "confirmed",
     "emoji": "🚄",
-    "useDays": [2, 8],
-    "dates": ["2026-07-25", "2026-07-31"],
+    "useDays": [
+      2,
+      8
+    ],
+    "dates": [
+      "2026-07-25",
+      "2026-07-31"
+    ],
     "details": {
       "route": "成田機場 ↔ 京成上野站",
       "duration": "41 分鐘直達",
@@ -29,8 +63,12 @@
     "category": "transport",
     "status": "confirmed",
     "emoji": "🚃",
-    "useDays": [4],
-    "dates": ["2026-07-27"],
+    "useDays": [
+      4
+    ],
+    "dates": [
+      "2026-07-27"
+    ],
     "details": {
       "route": "新宿 10:30 → 河口湖 12:24",
       "duration": "1 時 54 分",
@@ -56,8 +94,12 @@
     "category": "transport",
     "status": "confirmed",
     "emoji": "🚆",
-    "useDays": [8],
-    "dates": ["2026-07-31"],
+    "useDays": [
+      8
+    ],
+    "dates": [
+      "2026-07-31"
+    ],
     "details": {
       "route": "大月 10:23 → 新宿 11:27",
       "duration": "1 時 04 分",
@@ -80,8 +122,18 @@
     "category": "transport",
     "status": "confirmed",
     "emoji": "🚙",
-    "useDays": [5, 6, 7, 8],
-    "dates": ["2026-07-28", "2026-07-29", "2026-07-30", "2026-07-31"],
+    "useDays": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "dates": [
+      "2026-07-28",
+      "2026-07-29",
+      "2026-07-30",
+      "2026-07-31"
+    ],
     "details": {
       "pickup": "Toyota 富士河口湖店（河口湖駅正對面）",
       "pickupTime": "7/28 09:00",
@@ -106,8 +158,12 @@
     "category": "attraction",
     "status": "confirmed",
     "emoji": "🚀",
-    "useDays": [3],
-    "dates": ["2026-07-26"],
+    "useDays": [
+      3
+    ],
+    "dates": [
+      "2026-07-26"
+    ],
     "details": {
       "route": "日の出桟橋 → 台場",
       "time": "10:45 出發",
@@ -131,8 +187,12 @@
     "category": "attraction",
     "status": "confirmed",
     "emoji": "🦁",
-    "useDays": [6],
-    "dates": ["2026-07-29"],
+    "useDays": [
+      6
+    ],
+    "dates": [
+      "2026-07-29"
+    ],
     "details": {
       "location": "富士野生動物園",
       "time": "13:30",
@@ -153,8 +213,12 @@
     "category": "attraction",
     "status": "confirmed",
     "emoji": "🦖",
-    "useDays": [8],
-    "dates": ["2026-07-31"],
+    "useDays": [
+      8
+    ],
+    "dates": [
+      "2026-07-31"
+    ],
     "details": {
       "location": "國立科學博物館 3F",
       "time": "15:00",
@@ -175,8 +239,12 @@
     "category": "attraction",
     "status": "action-required",
     "emoji": "🚂",
-    "useDays": [2],
-    "dates": ["2026-07-25"],
+    "useDays": [
+      2
+    ],
+    "dates": [
+      "2026-07-25"
+    ],
     "details": {
       "location": "大宮鐵道博物館",
       "time": "11:05-11:35",
@@ -199,8 +267,12 @@
     "category": "attraction",
     "status": "action-required",
     "emoji": "🚅",
-    "useDays": [2],
-    "dates": ["2026-07-25"],
+    "useDays": [
+      2
+    ],
+    "dates": [
+      "2026-07-25"
+    ],
     "details": {
       "location": "大宮鐵道博物館",
       "time": "13:00-14:30",
@@ -222,8 +294,12 @@
     "category": "attraction",
     "status": "action-required",
     "emoji": "🎢",
-    "useDays": [7],
-    "dates": ["2026-07-30"],
+    "useDays": [
+      7
+    ],
+    "dates": [
+      "2026-07-30"
+    ],
     "details": {
       "location": "富士急ハイランド",
       "note": "大人免費入園(WEB券)，小孩買一日通票",
