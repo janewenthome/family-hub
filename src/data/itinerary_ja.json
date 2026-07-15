@@ -91,12 +91,26 @@
         },
         {
           "time": "10:45",
-          "endTime": "11:15",
+          "endTime": "11:00",
           "title": "大宮鉄道博物館へ移動",
           "icon": "train",
           "category": "transport",
           "description": "上野駅 ➡️ 大宮駅 ➡️ 鉄道博物館駅（ニューシャトル）",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
+        },
+        {
+          "time": "11:00",
+          "endTime": "11:15",
+          "title": "💳 大宮駅で長男のSuicaカード購入",
+          "icon": "ticket",
+          "category": "task",
+          "description": "みどりの窓口で記名式小児用Suicaを購入",
+          "important": true,
+          "adultNotes": [
+            "混雑回避作戦：大宮駅のみどりの窓口は主に地元の通勤客が利用するため、訪日外国人観光客が少なく、穴場の購入スポットです！",
+            "作戦実行：お父さんが窓口の様子を確認。10人未満の列であれば、5分で長男のパスポートを提示して小児用Suicaを購入します。10人以上並んでいる場合は即座にあきらめ、隣の券売機で通常切符を購入してください。11:05のミニ運転列車予約に絶対に遅れないように！"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=大宮駅"
         },
         {
           "time": "11:15",

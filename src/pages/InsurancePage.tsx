@@ -32,6 +32,34 @@ function PublicEmergencyContacts() {
           </a>
 
           <a
+            href="tel:+886-2-82535932"
+            className="flex items-center gap-3 p-3 bg-rose-50 hover:bg-rose-100/70 border border-rose-100 rounded-2xl tap-highlight active:scale-[0.98] text-xs"
+          >
+            <span className="text-2xl shrink-0">🌸</span>
+            <div className="flex-1 min-w-0">
+              <p className="font-bold text-rose-700">新安東京 海外緊急救援專線</p>
+              <p className="text-[10px] text-rose-600 leading-normal">海外急難救助 +886-2-8253-5932</p>
+            </div>
+            <span className="text-[10px] font-bold bg-rose-600 text-white px-2.5 py-1 rounded-lg shrink-0">
+              📞 撥打
+            </span>
+          </a>
+
+          <a
+            href="tel:0800-050-119"
+            className="flex items-center gap-3 p-3 bg-rose-50/60 hover:bg-rose-100/50 border border-rose-100/60 rounded-2xl tap-highlight active:scale-[0.98] text-xs"
+          >
+            <span className="text-2xl shrink-0">🌸</span>
+            <div className="flex-1 min-w-0">
+              <p className="font-bold text-rose-700">新安東京 客服及申訴專線</p>
+              <p className="text-[10px] text-rose-600 leading-normal">國內免費客服 0800-050-119</p>
+            </div>
+            <span className="text-[10px] font-bold bg-rose-600 text-white px-2.5 py-1 rounded-lg shrink-0">
+              📞 撥打
+            </span>
+          </a>
+
+          <a
             href="tel:+886-2-25773814"
             className="flex items-center gap-3 p-3 bg-blue-50 hover:bg-blue-100/70 border border-blue-100 rounded-2xl tap-highlight active:scale-[0.98] text-xs"
           >
@@ -165,6 +193,27 @@ function PublicCoverageSummary() {
         </div>
       </div>
 
+      {/* 新安東京 */}
+      <div className="bg-rose-50/40 border border-rose-100/30 rounded-xl p-3 text-xs space-y-1.5">
+        <p className="font-bold text-rose-700 flex items-center gap-1">🌸 新安東京平安御守專案</p>
+        <p className="text-warm-gray font-medium">保障期間：2026/07/24 ~ 08/03 (10天)</p>
+        <div className="grid grid-cols-2 gap-1.5 mt-2">
+          {[
+            { label: '旅平險 (身故/失能)', val: '最高200萬' },
+            { label: '傷害醫療 (實支)', val: '最高20萬' },
+            { label: '班機延誤 (定額累進)', val: '每4h/6千' },
+            { label: '行李延誤/損失', val: '各6,000元' },
+            { label: '旅程取消/更改', val: '各1萬/人' },
+            { label: '個人責任險', val: '最高60萬' },
+          ].map((item, i) => (
+            <div key={i} className="bg-white/80 rounded-lg p-2 border border-rose-100/10">
+              <p className="text-[10px] text-warm-gray">{item.label}</p>
+              <p className="font-bold text-dark-navy">{item.val}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* 台新 */}
       <div className="bg-blue-50/40 border border-blue-100/40 rounded-xl p-3 text-xs space-y-1.5">
         <p className="font-bold text-blue-700 flex items-center gap-1">💳 台新 Richart 信用卡 (新光產物承保)</p>
@@ -195,7 +244,7 @@ function PrivatePinLock({ onUnlock }: { onUnlock: () => void }) {
   const [pin, setPin] = useState('');
   const [error, setError] = useState(false);
 
-  const CORRECT_PIN = 'E123588922';
+  const CORRECT_PIN = '520';
 
   const handleDigit = (d: string) => {
     const next = pin + d;
@@ -235,7 +284,7 @@ function PrivatePinLock({ onUnlock }: { onUnlock: () => void }) {
         </div>
 
         {/* Keyboard */}
-        <div className="grid grid-cols-3 gap-2 w-full max-w-[260px] mb-3">
+        <div className="grid grid-cols-3 gap-2 w-full max-w-[260px] mb-4">
           {['1','2','3','4','5','6','7','8','9','0','⌫',''].map((key, idx) => (
             <button
               key={key || `empty-${idx}`}
@@ -248,19 +297,6 @@ function PrivatePinLock({ onUnlock }: { onUnlock: () => void }) {
                     ? 'bg-gray-100 text-warm-gray hover:bg-gray-200'
                     : 'bg-fuji-snow text-dark-navy hover:bg-fuji-ice active:bg-fuji-blue active:text-white'
               }`}
-            >
-              {key}
-            </button>
-          ))}
-        </div>
-
-        {/* Alpha keys for E */}
-        <div className="flex gap-2 w-full max-w-[260px] mb-4">
-          {['A','B','C','D','E','F'].map(key => (
-            <button
-              key={key}
-              onClick={() => handleDigit(key)}
-              className="flex-1 h-10 rounded-xl text-sm font-bold bg-fuji-ice text-dark-navy hover:bg-fuji-blue hover:text-white active:bg-fuji-deep active:text-white transition-all tap-highlight"
             >
               {key}
             </button>
@@ -285,7 +321,7 @@ function PrivatePinLock({ onUnlock }: { onUnlock: () => void }) {
 
 function PrivateMemberDetail() {
   const [expandedMember, setExpandedMember] = useState<string | null>(null);
-  const [policyTab, setPolicyTab] = useState<'fubon' | 'taishin'>('fubon');
+  const [policyTab, setPolicyTab] = useState<'fubon' | 'shinan' | 'taishin'>('fubon');
 
   return (
     <div className="space-y-3">
@@ -347,7 +383,7 @@ function PrivateMemberDetail() {
                   ))}
                 </div>
 
-                {/* Tabs for Fubon vs Taishin */}
+                {/* Tabs for Fubon vs Shinan vs Taishin */}
                 <div className="flex gap-2 p-0.5 bg-gray-100 rounded-lg">
                   <button
                     onClick={() => setPolicyTab('fubon')}
@@ -357,7 +393,17 @@ function PrivateMemberDetail() {
                         : 'text-warm-gray'
                     }`}
                   >
-                    🛡️ 富邦公教旅平險
+                    🛡️ 富邦公教
+                  </button>
+                  <button
+                    onClick={() => setPolicyTab('shinan')}
+                    className={`flex-1 py-1.5 text-center text-[10px] font-bold rounded-md transition-all ${
+                      policyTab === 'shinan'
+                        ? 'bg-white text-fuji-blue shadow-sm'
+                        : 'text-warm-gray'
+                    }`}
+                  >
+                    🌸 新安東京
                   </button>
                   <button
                     onClick={() => setPolicyTab('taishin')}
@@ -367,22 +413,46 @@ function PrivateMemberDetail() {
                         : 'text-warm-gray'
                     }`}
                   >
-                    💳 台新信用卡險
+                    💳 台新信用卡
                   </button>
                 </div>
 
                 {/* Coverage details */}
                 <div className="space-y-1.5">
                   <p className="text-[11px] font-bold text-warm-gray px-1 uppercase tracking-wider">
-                    {policyTab === 'fubon' ? '🛡️ 富邦承保內容明細' : '💳 台新/新光承保內容明細'}
+                    {policyTab === 'fubon' 
+                      ? '🛡️ 富邦承保內容明細' 
+                      : policyTab === 'shinan' 
+                        ? '🌸 新安東京承保內容明細' 
+                        : '💳 台新/新光承保內容明細'}
                   </p>
                   <div className="bg-white rounded-xl p-3 border border-gray-150/60 space-y-1.5">
-                    {(policyTab === 'fubon' ? m.coverages : m.creditCardCoverages).map((cov, idx) => (
-                      <p key={idx} className="text-dark-navy font-semibold flex items-start gap-1.5 leading-relaxed">
-                        <span className="text-fuji-blue font-bold">•</span>
-                        <span>{cov}</span>
-                      </p>
-                    ))}
+                    {policyTab === 'fubon' ? (
+                      m.coverages.map((cov, idx) => (
+                        <p key={idx} className="text-dark-navy font-semibold flex items-start gap-1.5 leading-relaxed">
+                          <span className="text-fuji-blue font-bold">•</span>
+                          <span>{cov}</span>
+                        </p>
+                      ))
+                    ) : policyTab === 'shinan' ? (
+                      m.shinanCoverages && m.shinanCoverages.length > 0 ? (
+                        m.shinanCoverages.map((cov, idx) => (
+                          <p key={idx} className="text-dark-navy font-semibold flex items-start gap-1.5 leading-relaxed">
+                            <span className="text-rose-600 font-bold">•</span>
+                            <span>{cov}</span>
+                          </p>
+                        ))
+                      ) : (
+                        <p className="text-warm-gray font-medium text-center py-2">⚠️ 此成員未加保新安東京產險</p>
+                      )
+                    ) : (
+                      m.creditCardCoverages.map((cov, idx) => (
+                        <p key={idx} className="text-dark-navy font-semibold flex items-start gap-1.5 leading-relaxed">
+                          <span className="text-blue-600 font-bold">•</span>
+                          <span>{cov}</span>
+                        </p>
+                      ))
+                    )}
                   </div>
                 </div>
               </div>

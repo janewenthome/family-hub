@@ -129,7 +129,7 @@
         },
         {
           "time": "10:01",
-          "endTime": "10:35",
+          "endTime": "10:30",
           "title": "🎫 上野站神級取票＋轉乘",
           "icon": "ticket",
           "category": "task",
@@ -147,7 +147,21 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
         },
         {
-          "time": "10:35",
+          "time": "10:30",
+          "endTime": "10:45",
+          "title": "💳 大宮站速買大寶 Suica卡",
+          "icon": "ticket",
+          "category": "task",
+          "description": "綠色窗口避人潮戰術",
+          "important": true,
+          "adultNotes": [
+            "避人潮戰術：大宮站綠色窗口主要服務在地通勤與差旅族，外國觀光客極少，是極佳的購卡點！",
+            "戰術執行：抵達大宮站後，由八重洲口或出站轉乘方向，爸爸看一眼綠色窗口。若排隊少於 10 人，花 5 分鐘出示大寶護照買一張兒童記名 Suica 卡；若排超過 10 人，果斷放棄，改去售票機買實體單程票。絕對不要耽誤 11:05 鐵道博物館的迷你運轉列車預約！"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=大宮駅"
+        },
+        {
+          "time": "10:45",
           "endTime": "16:00",
           "title": "🚂 大宮鐵道博物館 5.5 小時",
           "icon": "museum",
