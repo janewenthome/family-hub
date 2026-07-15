@@ -6,6 +6,7 @@ import DashboardPage from './pages/DashboardPage';
 import ItineraryPage from './pages/ItineraryPage';
 import TicketsPage from './pages/TicketsPage';
 import PackingPage from './pages/PackingPage';
+import InsurancePage from './pages/InsurancePage';
 
 export default function App() {
   const [lang, setLang] = useState<'zh' | 'ja'>(() => {
@@ -34,6 +35,7 @@ export default function App() {
           <Route path="/itinerary" element={<ItineraryPage lang={lang} />} />
           <Route path="/tickets" element={<TicketsPage />} />
           <Route path="/packing" element={<PackingPage />} />
+          <Route path="/insurance" element={<InsurancePage lang={lang} />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

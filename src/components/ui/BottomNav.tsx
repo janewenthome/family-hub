@@ -14,6 +14,7 @@ export default function BottomNav({ lang }: BottomNavProps) {
         { to: '/', label: '首頁', emoji: '🏠' },
         { to: '/itinerary', label: '行程', emoji: '📅' },
         { to: '/tickets', label: '票券', emoji: '🎟️' },
+        { to: '/insurance', label: '保險', emoji: '🛡️' },
         { to: '/packing', label: '行李', emoji: '🧳' },
       ];
 

@@ -414,69 +414,50 @@ function TodayHighlights({ lang }: { lang: 'zh' | 'ja' }) {
   );
 }
 
-function InsurancePublicView() {
+function InsuranceQuickCard() {
   const guide = insuranceData.taiwanFamilyGuide;
-  const claims = insuranceData.claimsGuide;
-  const strategies = (insuranceData as any).coordinationStrategy;
 
   return (
-    <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 space-y-4">
+    <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 space-y-3">
       <div className="flex items-center gap-2 mb-1">
         <span className="text-lg">🛡️</span>
-        <h3 className="text-sm font-bold text-dark-navy">旅平險與信用卡不便險戰情</h3>
+        <h3 className="text-sm font-bold text-dark-navy">旅平險與信用卡不便險</h3>
       </div>
 
-      {/* Guide for Taiwan Family */}
-      <div className="bg-fuji-ice/50 border border-fuji-blue/10 rounded-xl p-3 text-xs space-y-2">
-        <p className="font-bold text-dark-navy flex items-center gap-1">
-          <span>🇹🇼</span> {guide.title}
-        </p>
-        <p className="text-[11px] text-warm-gray leading-normal">{guide.description}</p>
-        <div className="bg-white p-2.5 rounded-lg border border-gray-150 space-y-1.5 bg-opacity-70">
-          <p className="text-[11px] font-semibold text-danger">☎️ 客服/海外專線：{guide.hotline}</p>
-          {guide.detailsToReport.map((detail, idx) => (
-            <p key={idx} className="text-[10px] text-dark-navy font-semibold leading-relaxed">
-              • {detail}
-            </p>
-          ))}
-        </div>
-      </div>
-
-      {/* Double Insurance Coordination Strategy */}
-      {strategies && (
-        <div className="space-y-2">
-          <p className="text-[11px] font-bold text-warm-gray px-1 uppercase tracking-wider">{strategies.title}</p>
-          <div className="space-y-2">
-            {strategies.strategies.map((strat: any, idx: number) => (
-              <div key={idx} className="bg-amber-50/50 border border-amber-100 rounded-xl p-3 text-xs">
-                <p className="font-bold text-amber-900 mb-1 flex items-center gap-1">
-                  <span>✨</span> {strat.title}
-                </p>
-                <p className="text-[11px] text-warm-gray leading-relaxed whitespace-pre-wrap font-medium">
-                  {strat.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Claims Guide */}
+      {/* 緊急電話快速撥打 */}
       <div className="space-y-2">
-        <p className="text-[11px] font-bold text-warm-gray px-1 uppercase tracking-wider">{claims.title}</p>
-        <div className="grid grid-cols-1 gap-2">
-          {claims.categories.map((cat, idx) => (
-            <div key={idx} className="bg-fuji-snow/40 border border-gray-150 rounded-xl p-2.5 text-xs">
-              <p className="font-bold text-dark-navy mb-1.5">{cat.type}</p>
-              <ul className="space-y-1 list-disc list-inside text-[11px] text-warm-gray pl-1 leading-relaxed">
-                {cat.docs.map((doc, i) => (
-                  <li key={i} className="marker:text-fuji-blue font-medium">{doc}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+        <a
+          href="tel:+886-2-25636292"
+          className="flex items-center gap-2 p-2.5 bg-red-50 border border-red-100 rounded-xl tap-highlight text-xs"
+        >
+          <span className="text-lg">🛡️</span>
+          <span className="font-bold text-red-700 flex-1">富邦 海外緊急救援</span>
+          <span className="text-[10px] font-bold bg-red-600 text-white px-2 py-0.5 rounded-md">撥打</span>
+        </a>
+        <a
+          href="tel:+886-2-25773814"
+          className="flex items-center gap-2 p-2.5 bg-blue-50 border border-blue-100 rounded-xl tap-highlight text-xs"
+        >
+          <span className="text-lg">💳</span>
+          <span className="font-bold text-blue-700 flex-1">新光 (台新) 不便險</span>
+          <span className="text-[10px] font-bold bg-blue-600 text-white px-2 py-0.5 rounded-md">撥打</span>
+        </a>
       </div>
+
+      {/* 關鍵資訊 */}
+      <div className="bg-fuji-snow/60 p-2.5 rounded-xl border border-gray-150 text-[10px]">
+        {guide.detailsToReport.map((detail: string, idx: number) => (
+          <p key={idx} className="text-dark-navy font-semibold leading-relaxed mb-1">• {detail}</p>
+        ))}
+      </div>
+
+      {/* 導向完整保險頁 */}
+      <a
+        href="/insurance"
+        className="block w-full text-center bg-fuji-ice text-fuji-blue rounded-xl py-2.5 text-xs font-bold tap-highlight border border-fuji-blue/10 hover:bg-fuji-blue hover:text-white transition-colors"
+      >
+        📋 查看完整保險戰情室 →
+      </a>
     </div>
   );
 }
@@ -504,7 +485,7 @@ export default function DashboardPage({ lang }: DashboardPageProps) {
       <WeatherSection lang={lang} />
       <HotelQuickView lang={lang} unlocked={unlocked} />
       <TripOverview lang={lang} />
-      {lang === 'zh' && <InsurancePublicView />}
+      {lang === 'zh' && <InsuranceQuickCard />}
       {lang === 'zh' && <EmergencySection />}
     </div>
   );
