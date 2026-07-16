@@ -981,7 +981,7 @@
       "date": "2026-07-31",
       "dayNumber": 8,
       "label": "Day 8",
-      "title": "鐵路回城＋科博館＋錯峰拉麵＋太太的香氛綠洲",
+      "title": "都心無痛大滿貫＋一蘭拉麵＋不忍池夏日祭典＋香氛掃貨",
       "emoji": "🦖",
       "location": "河口湖 → 大月 → 新宿 → 上野 → 成田",
       "hotel": "nikko-narita",
@@ -992,7 +992,7 @@
           "title": "🚗 Toyota 河口湖店還車",
           "icon": "car",
           "category": "task",
-          "description": "開車至 Toyota 富士河口湖店提早還車",
+          "description": "開車至 Toyota 富士河口湖店提早還車 (確認加滿油)",
           "important": true,
           "adultNotes": [
             "Toyota 08:00 開門",
@@ -1016,13 +1016,13 @@
         {
           "time": "10:23",
           "endTime": "11:27",
-          "title": "🚆 特急かいじ 14 号回城",
+          "title": "🚆 特急慢車/特急かいじ 14 号回城",
           "icon": "train",
           "category": "transport",
           "description": "大月 → 新宿（指定席已預訂，實體票已於 Day 2 領妥）",
           "important": true,
           "adultNotes": [
-            "予約番号：E96991",
+            "預約編號：E96991",
             "4 人（三寶膝上坐免費）",
             "¥6,200"
           ],
@@ -1034,107 +1034,138 @@
           "title": "🚇 山手線移動至上野",
           "icon": "train",
           "category": "transport",
-          "description": "山手線外回り（池袋・上野方面）約 25 分鐘",
-          "warning": "確認不要搭成內回り",
+          "description": "山手線外回（池袋・上野方面）約 25 分鐘",
+          "warning": "確認不要搭成內迴",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=新宿駅"
         },
         {
           "time": "11:55",
-          "title": "🧳 上野站寄物＋換 Skyliner 票",
+          "endTime": "12:20",
+          "title": "🧳 京成上野站置物與換 Skyliner 票 (樞紐戰略)",
           "icon": "luggage",
           "category": "task",
-          "description": "抵達上野，出「広小路口」存 28 吋行李入特大置物箱。順手於售票機刷 KKday QR 換妥傍晚回程 Skyliner 實體票 (4連座)。",
+          "description": "抵達上野後，直接前往終點站『京成上野站』。把行李寄放在特大置物櫃，並以自動售票機掃描 KKday QR code 提早換妥晚上 18:40 的 Skyliner 實體票。雙手空空、票券到手，進入無敵狀態！",
+          "important": true,
           "adultNotes": [
-            "広小路口出站，右手邊特大置物櫃",
-            "旁邊 E-TICKETS 售票機掃 KKday 回程 QR Code",
-            "兌換 18:00 Skyliner 實體票（劃 ABCD 4 連座）"
+            "京成上野站特大櫃 ¥900，若遇客滿，站內直走即有「手荷物預り所 (人工行李寄放處)」(約¥900/件)，保證一定能存！",
+            "利用售票機換妥 18:40 發車的 Skyliner 實體四連座車票 (劃 ABCD 同排)，傍晚無需排隊"
           ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=京成上野駅"
         },
         {
-          "time": "12:30",
-          "endTime": "15:00",
+          "time": "12:20",
+          "endTime": "15:45",
           "title": "🍽️ 國立科學博物館＋午餐",
           "icon": "museum",
           "category": "attraction",
-          "description": "MOUSEION 餐廳午餐，分組看展",
+          "description": "MOUSEION 餐廳午餐，分組看展。15:00 玩 ComPASS 探險廣場 (已預約，需提前報到)。",
           "important": true,
           "kidFocus": "在巨大恐龍化石旁邊吃午餐！",
           "adultNotes": [
             "先去地球館 M2F MOUSEION 餐廳抽號碼牌",
-            "13:00 分組：爸爸+大寶租中文導覽 ¥320/台",
-            "媽媽+幼童租探險包 ¥410/個"
+            "13:00 分組：爸爸+大寶租中文導覽 ¥320/台，媽媽+幼童租探險包 ¥410/個",
+            "15:00 ComPASS 幼童神殿：需提早 5-10 分鐘報到 (45 分鐘場次)"
           ],
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=国立科学博物館"
         },
         {
-          "time": "15:00",
-          "endTime": "15:45",
-          "title": "🦖 ComPASS 幼童神殿",
-          "icon": "star",
-          "category": "attraction",
-          "description": "科博館 3F 探險廣場 ComPASS（已預約 15:00，提早報到）",
-          "important": true,
-          "kidFocus": "在安全的木質攀爬設施上瘋狂放電！",
-          "tips": [
-            "需提早 5-10 分鐘報到",
-            "45 分鐘場次"
-          ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=国立科学博物館"
-        },
-        {
-          "time": "16:15",
-          "endTime": "17:00",
-          "title": "🍜 一蘭拉麵錯峰晚餐",
+          "time": "16:00",
+          "endTime": "16:45",
+          "title": "🍜 一蘭拉麵錯峰晚餐 (兒童免費福利)",
           "icon": "food",
           "category": "food",
-          "description": "一蘭拉麵 アトレ上野山下口店（絕對錯峰晚餐，先吃飽再逛街，免顧戰利品）",
+          "description": "一蘭拉麵 アトレ上野山下口店。此時完全錯開晚餐高峰，空手輕鬆入座。帶小孩體驗日本道地的『隔板座』吧台座位。",
+          "important": true,
           "tips": [
-            "此時完全沒有排隊",
-            "隔板折攏，全家一字排開"
+            "兒童免費福利：小學六年級以下（含）兒童拉麵完全免費！(下載一蘭APP或註冊麺マイレージ會員，大人點1碗麵可帶最多5位小孩免費兌換兒童版半份拉麵)",
+            "折疊隔板：座位中間的木製隔板可折疊打開。5個座位全開即成無障礙長條吧台",
+            "吧台陣型安排：大寶 - 爸爸 - 三寶(掛桌嬰兒椅) - 媽媽 - 二寶，兩側方便照顧小孩"
           ],
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=一蘭 アトレ上野山下口店"
         },
         {
-          "time": "17:00",
-          "endTime": "17:45",
-          "title": "✨ 太太的香氛綠洲時光",
+          "time": "16:50",
+          "endTime": "17:30",
+          "title": "🏮 上野夏祭 (不忍池畔夏日風情)",
+          "icon": "star",
+          "category": "attraction",
+          "description": "散步至不忍池畔。夕陽微涼、燈籠點亮，體驗最道地的日本夏日風情。",
+          "important": true,
+          "tips": [
+            "風鈴迴廊（りんりん回廊）：不忍池蓮花池木棧道掛滿數千個風鈴，微風吹過極為浪漫，是全家福拍照聖地！",
+            "屋台與小遊戲：傳統祭典攤位（剉冰かき氷、烤香腸、炒麵、射擊、撈金魚等），讓小孩開心體驗",
+            "不忍池蓮花：7月底正值蓮花盛開，配上點亮的祭典提燈，景色絕美！"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=不忍池",
+          "mapUrls": [
+            {
+              "name": "不忍池 弁天堂 (祭典屋台周邊)",
+              "url": "https://www.google.com/maps/search/?api=1&query=不忍池+弁天堂"
+            },
+            {
+              "name": "不忍池 蓮池木棧道 (風鈴迴廊)",
+              "url": "https://www.google.com/maps/search/?api=1&query=不忍池+ボート場"
+            }
+          ]
+        },
+        {
+          "time": "17:35",
+          "endTime": "18:15",
+          "title": "🛍️ 太太的重裝備香氛掃貨 (空手狀態)",
           "icon": "shopping",
           "category": "shopping",
-          "description": "爸爸帶小孩在商場走道/無印良品內休息，太太專心試香購買",
+          "description": "爸爸帶小孩休息，太太專心試香購買精油與保養品。因不走回頭路，買完即直接前往車站裝箱。",
           "tips": [
-            "第一站 [Atre WEST 1F] MARKS&WEB：狂掃高質感平價草本洗沐 (約阿原半價，日本買一塊皂只要台幣一百出頭，洗髮乳、身體乳大容量又激省一半以上！)",
-            "第二站 [Atre WEST 1F] Cosme Kitchen：專攻 Waphyto 頂級艾草/和漢精油保養，試聞日系高級香",
-            "第三站 [過馬路對面] 無印良品 (上野マルイ B2F)：挑選 Wood 木質調純精油"
+            "第一站 [Atre WEST 1F] MARKS&WEB：購買高品質草本洗沐用品 (約台灣阿原皂半價)",
+            "第二站 [Atre WEST 1F] Cosme Kitchen：專攻 Waphyto 艾草/和漢保養，試聞日系高級香",
+            "第三站 [對面丸井 B2F] 無印良品：選購 Wood 木質調純精油"
           ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=MARKS%26WEB+アトレ上野"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=MARKS%26WEB+アトレ上野",
+          "mapUrls": [
+            {
+              "name": "MARKS & WEB アトレ上野店",
+              "url": "https://www.google.com/maps/search/?api=1&query=MARKS%26WEB+アトレ上野"
+            },
+            {
+              "name": "Cosme Kitchen アトレ上野店",
+              "url": "https://www.google.com/maps/search/?api=1&query=Cosme+Kitchen+アトレ上野"
+            },
+            {
+              "name": "無印良品 上野マルイ店",
+              "url": "https://www.google.com/maps/search/?api=1&query=無印良品+上野マルイ"
+            }
+          ]
         },
         {
-          "time": "17:45",
-          "title": "🚶 領出大行李並前往搭車",
+          "time": "18:20",
+          "endTime": "18:35",
+          "title": "🧳 京成上野站：終極合體裝箱與進站",
           "icon": "luggage",
           "category": "task",
-          "description": "走回上野站「広小路口」領出 28 吋大行李，步行前往京成上野站。",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=JR 上野駅"
-        },
-        {
-          "time": "18:00",
-          "title": "🚄 Skyliner 返回機場",
-          "icon": "train",
-          "category": "transport",
-          "description": "京成上野 → 成田機場 T2（41 分鐘）",
+          "description": "提著戰利品走回京成上野站的置物櫃。打開櫃子，將所有沉重液體/香氛用品直接塞進 28 吋大行李箱，封箱進站。拿著中午已換好的 Skyliner 實體票從容過閘門！",
+          "important": true,
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=京成上野駅"
         },
         {
-          "time": "19:00",
+          "time": "18:40",
+          "endTime": "19:21",
+          "title": "🚄 Skyliner 列車返回機場",
+          "icon": "train",
+          "category": "transport",
+          "description": "搭乘 Skyliner 57 號 (18:40 京成上野發車 ➡️ 19:21 抵達成田機場第二航廈)。車上吃點心休息。",
+          "important": true,
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=京成上野駅"
+        },
+        {
+          "time": "19:40",
           "title": "🏨 入住成田日航酒店（第 2 晚）",
           "icon": "hotel",
           "category": "hotel",
-          "description": "房型：主樓舒適三人房 (含5份早餐)。確認號：1128142272413654",
+          "description": "Comfort Triple Room (含5份早餐)。確認號：1128142272413654。領取 Plarail 網購大禮包 ＆ 地の塩社艾草皂！",
           "important": true,
           "adultNotes": [
             "預約編號：ORD0026706564",
-            "⚠️ Check-in 時領取 Plarail 網購大禮包 ＆ 地の塩社艾草皂！"
+            "⚠️ Check-in 時領取 Plarail 大禮包 ＆ 艾草皂"
           ],
           "kidFocus": "領取超大的 Plarail 火車禮物！",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"

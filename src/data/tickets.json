@@ -49,9 +49,8 @@
       "source": "KKday"
     },
     "pickupInstructions": [
-      "在成田機場京成電鐵乘車處的 E-TICKETS 自動售票機",
-      "掃描 KKday QR Code 兌換實體票",
-      "劃位選 A/B/C/D 同排，全家包下一整排"
+      "去程 (Day 2)：在成田機場京成電鐵乘車處的 E-TICKETS 自動售票機，掃描 KKday QR Code 劃位並兌換實體票 (選 ABCD 同排連號，包下一整排)。",
+      "回程 (Day 8)：中午 11:55 抵達上野後，前往『京成上野站』的自動售票機，掃描 KKday QR Code 劃位並換妥 18:40 發車的實體票，可避免傍晚排隊。"
     ],
     "ticketImage": null,
     "important": true,
