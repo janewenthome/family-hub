@@ -638,50 +638,122 @@
           ]
         },
         {
-          "time": "09:30",
-          "title": "🚙 山中湖へドライブ出発",
-          "icon": "car",
-          "category": "transport",
-          "description": "NOAHで両家族全員（大所帯）で出発",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=吉村大池荘"
+          "time": "09:10",
+          "endTime": "10:15",
+          "title": "🚠 河口湖富士山パノラマロープウェイ【戦略 A：早朝電撃戦】",
+          "icon": "star",
+          "category": "attraction",
+          "description": "団体観光客が到着する前に、富士山がきれいに見える朝の黄金時間帯にロープウェイに乗車！",
+          "important": true,
+          "kidFocus": "ロープウェイで山頂へ！「天上鐘」を鳴らしたり、たぬきのお団子を食べよう！",
+          "adultNotes": [
+            "🚠 戦略 A 実行手順：",
+            "　• 09:10 ロープウェイ下の「無料駐車場」に車を停めます。",
+            "　• 09:15 団体ツアーバスが到着する前に、オープンと同時に乗車 (片道約3分)。",
+            "　• 山頂攻略：天上鐘を鳴らし、お団子を食べ、絶景の富士山を撮影。山頂は階段が多いためベビーカーは畳み、三男は抱っこひも等で抱っこします。",
+            "　• 10:15 までにロープウェイを下車し、次の目的地へ出発します。"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=～河口湖～+富士山パノラマロープウェイ"
         },
         {
           "time": "10:15",
-          "title": "山中湖 旭日丘桟橋に到着",
-          "icon": "walk",
-          "category": "attraction",
-          "description": "湖畔を散歩し、白鳥やコイに餌やり体験",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=山中湖 旭日丘桟橋"
+          "endTime": "10:30",
+          "title": "🚗 道の駅富士吉田へ移動 (レーダードーム＆モンベル)",
+          "icon": "car",
+          "category": "transport",
+          "description": "車で道の駅富士吉田へ移動 (乗車時間約15分)"
         },
         {
-          "time": "10:45",
-          "endTime": "11:10",
-          "title": "🦢 遊覧船「白鳥の湖」乗船",
-          "icon": "ship",
-          "category": "attraction",
+          "time": "10:30",
+          "endTime": "11:45",
+          "title": "📡 富士山レーダードーム館 ＆ モンベルお買い物",
+          "icon": "shopping",
+          "category": "shopping",
           "important": true,
-          "description": "水戸岡鋭治氏デザインの温かみのある木製内装の遊覧船",
-          "kidFocus": "可愛い大きな白鳥の船に乗って、みんなで富士山を探そう！",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=山中湖 旭日丘桟橋"
+          "description": "パパとママで完璧な分擔！パパはモンベルでショッピング、ママは子供たちとレーダードーム体験！",
+          "kidFocus": "レーダードーム館で「マイナス5℃の寒さと強風」の富士山頂気候を体験！",
+          "adultNotes": [
+            "📍 場所：道の駅富士吉田 (同じ敷地内にあります)。",
+            "👨 パパ任務 (モンベル 富士吉田店)：日本最大級のアウトドアショップ。免税対応で高機能ウェアやギアをお得に購入できます。",
+            "👩 ママ任務 (富士山レーダードーム館)：長男・次男と一緒に「富士山頂寒さ体験室」に入り、マイナス5℃の低風を体験。子供たちが学べる楽しい展示が満載です！",
+            "💡 レーダードーム館のプチ知識：火山や地震の監視施設ではありません！かつて標高3,776mの富士山頂に設置されていた台風観測用レーダーで、退役後にこの地に移設・復元されました。"
+          ],
+          "mapUrls": [
+            {
+              "name": "富士山レーダードーム館",
+              "url": "https://www.google.com/maps/search/?api=1&query=富士山レーダードーム館"
+            },
+            {
+              "name": "モンベル 富士吉田店",
+              "url": "https://www.google.com/maps/search/?api=1&query=モンベル+富士吉田店"
+            }
+          ]
         },
         {
-          "time": "11:15",
-          "endTime": "13:00",
+          "time": "11:45",
+          "endTime": "12:00",
+          "title": "🚗 山中湖・小作ほうとうへ移動",
+          "icon": "car",
+          "category": "transport",
+          "description": "車で山中湖へ移動 (乗車時間約15分)"
+        },
+        {
+          "time": "12:00",
+          "endTime": "13:20",
           "title": "🍜 小作 山中湖店でほうとうランチ",
           "icon": "food",
           "category": "food",
           "description": "予約不可、現地ウェイティングボードに記帳",
           "important": true,
           "kidFocus": "もちもちの太麺とかぼちゃの甘いスープのほうとうを食べよう！",
+          "adultNotes": [
+            "11:00開店、12:00頃に到着して並びます。小作は山梨名物「ほうとう」の超人気店で、かぼちゃや山菜が入った味噌ベースの太麺は子供にも大人気です。",
+            "広い畳の席があるので、4歳と2歳の子連れでもゆっくり横になれて快適に過ごせます。"
+          ],
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=甲州ほうとう 小作 山中湖店"
         },
         {
+          "time": "13:20",
+          "endTime": "13:30",
+          "title": "🚶 山中湖 旭日丘桟橋に到着",
+          "icon": "walk",
+          "category": "attraction",
+          "description": "白鳥やコイにやるエサを購入して準備します",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=山中湖 旭日丘桟橋"
+        },
+        {
           "time": "13:30",
-          "title": "🚗 河口湖へドライブで戻る",
+          "endTime": "13:50",
+          "title": "🦢 遊覧船「白鳥の湖」乗船",
+          "icon": "ship",
+          "category": "attraction",
+          "description": "水戸岡鋭治氏デザインの温かみのある木製内装の遊覧船",
+          "important": true,
+          "kidFocus": "可愛い大きな白鳥の船に乗って、みんなで富士山を探そう！",
+          "adultNotes": [
+            "⏱️ 運航時間：13:30発 (旭日丘桟橋から毎時00分・30分に出発、1周約20分)。",
+            "💰 料金：大人 1,200円 ×2 + 子供(4歳以上) 600円 ×2 + 3歳未満無料 = 3,600円。",
+            "船内はシートベルト等の制限がなく、子供たちも木目のフロアを自由に動き回れます。"
+          ],
+          "warning": "強風・濃霧時は欠航する場合があるため、事前に yamanakako-yuransen.jp で確認してください。",
+          "mapUrls": [
+            {
+              "name": "山中湖白鳥の湖リアルタイム時刻表・運賃案内",
+              "url": "file:///public/tickets/swan-boat-timetable.png"
+            },
+            {
+              "name": "山中湖 旭日丘桟橋",
+              "url": "https://www.google.com/maps/search/?api=1&query=山中湖 旭日丘桟橋"
+            }
+          ]
+        },
+        {
+          "time": "13:50",
+          "endTime": "14:30",
+          "title": "🚗 河口湖へ戻る (子供のお昼寝タイム)",
           "icon": "car",
           "category": "transport",
-          "description": "約35分の道のり、ドライブ中に子供はお昼寝タイム",
-          "kidFocus": "チャイルドシートでぐっすり夢の中へ～"
+          "description": "車で約35分。ドライブ中に子供たちはぐっすりお昼寝です。"
         },
         {
           "time": "14:30",
@@ -690,6 +762,7 @@
           "icon": "museum",
           "category": "attraction",
           "description": "ヨーロッパ風のオルゴール庭園とオルガン演奏・砂絵ショー",
+          "kidFocus": "おとぎ話のような音楽の森で、自動演奏のオルゴールを聞こう！",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=河口湖 音楽と森の美術館"
         },
         {
@@ -706,19 +779,11 @@
           "icon": "food",
           "category": "food",
           "description": "地元の絶品しゃぶしゃぶ、子供フレンドリーな個室風席",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=しゃぶしゃぶ はやし"
-        },
-        {
-          "time": "19:30",
-          "title": "🛒 モンベル 富士吉田店",
-          "icon": "shopping",
-          "category": "shopping",
-          "description": "日本最大級のアウトドアショップでモンベルグッズのお買い物",
-          "tips": [
-            "しゃぶしゃぶの後に車で約10分",
-            "20:00まで営業。広々とした駐車場あり"
+          "adultNotes": [
+            "大人数用（9名）のテーブル席の事前予約が必要です。",
+            "VISAプラチナコンシェルジュ経由などで予約を推奨します。"
           ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=モンベル 富士吉田店"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=しゃぶしゃぶ はやし"
         }
       ]
     },
@@ -1103,63 +1168,70 @@
       "phase": "フェーズ4：帰国準備と最後のショッピング",
       "events": [
         {
-          "time": "09:00",
-          "title": "ホテル朝食＆荷物の整理",
-          "icon": "hotel",
-          "category": "hotel",
-          "description": "パッキングとおもちゃの梱包を完了",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
-        },
-        {
-          "time": "10:30",
-          "title": "無料シャトルバスで成田第1ターミナルへ",
-          "icon": "bus",
-          "category": "transport",
-          "description": "ホテル発のシャトルバスで空港へ移動",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
+          "time": "08:30",
+          "endTime": "10:30",
+          "title": "🍳 豪華なホテル朝食 ＆ のんびり客室時間",
+          "icon": "food",
+          "category": "food",
+          "description": "家族全員ゆっくり起床。ホテル日航成田のレストランで美味しい朝食バイキングを満喫。食後は中庭を散策したり、客室でゆっくり荷造りを整えます。",
+          "kidFocus": "綺麗なホテルでゆっくり起きて、美味しいパンやフルーツを食べよう！"
         },
         {
           "time": "11:00",
-          "title": "T1からT2への連絡バス移動",
+          "title": "🏨 チェックアウト ＆ 無料送迎バスで第2ターミナルへ",
           "icon": "bus",
           "category": "transport",
-          "description": "第1ターミナルから第2ターミナルへの連絡バスに乗車",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第1ターミナル"
+          "description": "ホテル日航成田をチェックアウトし、無料シャトルバスで空港の第2ターミナル (T2) へ直行。ターミナル間の移動の手間を省きます！",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
         },
         {
           "time": "11:30",
-          "title": "成田空港第2ビル 散策＆足湯体験",
-          "icon": "walk",
-          "category": "attraction",
-          "description": "空港展望デッキ近くで飛行機を見ながら足湯を楽しむ",
+          "title": "🧳 第2ターミナル 中華航空での受託手荷物手続き",
+          "icon": "luggage",
+          "category": "task",
+          "description": "第2ターミナル到着後、チャイナエアラインのカウンターで手荷物預け入れと搭乗手続きを行います。身軽になって空港を散策！",
+          "important": true,
+          "adultNotes": [
+            "CI101便は14:30出発、搭乗手続きは11:30より開始されます。",
+            "大きなスーツケースを預け、手荷物だけにして快適に過ごします。"
+          ]
+        },
+        {
+          "time": "12:00",
+          "endTime": "13:30",
+          "title": "🍽️ 第2ターミナルでののんびりランチ ＆ 展望デッキ見学",
+          "icon": "food",
+          "category": "food",
+          "description": "第2ターミナル 4 階のレストランエリアで日本最後のランチ。食後は子供たちと一緒に展望デッキへ行き、大きな飛行機の離着陸を目の前で見学！",
+          "kidFocus": "目の前を飛び立つ大迫力の飛行機を見よう！",
           "mapUrls": [
             {
-              "name": "第二ターミナル (キッズ広場)",
-              "url": "https://www.google.com/maps/search/?api=1&query=成田空港+第一ターミナル"
+              "name": "成田国際空港 第2ターミナル 展望デッキ",
+              "url": "https://www.google.com/maps/search/?api=1&query=成田国際空港+第2ターミナル+見学デッキ"
             },
             {
-              "name": "展望デッキ足湯",
-              "url": "https://www.google.com/maps/search/?api=1&query=成田空港+第一ターミナル+展望デッキ"
+              "name": "成田国際空港 第2ターミナル 4F",
+              "url": "https://www.google.com/maps/search/?api=1&query=成田国際空港+第2ターミナル+4F"
             }
           ]
         },
         {
-          "time": "12:30",
-          "title": "京成友膳にて空港ラストランチ",
-          "icon": "food",
-          "category": "food",
-          "description": "帰国前の美味しい日本食ランチ",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=京成友膳 成田空港"
+          "time": "13:30",
+          "title": "🛂 安全検査・出国審査と搭乗準備",
+          "icon": "walk",
+          "category": "transport",
+          "description": "保安検査と出国手続きを済ませ、免税店でお土産を購入後、搭乗ゲートへ向かいます。",
+          "warning": "13:50までに必ず搭乗ゲートに到着してください。"
         },
         {
           "time": "14:30",
           "endTime": "17:15",
-          "title": "✈️ チャイナエアライン CI101 便帰国",
+          "title": "✈️ チャイナエアライン CI101 便で台湾へ帰国",
           "icon": "plane",
           "category": "transport",
           "important": true,
-          "description": "成田空港 (NRT) T2 ➡️ 台北桃園 (TPE) T2（飛行時間3時間45分）",
-          "kidFocus": "飛行機に乗って台湾のお家に帰ろう！",
+          "description": "成田空港 (NRT) T2 ➡️ 台北桃園 (TPE) T2、無事に帰国！",
+          "kidFocus": "飛行機に乗って台湾のお家に帰ろう！楽しい思い出がいっぱい！",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第2ターミナル"
         }
       ]

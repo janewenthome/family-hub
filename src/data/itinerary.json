@@ -316,20 +316,20 @@
         },
         {
           "time": "17:50",
-          "title": "東京站八重洲口搭計程車",
+          "title": "🚕 東京站八重洲口搭計程車直奔 Peacock 超市",
           "icon": "taxi",
           "category": "transport",
           "important": true,
-          "description": "朝「八重洲口 (Yaesu Exit)」出站搭計程車直達飯店（約 2.5 公里）",
+          "description": "搭計程車直接載至 Peacock Store 日本橋浜町店購買熟食，免去登記入住後二次出門！",
           "adultNotes": [
-            "出口提示：抵達東京站後，務必朝著『八重洲口 (Yaesu Exit)』方向出站！千萬不要走去『丸之內口』(那是反方向，搭車不順路)。",
-            "車資修正：至日本橋飯店總車資約落在 ¥1,200 ～ ¥1,500 之間。",
-            "花台幣 300 讓全家五口瞬間從擁擠車站直達冷氣大廳，這筆錢花得絕對超值！"
+            "🚪 出口提示：抵達東京站後，務必朝著『八重洲口 (Yaesu Exit)』方向出站！千萬不要走去『丸之內口』(反方向不順路)。",
+            "📍 目的地：Peacock Store 日本橋浜町店 (ピーコックストア 日本橋浜町店，車程約 3 公里，車資約 ¥1,500–1,800)。",
+            "🛒 採購戰術：計程車在 Peacock 門口放全家下車。爸爸大寶迅速進入超市橫掃炸物、壽司、冷飲等煙火野餐補給；媽媽與二寶三寶在旁休息或一同採買。買完後全家直接散步回飯店 (步行約 8 分鐘)。"
           ],
           "mapUrls": [
             {
-              "name": "東京站八重洲口 (Yaesu Exit)",
-              "url": "https://www.google.com/maps/search/?api=1&query=東京駅+八重洲口"
+              "name": "Peacock Store 日本橋浜町店",
+              "url": "https://www.google.com/maps/search/?api=1&query=ピーコックストア+トルナーレ日本橋浜町店"
             },
             {
               "name": "東京站八重洲口計程車搭乘處",
@@ -338,53 +338,16 @@
           ]
         },
         {
-          "time": "18:10",
-          "title": "入住日本橋阿克薩斯飯店",
+          "time": "18:25",
+          "title": "🏨 入住日本橋阿克薩斯飯店",
           "icon": "hotel",
           "category": "hotel",
-          "description": "登登記安頓，全家在冷氣房換上舒服衣服稍微休息",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
-        },
-        {
-          "time": "18:30",
-          "title": "🛒 爸爸大寶熟食採購大掃蕩",
-          "icon": "shopping",
-          "category": "shopping",
-          "important": true,
-          "description": "爸爸帶大寶去附近超市大採購看煙火的熟食炸物與冷飲",
+          "description": "辦理登記入住，安頓行李。媽媽及雙幼童留在冷氣房享用熟食晚餐，爸爸與大寶準備出發野餐煙火戰。",
           "adultNotes": [
-            "兩大主力採買基地：",
-            "1. Maruetsu Petit 水天宮前店 (マルエツ プチ)：飯店出門僅 2 分鐘轉彎即達，主力速食補給站。",
-            "2. Peacock Store ピーコックストア (日本橋浜町店)：往濱町公園方向步行 8 分鐘，大型高級超市，熟食炸物區極為豪華！",
             "👧 媽媽＋雙幼童 (冷氣房豪華晚餐)：綜合水果切盤、茶碗蒸(微波加熱)、蛋包飯/漢堡排便當、豪華綜合壽司拼盤與梅酒。",
             "👦 爸爸＋10歲大寶 (煙火野餐)：無骨炸雞 (唐揚げ)、烤肉串拼盤 (焼き鳥)、炸肉餅可樂餅、水煮毛豆、日式炒麵。"
           ],
-          "tips": [
-            "便利商店炸物保溫箱：7-11 美國熱狗/炸熱狗串；全家 Famichiki 無骨炸雞排；Lawson からあげクン 炸雞塊。",
-            "實戰提醒：出門時務必從房間帶 1-2 個小塑膠袋，吃完的垃圾裝好自己提回飯店丟，現場垃圾桶會爆滿。"
-          ],
-          "mapUrls": [
-            {
-              "name": "起點：日本橋阿克薩斯飯店",
-              "url": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
-            },
-            {
-              "name": "Maruetsu Petit 水天宮前店",
-              "url": "https://www.google.com/maps/search/?api=1&query=マルエツ+プチ+水天宮前店"
-            },
-            {
-              "name": "Peacock Store 日本橋浜町店",
-              "url": "https://www.google.com/maps/search/?api=1&query=ピーコックストア+トルナーレ日本橋浜町店"
-            },
-            {
-              "name": "7-Eleven 日本橋水天宮前店",
-              "url": "https://www.google.com/maps/search/?api=1&query=セブン-イレブン+日本橋水天宮前店"
-            },
-            {
-              "name": "FamilyMart 水天宮駅前店",
-              "url": "https://www.google.com/maps/search/?api=1&query=ファミリーマート+水天宮駅前店"
-            }
-          ]
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテルアクサス日本橋"
         },
         {
           "time": "18:50",
@@ -467,24 +430,11 @@
       "phase": "階段一：城市與鐵道探索",
       "events": [
         {
-          "time": "07:30",
-          "endTime": "08:15",
-          "title": "🥐 爸爸的早餐儀式",
-          "icon": "food",
-          "category": "food",
-          "description": "TRUFFLE Bakery 富岡本店白松露鹽麵包",
-          "adultNotes": [
-            "地址：〒135-0047 東京都江東区富岡1-15-2",
-            "回程建議在店門口攔計程車（¥500-600，3 分鐘）"
-          ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=トリュフベーカリー 門前仲町店"
-        },
-        {
           "time": "08:30",
-          "title": "全家在房間吃頂級麵包早餐",
+          "title": "🥞 悠閒起床與早餐時間",
           "icon": "food",
           "category": "food",
-          "description": "充足時間讓孩子睡飽、吃飽、著裝"
+          "description": "全家睡到自然醒，享用昨晚在便利商店或超市買好的美味早餐。充足時間讓孩子睡飽、吃飽、著裝，迎接今天的台場與水上巴士探險！"
         },
         {
           "time": "10:00",
@@ -567,11 +517,24 @@
         },
         {
           "time": "16:40",
-          "title": "🚕 Jumbo Taxi 返回飯店",
+          "title": "🚕 Jumbo Taxi 直奔 Peacock 超市採購熟食",
           "icon": "taxi",
           "category": "transport",
-          "description": "車資約 ¥3,000–3,500，途中經超市補貨",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=日本科学未来館"
+          "description": "搭乘 Jumbo Taxi (大台計程車) 從台場直達 Peacock 超市採購熟食，再走回飯店。",
+          "adultNotes": [
+            "🚕 交通戰略：車資約 ¥3,000–3,500。請司機直接將全家載到 Peacock Store 日本橋浜町店 (東京都中央区日本橋浜町3-44-1) 下車。",
+            "🛒 晚餐採買：買好熱騰騰的熟食炸物、壽司、水果與飲料後，全家散步 8 分鐘返回飯店房間享用。讓累了一整天的小孩在房間吃晚餐徹底放鬆，省去再次外出覓食的奔波！"
+          ],
+          "mapUrls": [
+            {
+              "name": "Peacock Store 日本橋浜町店",
+              "url": "https://www.google.com/maps/search/?api=1&query=ピーコックストア+トルナーレ日本橋浜町店"
+            },
+            {
+              "name": "日本科學未來館起點",
+              "url": "https://www.google.com/maps/search/?api=1&query=日本科学未来館"
+            }
+          ]
         }
       ]
     },
@@ -726,68 +689,126 @@
           "adultNotes": [
             "車站正對面 Toyota 店",
             "確認安全座椅：嬰幼兒座(三寶) + 增高座(二寶)",
-            "導航設定完成後返回民宿接人"
+            "導航設定完成後返回別墅接全家人"
           ]
         },
         {
-          "time": "09:30",
-          "title": "🚙 出發往山中湖",
-          "icon": "car",
-          "category": "transport",
-          "description": "NOAH 載兩家大部隊出發",
-          "kidFocus": "爸爸開著大戰車載大家去探險！",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=吉村大池荘"
+          "time": "09:10",
+          "endTime": "10:15",
+          "title": "🚠 河口湖富士山全景纜車【戰略 A：破曉閃電戰】",
+          "icon": "star",
+          "category": "attraction",
+          "description": "避開觀光團客，趁富士山露臉的黃金時段搭纜車圓夢！",
+          "important": true,
+          "kidFocus": "坐纜車飛高高！去山頂敲響許願鐘、吃狸貓烤糰子！",
+          "adultNotes": [
+            "🚠 戰略 A 執行步驟：",
+            "　• 09:10 開車直奔纜車山下的「無料駐車場 (免費停車場)」停妥車。",
+            "　• 09:15 趕在第一批遊覽車團客抵達前，開門即進場搭乘纜車 (單程約 3 分鐘)。",
+            "　• 山頂攻略：敲天上鐘、吃烤糰子、拍下無敵富士山全景。山頂階梯多，推車折疊放置，三寶由大人抱著。",
+            "　• 10:15 前搭纜車下山，準備開車前往下一個目的地。"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=～河口湖～+富士山パノラマロープウェイ"
         },
         {
           "time": "10:15",
-          "title": "抵達山中湖旭日丘碼頭",
-          "icon": "walk",
-          "category": "attraction",
-          "description": "湖畔散步、買飼料餵天鵝與鯉魚",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=山中湖 旭日丘桟橋"
+          "endTime": "10:30",
+          "title": "🚗 前往道の駅富士吉田 (雷達館 ＆ Mont-bell)",
+          "icon": "car",
+          "category": "transport",
+          "description": "開車前往富士吉田休息站 (車程約 15 分鐘)"
         },
         {
-          "time": "10:45",
-          "endTime": "11:10",
-          "title": "🦢 天鵝湖號遊覽船",
-          "icon": "ship",
-          "category": "attraction",
-          "description": "水戶岡銳治設計木質內裝",
+          "time": "10:30",
+          "endTime": "11:45",
+          "title": "📡 富士山雷達巨蛋館 ＆ Mont-bell 採購大戰",
+          "icon": "shopping",
+          "category": "shopping",
           "important": true,
-          "kidFocus": "搭華麗的木造海盜船，在沙發上用望遠鏡看富士山！",
+          "description": "爸媽完美分工！爸爸去 Mont-bell 採購，媽媽帶孩子體驗氣象雷達館！",
+          "kidFocus": "去雷達館體驗「零下 5 度與超級強風」的富士山頂氣候！",
           "adultNotes": [
-            "大人 ¥1,100 ×2 + 大寶 ¥550 + 二寶 ¥550（4歲不免費！）+ 三寶免費 = ¥3,300",
-            "船上無安全帶限制，幼童可在木質地板自由走動"
+            "📍 地點：道の駅富士吉田 (富士吉田休息站園區內)。",
+            "👨 爸爸任務 (Mont-bell 富士吉田店)：日本最大的戶外用品專賣店，享有免稅與極佳匯率差價，入手高機能裝備。",
+            "👩 媽媽任務 (富士山雷達巨蛋館)：帶大寶、二寶進去體驗「富士山頂寒冷體驗室」，感受零下 5 度低溫。館內還有氣象觀測儀器，非常適合孩子邊玩邊學！",
+            "💡 雷達巨蛋館科普：它不是用來監控火山或地震的！這個巨大的雷達圓頂原先設立在海拔 3,776 公尺的富士山頂，是當年用來偵測颱風與氣象的退役觀測站，後來才移置下山建為博物館。"
           ],
-          "warning": "強風時改為小型船或停駛，出發前查 yamanakako-yuransen.jp",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=山中湖 旭日丘桟橋"
+          "mapUrls": [
+            {
+              "name": "富士山雷達巨蛋館",
+              "url": "https://www.google.com/maps/search/?api=1&query=富士山レーダードーム館"
+            },
+            {
+              "name": "Mont-bell 富士吉田店",
+              "url": "https://www.google.com/maps/search/?api=1&query=モンベル+富士吉田店"
+            }
+          ]
         },
         {
-          "time": "11:15",
-          "endTime": "13:00",
-          "title": "🍜 小作山中湖店（餺飥名店）",
+          "time": "11:45",
+          "endTime": "12:00",
+          "title": "🚗 前往山中湖小作餺飥",
+          "icon": "car",
+          "category": "transport",
+          "description": "從富士吉田開車直奔山中湖 (車程約 15 分鐘)"
+        },
+        {
+          "time": "12:00",
+          "endTime": "13:20",
+          "title": "🍜 小作山中湖店 (餺飥名店)",
           "icon": "food",
           "category": "food",
           "description": "不接受預約，純現場排隊",
           "important": true,
           "kidFocus": "吃軟綿綿的南瓜蔬菜粗麵條！",
           "adultNotes": [
-            "11:00 開門，天鵝湖船 11:10 結束後步行 5 分鐘抵達",
-            "避開正午排隊熱潮",
-            "9 人入座榻榻米座位，幼童可爬可躺"
+            "11:00 已開門，12:00 抵達現場排隊。小作餺飥在富士山吉田區極具盛名，主打南瓜野菜烏龍粗麵，高營養且口味溫和，深受幼童喜愛。",
+            "店內設有大型榻榻米座席，對帶著 4 歲 and 2 歲小孩的家庭非常便利，孩子可坐可躺放鬆。"
           ],
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=甲州ほうとう 小作 山中湖店"
         },
         {
+          "time": "13:20",
+          "endTime": "13:30",
+          "title": "🚶 步行至山中湖旭日丘碼頭",
+          "icon": "walk",
+          "category": "attraction",
+          "description": "買飼料準備餵湖裡的大天鵝與鯉魚",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=山中湖 旭日丘桟橋"
+        },
+        {
           "time": "13:30",
-          "title": "🚗 開車返回河口湖",
+          "endTime": "13:50",
+          "title": "🦢 天鵝湖號遊覽船 (白鳥の湖)",
+          "icon": "ship",
+          "category": "attraction",
+          "description": "搭乘水戶岡銳治設計的木質天鵝船遊覽山中湖",
+          "important": true,
+          "kidFocus": "搭乘超可愛的巨大天鵝船出航！在湖上用望遠鏡看富士山！",
+          "adultNotes": [
+            "⏱️ 班次時間：13:30 準時發船 (旭日丘棧橋每小時的 00 分與 30 分均有發船，航程一周約 20 分鐘)。",
+            "💰 票價：大人 ¥1,200 ×2 + 大寶/二寶 ¥600 ×2 + 三寶免費 = ¥3,600 (3歲以下免費，4-12歲為兒童票)。",
+            "船艙內為無安全帶木質設計，小朋友可在艙內安心走動觀賞。"
+          ],
+          "warning": "強風或濃霧時可能停駛，出發前可查閱 yamanakako-yuransen.jp 官網確認。",
+          "mapUrls": [
+            {
+              "name": "山中湖天鵝船即時時刻表與價格資訊",
+              "url": "file:///public/tickets/swan-boat-timetable.png"
+            },
+            {
+              "name": "山中湖 旭日丘桟橋",
+              "url": "https://www.google.com/maps/search/?api=1&query=山中湖 旭日丘桟橋"
+            }
+          ]
+        },
+        {
+          "time": "13:50",
+          "endTime": "14:30",
+          "title": "🚗 返回河口湖 (孩子午睡時間)",
           "icon": "car",
           "category": "transport",
-          "description": "35 分鐘車程，孩子車上午睡",
-          "kidFocus": "在車上睡個好覺～",
-          "tips": [
-            "車程剛好讓三個孩子完整午睡"
-          ]
+          "description": "35 分鐘車程，剛好讓三個孩子在車上睡個好覺！"
         },
         {
           "time": "14:30",
@@ -812,24 +833,12 @@
           "title": "🍲 しゃぶしゃぶ はやし 涮涮鍋",
           "icon": "food",
           "category": "food",
-          "description": "清爽高湯專人涮肉片，幼兒極度友善",
+          "description": "清爽高湯專人涮肉片，對幼兒極度友善",
           "adultNotes": [
             "需預訂 9 人大桌座位",
             "可委託 VISA 秘書或直接預訂"
           ],
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=しゃぶしゃぶ はやし"
-        },
-        {
-          "time": "19:30",
-          "title": "🛒 mont-bell 富士吉田店",
-          "icon": "shopping",
-          "category": "shopping",
-          "description": "日本最大戶外用品專賣店，採購 mont-bell 服飾與裝備",
-          "tips": [
-            "吃完涮涮鍋後開車前往，車程約 10 分鐘",
-            "營業至 20:00，有免費大型停車場"
-          ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=モンベル 富士吉田店"
         }
       ]
     },
@@ -1321,86 +1330,65 @@
       "phase": "階段四：最後放電與歸途",
       "events": [
         {
-          "time": "08:00",
-          "title": "🍳 飯店內悠閒早餐",
+          "time": "08:30",
+          "endTime": "10:30",
+          "title": "🍳 飯店內享用豪華早餐 ＆ 悠閒時光",
           "icon": "food",
           "category": "food",
-          "description": "最後一頓日本早餐"
+          "description": "全家睡飽起床，在日航成田餐廳悠閒享用豐盛的自助早餐。餐後可在飯店庭園散步、房間內收拾行李，好好享受出發前的舒適時光！",
+          "kidFocus": "在漂亮的飯店裡睡飽飽、吃美味的鬆餅與水果！"
         },
         {
-          "time": "09:30",
-          "title": "退房＋搭接駁巴士去 T1",
+          "time": "11:00",
+          "title": "🏨 辦理退房 ＆ 搭接駁車前往 T2",
           "icon": "bus",
           "category": "transport",
-          "description": "免費接駁巴士在 T1 下車",
+          "description": "辦理 Hotel Nikko Narita 退房，並搭乘飯店免費接駁巴士直達成田機場第二航廈 (T2)，免去航廈間奔波！",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
         },
         {
-          "time": "10:00",
-          "title": "🚌 T1 → T2 穿梭巴士",
-          "icon": "bus",
-          "category": "transport",
-          "description": "免費航廈穿梭巴士前往 T2",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第1ターミナル"
-        },
-        {
           "time": "11:30",
-          "title": "🧳 T2 中華航空辦理託運",
+          "title": "🧳 T2 中華航空辦理託運與登機",
           "icon": "luggage",
           "category": "task",
-          "description": "CI 櫃檯起飛前 3 小時開櫃",
+          "description": "抵達 T2 後，直接前往華航櫃檯辦理行李託運與領取登機證，全體輕裝解脫！",
           "important": true,
           "adultNotes": [
-            "辦理託運行李與領取登機證",
-            "行李託運後全體輕裝"
+            "CI101 航班預計於 14:30 起飛，櫃檯於 11:30 準時開櫃辦理。",
+            "將 28 吋大行李託運後，全家只攜帶隨身小背包，輕鬆在機場活動。"
           ]
         },
         {
           "time": "12:00",
-          "title": "搭接駁巴士回 T1 5F",
-          "icon": "bus",
-          "category": "transport",
-          "description": "輕裝返回 T1 放電",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
-        },
-        {
-          "time": "12:00",
           "endTime": "13:30",
-          "title": "🎡 最後放電＋足湯",
-          "icon": "park",
-          "category": "attraction",
-          "description": "Kinder Platz 兒童樂園 + 看飛機 + 免費足湯",
-          "kidFocus": "在機場樂園最後放電！看飛機＋泡腳！",
-          "adultNotes": [
-            "Kinder Platz：兒童 ¥2,200、陪同大人 ¥1,100",
-            "SHIKISAI GARDEN 看飛機、免費泡足湯、扭蛋"
-          ],
+          "title": "🍽️ T2 機場悠閒午餐 ＆ 飛機展望台",
+          "icon": "food",
+          "category": "food",
+          "description": "在第二航廈 4 樓餐飲區悠閒享用日本最後一餐，飯後可帶小孩到 T2 展望台看大飛機起降。",
+          "kidFocus": "看超大飛機在跑道上起飛降落！",
           "mapUrls": [
             {
-              "name": "第一航廈 (Kinder Platz)",
-              "url": "https://www.google.com/maps/search/?api=1&query=成田空港+第一ターミナル"
+              "name": "成田機場第2航廈展望台",
+              "url": "https://www.google.com/maps/search/?api=1&query=成田国際空港+第2ターミナル+見学デッキ"
             },
             {
-              "name": "足湯 (展望デッキ)",
-              "url": "https://www.google.com/maps/search/?api=1&query=成田空港+第一ターミナル+展望デッキ"
+              "name": "成田機場第2航廈 4F 商店與餐飲區",
+              "url": "https://www.google.com/maps/search/?api=1&query=成田国際空港+第2ターミナル+4F"
             }
           ]
         },
         {
           "time": "13:30",
-          "title": "🍽️ T1 4F 京成友膳午餐",
-          "icon": "food",
-          "category": "food",
-          "description": "日式兒童餐",
-          "tips": [
-            "13:45 準時搭巴士回 T2 過安檢"
-          ],
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=京成友膳 成田空港"
+          "title": "🛂 安全檢查、出境通關與登機",
+          "icon": "walk",
+          "category": "transport",
+          "description": "進入管制區過安檢與海關，購買免稅伴手禮，前往登機門準備登機。",
+          "warning": "請於 13:50 前抵達登機門準備登機。"
         },
         {
           "time": "14:30",
           "endTime": "17:15",
-          "title": "✈️ CI101 返台！",
+          "title": "✈️ 中華航空 CI101 返台！",
           "icon": "plane",
           "category": "transport",
           "description": "NRT → TPE，平安回家！",
