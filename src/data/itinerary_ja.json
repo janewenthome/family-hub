@@ -6,7 +6,7 @@
       "date": "2026-07-24",
       "dayNumber": 1,
       "label": "Day 1",
-      "title": "日本到着＆成田ステイ",
+      "title": "日本到着＆7-11チケット受取ミッション",
       "emoji": "✈️",
       "location": "台湾 → 成田",
       "hotel": "nikko-narita",
@@ -15,31 +15,85 @@
         {
           "time": "16:25",
           "endTime": "20:50",
-          "title": "チャイナエアライン CI106 便出発",
+          "title": "✈️ チャイナエアライン CI101 便出発",
           "icon": "plane",
           "category": "transport",
-          "description": "台北桃園 (TPE) ➡️ 成田空港 (NRT)",
+          "description": "台北桃園 (TPE) ➡️ 成田空港 第2ターミナル (NRT)",
           "important": true,
           "kidFocus": "飛行機に乗って日本へ出発！"
         },
         {
+          "time": "20:50",
+          "endTime": "21:30",
+          "title": "🛂 入国審査・税関・荷物受取",
+          "icon": "luggage",
+          "category": "task",
+          "description": "成田空港第2ターミナル：入国審査 → 税関 → ベルトコンベアで28インチ大型スーツケースを受取",
+          "tips": [
+            "Visit Japan Web QR コードを提示してスムーズに通関",
+            "荷物受取後、1F到着ロビーに出ます"
+          ]
+        },
+        {
           "time": "21:30",
-          "title": "ホテル無料シャトルバス乗車",
+          "endTime": "21:45",
+          "title": "🎯【パパの極速ソロミッション】7-11チケット受取",
+          "icon": "ticket",
+          "category": "task",
+          "description": "パパが単独でB1の7-11へ向かい、鉄道博物館の入館券とミニ運転列車体験券を受け取ります。ママと子供たちは1F到着ロビーのソファで待機。",
+          "important": true,
+          "tips": [
+            "📍 場所：成田空港T2 B1F (本館) の7-11（24時間営業、大型店）",
+            "ルート：1F到着ロビー → エスカレーターでB1（鉄道のりば方面）→ 7-11",
+            "手順①：レジカウンターで13桁の払込票番号のバーコードを提示し「チケット」と伝える",
+            "手順②：店員がスキャン後、画面に金額が表示 → 日本円の現金で支払い",
+            "手順③：実物の「入館券＋ミニ運転列車体験券」が印刷されます。枚数確認後、領収書にサイン",
+            "⚠️ 台湾出発前に必ず13桁の番号/バーコードをスクリーンショット保存！ibon不要、店員に直接対応可"
+          ],
+          "adultNotes": [
+            "ママは大宝・二宝・三宝と荷物と一緒に1F到着ロビーのソファエリアで休憩",
+            "パパがエスカレーターでB1の7-11へ。約10~15分で完了"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港+第2ターミナル+セブンイレブン"
+        },
+        {
+          "time": "22:00",
+          "title": "🚌 ホテル無料シャトルバス乗車",
           "icon": "bus",
           "category": "transport",
-          "description": "ホテル日航成田の無料シャトルバス",
+          "description": "家族合流後、ホテル日航成田の無料シャトルバスに乗車（22:00または22:30発）",
           "tips": [
-            "到着後はホテル日航成田のバス乗り場案内板に従って進んでください"
+            "シャトルバスは20~30分間隔、Hotel Nikko Naritas の案内板に従って進んでください"
           ],
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第2ターミナル"
         },
         {
-          "time": "22:00",
-          "title": "ホテル日航成田 チェックイン",
+          "time": "22:30",
+          "title": "🏨 ホテル日航成田 チェックイン",
           "icon": "hotel",
           "category": "hotel",
-          "description": "成田での前泊拠点",
+          "description": "コンフォートトリプルルーム",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
+        },
+        {
+          "time": "22:45",
+          "title": "🍙 Lawson で夜食＆翌朝の朝食購入",
+          "icon": "food",
+          "category": "food",
+          "description": "ママは部屋で子供たちを寝かしつけ、パパがホテル1FのLawsonで夜食と翌日の朝食を購入",
+          "kidFocus": "コンビニでおいしいものを買おう！"
+        },
+        {
+          "time": "23:00",
+          "title": "🛡️ 東京海上日動の旅行保険に加入",
+          "icon": "phone",
+          "category": "task",
+          "description": "オンラインで「東京海上日動 訪日外国人向け旅行保険 (TOKIO OMOTENASHI POLICY)」に加入",
+          "adultNotes": [
+            "補償は7/25から有効",
+            "7/24入国当日は台湾の富邦保険とクレジットカード付帯保険でカバー"
+          ],
+          "important": true
         }
       ]
     },

@@ -6,7 +6,7 @@
       "date": "2026-07-24",
       "dayNumber": 1,
       "label": "Day 1",
-      "title": "降落與前進基地",
+      "title": "降落與搶票特攻",
       "emoji": "✈️",
       "location": "台灣 → 成田",
       "hotel": "nikko-narita",
@@ -15,27 +15,61 @@
         {
           "time": "16:25",
           "endTime": "20:50",
-          "title": "中華航空 CI106 起飛",
+          "title": "✈️ 中華航空 CI101 起飛",
           "icon": "plane",
           "category": "transport",
-          "description": "TPE → NRT",
+          "description": "TPE → NRT (成田機場第 2 航廈降落)",
           "important": true,
           "kidFocus": "坐飛機出發去日本囉！"
         },
         {
+          "time": "20:50",
+          "endTime": "21:30",
+          "title": "🛂 入境、過海關、領行李",
+          "icon": "luggage",
+          "category": "task",
+          "description": "成田機場第 2 航廈入境審查 → 海關 → 行李轉盤領取 28 吋大行李",
+          "tips": [
+            "出示 Visit Japan Web QR Code 快速通關 (入境審查 + 海關申報)",
+            "行李轉盤出來後即為 1F 入境大廳"
+          ]
+        },
+        {
           "time": "21:30",
-          "title": "搭乘免費接駁車前往飯店",
+          "endTime": "21:45",
+          "title": "🎯 【爸爸極速單兵任務】7-11 搶票特攻",
+          "icon": "ticket",
+          "category": "task",
+          "description": "爸爸單獨衝 B1 的 7-11 取鐵道博物館門票與迷你運轉列車體驗券，媽媽帶三個小孩在 1F 入境大廳沙發區休息等候。",
+          "important": true,
+          "tips": [
+            "📍 目標：成田機場 T2 B1F (本館) 的 7-11 (24H 營業，很大間)",
+            "路線：1F 入境大廳 → 搭手扶梯/電梯下 B1 (鐵道のりば方向) → 即見 7-11",
+            "步驟①：直接走向收銀櫃檯，出示手機上的「13碼取票序號 (払込票番号)」條碼截圖，說 'Ticket'",
+            "步驟②：店員掃描後螢幕顯示金額，以日幣現金付款",
+            "步驟③：店員印出實體「入館券 ＋ 迷你運轉列車體驗券」，核對張數後在領收書上簽名",
+            "⚠️ 務必在台灣先截圖存好 13 碼序號 / 條碼！不用操作 ibon 機台，找真人店員即可"
+          ],
+          "adultNotes": [
+            "媽媽帶大寶、二寶、三寶與行李在 1F 入境大廳沙發區休息，或推至外面等候飯店接駁車",
+            "爸爸搭手扶梯直奔 B1 的 7-11 取票，約 10-15 分鐘完成"
+          ],
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港+第2ターミナル+セブンイレブン"
+        },
+        {
+          "time": "22:00",
+          "title": "🚌 搭乘免費接駁車前往飯店",
           "icon": "bus",
           "category": "transport",
-          "description": "成田日航酒店免費接駁車",
+          "description": "全家會合後搭乘成田日航酒店免費接駁車 (22:00 或 22:30 班次)",
           "tips": [
-            "抵達後跟著 Hotel Nikko Narita 指標走"
+            "接駁車每 20~30 分一班，跟著 Hotel Nikko Narita 指標走"
           ],
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=成田国際空港 第2ターミナル"
         },
         {
-          "time": "22:00",
-          "title": "辦理成田日航酒店入住",
+          "time": "22:30",
+          "title": "🏨 辦理成田日航酒店入住",
           "icon": "hotel",
           "category": "hotel",
           "description": "Comfort Triple Room",
@@ -46,19 +80,19 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=ホテル日航成田"
         },
         {
-          "time": "22:30",
-          "title": "Lawson 宵夜＋休息",
+          "time": "22:45",
+          "title": "🍙 Lawson 宵夜＋買隔天早餐",
           "icon": "food",
           "category": "food",
-          "description": "飯店 1F Lawson 便利商店",
+          "description": "媽媽在房間安頓小孩，爸爸去飯店 1F 的 Lawson 買宵夜與隔天早餐",
           "kidFocus": "去便利商店買好吃的！"
         },
         {
-          "time": "22:45",
+          "time": "23:00",
           "title": "🛡️ 投保東京海上日動旅平險",
           "icon": "phone",
           "category": "task",
-          "description": "上網投保「東京海上日動訪日外國人旅平險」",
+          "description": "上網投保「東京海上日動訪日外國人旅平險」(TOKIO OMOTENASHI POLICY)",
           "adultNotes": [
             "保障於 7/25 生效",
             "7/24 入境當天由台灣富邦不便險與公教信用卡 cover"
