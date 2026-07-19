@@ -54,7 +54,8 @@
     ],
     "ticketImage": null,
     "important": true,
-    "warning": null
+    "warning": null,
+    "mapUrl": "https://zaisen.tid-keisei.jp/tc/html/zaisen.html?line=1"
   },
   {
     "id": "fuji-excursion",
@@ -219,18 +220,21 @@
       "2026-07-31"
     ],
     "details": {
-      "location": "國立科學博物館 3F",
-      "time": "15:00",
-      "duration": "45 分鐘",
-      "note": "安全木質攀爬設施"
+      "location": "國立科學博物館 3F (地球館 3F)",
+      "time": "15:00 - 15:45",
+      "passengers": "5 張 (大人 2 + 兒童 3)",
+      "price": "¥1,500",
+      "reservationCode": "SPM0-23M7",
+      "note": "安全木質攀爬遊樂設施，每場次 45 分鐘"
     },
     "pickupInstructions": [
-      "需提早 5-10 分鐘報到",
-      "已預約 15:00 場次"
+      "請務必於入場時段開始前 5-10 分鐘抵達 3F 現場排隊報到。",
+      "直接以手機出示 QR Code 供工作人員掃描進場，無須換票。",
+      "此票券不可遲到，若遲到雖可入場，但仍須於該場次結束時間 (15:45) 準時離場。"
     ],
-    "ticketImage": null,
-    "important": false,
-    "warning": null
+    "ticketImage": "/tickets/compass-qr.png",
+    "important": true,
+    "warning": "本票券預訂時間為 15:00-15:45，請提早抵達以保障完整遊玩時間。"
   },
   {
     "id": "omiya-mini",

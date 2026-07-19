@@ -1,6 +1,23 @@
 {
   "categories": [
     {
+      "id": "luggage-split",
+      "name": "🎒📦 行李分包戰略（Day 1 晚上整理）",
+      "emoji": "🎒",
+      "items": [
+        { "id": "split-title-backpack", "text": "── 🎒 隨身背包（不寄、隨身帶）──" },
+        { "id": "split-1", "text": "每人一套換洗衣物＋睡衣＋內衣褲", "critical": true },
+        { "id": "split-2", "text": "三寶：2 天份紙尿褲＋濕紙巾", "critical": true },
+        { "id": "split-3", "text": "護照（全家 5 本）", "critical": true },
+        { "id": "split-4", "text": "信用卡＋現金＋常備藥", "critical": true },
+        { "id": "split-5", "text": "充電線＋行動電源（爸媽各一顆）", "critical": true },
+        { "id": "split-6", "text": "手機（所有電子票都在裡面）", "critical": true },
+        { "id": "split-title-suitcase", "text": "── 📦 28 吋行李箱（機場黑貓寄出）──" },
+        { "id": "split-7", "text": "其餘全部衣物與用品" },
+        { "id": "split-8", "text": "盥洗用品（Hotel Axas 有提供，可不放）" }
+      ]
+    },
+    {
       "id": "documents",
       "name": "📄 證件與文件",
       "emoji": "📄",
